@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url(../fonts/ProximaNova-Reg.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url(../fonts/ProximaNova-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+/* line 12, ../sass/_fonts.scss */
+body {
+  color: #222222;
+  font-family: "Proxima Nova Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* line 1, ../sass/_layout.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/_layout.scss */
+a {
+  text-decoration: none;
+  color: #f16529;
+}
+/* line 10, ../sass/_layout.scss */
+a:visited {
+  color: #f16529;
+}
+/* line 13, ../sass/_layout.scss */
+a:hover {
+  color: #a93a0b;
+}
+
+/* line 18, ../sass/_layout.scss */
+.main-container {
+  padding: 1.5em;
+  padding-right: 1em;
+  padding-top: 0px;
+  margin-left: 1em;
+}
+/* line 24, ../sass/_layout.scss */
+.main-container.menu-active {
+  margin-left: 194px;
+  padding-left: 2.5em;
+}
+@media (min-width: 768px) {
+  /* line 18, ../sass/_layout.scss */
+  .main-container {
+    margin-left: 194px;
+    padding: 1.5em;
+  }
+}
+
+/* line 35, ../sass/_layout.scss */
+.main {
+  max-width: 940px;
+  font-size: 18px;
+  margin: 0px auto;
+}
+
+/* line 42, ../sass/_layout.scss */
+article header {
+  font-size: 150%;
+  font-weight: bold;
+}
+/* line 47, ../sass/_layout.scss */
+article blockquote {
+  border-left: 6px solid #ccc;
+  font-style: italic;
+  padding-left: 1em;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+@media (min-width: 1140px) {
+  /* line 47, ../sass/_layout.scss */
+  article blockquote {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+/* line 61, ../sass/_layout.scss */
+article table td {
+  padding-right: 1em;
+}
+
+/* line 67, ../sass/_layout.scss */
+.mobile-nav {
+  position: fixed;
+  left: 5px;
+  top: 5px;
+}
+/* line 72, ../sass/_layout.scss */
+.mobile-nav.menu-active {
+  left: 199px;
+}
+@media (min-width: 768px) {
+  /* line 67, ../sass/_layout.scss */
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* line 81, ../sass/_layout.scss */
+.side-nav {
+  background-color: #0086b3;
+  float: left;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  width: 194px;
+  height: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 81, ../sass/_layout.scss */
+  .side-nav {
+    display: block;
+  }
+}
+/* line 95, ../sass/_layout.scss */
+.side-nav.menu-active {
+  display: block;
+}
+/* line 99, ../sass/_layout.scss */
+.side-nav h1 a {
+  color: white;
+  font-weight: normal;
+}
+/* line 105, ../sass/_layout.scss */
+.side-nav nav ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 109, ../sass/_layout.scss */
+.side-nav nav a {
+  font: 18px arial, sans-serif;
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: 	#f4f4d7;
+  background: #33ccff;;
+}
+/* line 121, ../sass/_layout.scss */
+.side-nav nav a:hover {
+  background: #b3ecff;
+}
+/* line 125, ../sass/_layout.scss */
+.side-nav nav a.active {
+  background:#b3ecff;
+}
+/* line 131, ../sass/_layout.scss */
+.side-nav .nav-icons {
+  margin-top: 2em;
+}
+/* line 133, ../sass/_layout.scss */
+.side-nav .nav-icons a {
+  color: white;
+  margin-right: 0.5em;
+  opacity: 0.5;
+}
+/* line 138, ../sass/_layout.scss */
+.side-nav .nav-icons a:hover {
+  opacity: 1.0;
+}
+/* line 142, ../sass/_layout.scss */
+.side-nav .nav-icons a:last-child {
+  margin-right: 0px;
+}
+
+/* line 1, ../sass/_projects.scss */
+.project {
+  overflow: hidden;
+  width: 100%;
+  padding-right: 1em;
+  padding-top: 1em;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 9, ../sass/_projects.scss */
+.project:nth-child(even) {
+  clear: left;
+}
+/* line 13, ../sass/_projects.scss */
+.project .image-container {
+  max-height: 260px;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+/* line 19, ../sass/_projects.scss */
+.project img {
+  width: 100%;
+  opacity: 0.5;
+}
+/* line 23, ../sass/_projects.scss */
+.project img:hover {
+  opacity: 1.0;
+}
+@media (min-width: 1140px) {
+  /* line 1, ../sass/_projects.scss */
+  .project {
+    width: 50%;
+  }
+}
+
+/* line 1, ../sass/_helper.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 3, ../sass/_helper.scss */
+.clearfix:after {
+  clear: both;
+}
+/* line 6, ../sass/_helper.scss */
+.clearfix:after, .clearfix:before {
+  content: " ";
+  display: table;
+}
+
+/* line 12, ../sass/_helper.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 17, ../sass/_helper.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 21, ../sass/_helper.scss */
+.image-container {
+  overflow: hidden;
+}
+
+/* line 25, ../sass/_helper.scss */
+.rounded-corners {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Leftover HTML 5 Boilerplate */
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/* line 3, ../sass/_html5bp.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 12, ../sass/_html5bp.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/* line 19, ../sass/_html5bp.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 25, ../sass/_html5bp.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 1, ../sass/_blog.scss */
+.blog-list {
+  list-style: none;
+  margin-top: 2em;
+  padding: 0px;
+}
+/* line 6, ../sass/_blog.scss */
+.blog-list li {
+  margin-bottom: 2em;
+}
+/* line 11, ../sass/_blog.scss */
+.blog-list .blog-list-header a {
+  font-size: 125%;
+}
+@media (min-width: 768px) {
+  /* line 15, ../sass/_blog.scss */
+  .blog-list .blog-list-header .blog-list-time {
+    float: right;
+  }
+}
+/* line 22, ../sass/_blog.scss */
+.blog-list .blog-list-teaser {
+  clear: both;
+}
+
+/* line 27, ../sass/_blog.scss */
+.pagination {
+  text-align: center;
+}
+/* line 30, ../sass/_blog.scss */
+.pagination span {
+  margin: 0.5em;
+}
+
+/* line 35, ../sass/_blog.scss */
+#disqus_thread {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+  /* line 35, ../sass/_blog.scss */
+  #disqus_thread {
+    margin: 1em 3em;
+  }
+}
