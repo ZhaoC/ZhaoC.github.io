@@ -146,15 +146,15 @@ article table td {
   text-decoration: none;
   font-weight: bold;
   color: 	#f4f4d7;
-  background: #33ccff;;
+  background:  #6699ff;
 }
 /* line 121, ../sass/_layout.scss */
 .side-nav nav a:hover {
-  background: #b3ecff;
+  background: #0086b3;
 }
 /* line 125, ../sass/_layout.scss */
 .side-nav nav a.active {
-  background:#b3ecff;
+  background:#0086b3;
 }
 /* line 131, ../sass/_layout.scss */
 .side-nav .nav-icons {
