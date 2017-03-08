@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhaoc.github.io/2017/03/05/hello-world/</loc>
+    
+    <lastmod>2017-03-08T02:14:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhaoc.github.io/all-tags/index.html</loc>
     
     <lastmod>2017-03-07T02:53:58.000Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://zhaoc.github.io/all-categories/index.html</loc>
     
     <lastmod>2017-03-07T01:58:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhaoc.github.io/2017/03/05/hello-world/</loc>
-    
-    <lastmod>2017-03-07T01:31:34.000Z</lastmod>
     
   </url>
   
