@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaoc.github.io/"/>
-  <updated>2017-03-09T03:06:29.000Z</updated>
+  <updated>2017-03-25T14:11:47.000Z</updated>
   <id>https://zhaoc.github.io/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>A Taste of JavaScript Promise</title>
+    <link href="https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/"/>
+    <id>https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/</id>
+    <published>2017-03-25T01:04:58.000Z</published>
+    <updated>2017-03-25T14:11:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="figure center" style="width:;"><a class="fancybox" href="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" title="JavaScript Promise" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" alt="JavaScript Promise"></a><span class="caption">JavaScript Promise</span></div><div style="clear:both;"></div>
+<blockquote>
+<p>JavaScript Promises are used to track the state of an asynchronous task.</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="comment">/* executor */</span> <span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;...&#125;);</div></pre></td></tr></table></figure>
+<h2 id="Promise-states"><a href="#Promise-states" class="headerlink" title="Promise states"></a>Promise states</h2><ul>
+<li>fulfilled - the action relating to the promise successed</li>
+<li>rejected - the action relating to the promise failed</li>
+<li>pending - hasn’t fulfilled or rejected yet</li>
+<li>settled - has fulfilled or rejected</li>
+</ul>
+<blockquote>
+<p>A promise can be <code>resolved to</code> either a promise or thenable, in which case it will store the promise or thenable for later unwrapping.</p>
+</blockquote>
+<h2 id="how-to-create-a-promise"><a href="#how-to-create-a-promise" class="headerlink" title="how to create a promise"></a>how to create a promise</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</div><div class="line">    <span class="comment">//process a task, possibly async, then...</span></div><div class="line">    <span class="keyword">if</span>(<span class="comment">/* task successed */</span>)&#123;</div><div class="line">        resolve(<span class="string">"it worked!"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span>&#123;</div><div class="line">        reject(<span class="built_in">Error</span>(<span class="string">"it  failed!"</span>));</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="how-to-use-promise"><a href="#how-to-use-promise" class="headerlink" title="how to use promise"></a>how to use promise</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">promise.then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(result); <span class="comment">// "it worked!"</span></div><div class="line">&#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(err); <span class="comment">//"it failed!"</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<blockquote>
+<p><code>then()</code> takes two arguments, callback for a success case, and another for the failure case. Both are optional, so you are able to add a callback for the success or failure case only.</p>
+</blockquote>
+<h4 id="Resources"><a href="#Resources" class="headerlink" title="Resources:"></a>Resources:</h4><p>   <a href="http://www.javascriptkit.com/javatutors/javascriptpromises.shtml" target="_blank" rel="external">Guide to JavaScript Promise</a>， <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises#promise-api-reference" target="_blank" rel="external">Promise API Reference</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;figure center&quot; style=&quot;width:;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>Photography</title>
