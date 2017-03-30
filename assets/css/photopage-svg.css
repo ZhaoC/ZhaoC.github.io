@@ -4,17 +4,15 @@
   overflow-x: hidden;
 }
 
-body{
-  margin:0;
-  padding-top:100px;
-  background-color:hsl(0,10%,89%)
+#svgbody{
+position: absolute;
+bottom: 0;
 } 
 
 #holder{
     width: 800px;
     height: 500px;
     position: relative;
-    background: hsl(0, 10%, 89%);
 }
 
 div#viewport {
@@ -113,7 +111,7 @@ div#explosion-circle {
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 0;
 }
 
 @keyframes explosion{
@@ -123,7 +121,7 @@ div#explosion-circle {
         background-color: hsl(355, 95%, 53%);
     }
     75%{
-        opacity: 0.8;
+        opacity: 0;
         transform:translateX(0px) scale(0);
         background-color: hsl(355, 95%, 53%);
     }
@@ -135,7 +133,7 @@ div#explosion-circle {
     }
     93.75%{
         background-color: hsl(60, 100%, 50%);
-        opacity: 0.1;
+        opacity: 0;
     }
     100%{
         transform:translateX(-254px) scale(1);
