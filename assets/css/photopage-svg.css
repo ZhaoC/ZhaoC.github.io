@@ -5,7 +5,7 @@
 }
 
 #svgbody{
-position: absolute;
+position: fixed;
 bottom: 0;
 } 
 
@@ -467,5 +467,11 @@ div#explosion-circle {
     }
     100%{
         transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #svgbody {
+      display:none
     }
 }

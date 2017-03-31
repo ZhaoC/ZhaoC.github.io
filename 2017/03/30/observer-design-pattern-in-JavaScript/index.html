@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Zhao Cai | Blog">
-    <title>Category: JavaScript - Zhao Cai | Blog</title>
+    <title>A Taste of Observer pattern in JavaScript - Zhao Cai | Blog</title>
     <meta name="author" content="Zhao Cai">
     
     
@@ -15,12 +15,19 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta property="og:type" content="blog">
-<meta property="og:title" content="Zhao Cai | Blog">
-<meta property="og:url" content="https://zhaoc.github.io/categories/JavaScript/index.html">
+    <meta name="description" content="Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. 
+ There would be an object (observer collection) maintains a lis">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="A Taste of Observer pattern in JavaScript">
+<meta property="og:url" content="https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/index.html">
 <meta property="og:site_name" content="Zhao Cai | Blog">
+<meta property="og:description" content="Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. 
+ There would be an object (observer collection) maintains a lis">
+<meta property="og:updated_time" content="2017-03-31T02:23:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zhao Cai | Blog">
+<meta name="twitter:title" content="A Taste of Observer pattern in JavaScript">
+<meta name="twitter:description" content="Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. 
+ There would be an object (observer collection) maintains a lis">
     
     
         
@@ -60,7 +67,7 @@
         
     
 
-<header id="header" data-behavior="2">
+<header id="header" data-behavior="5">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <div class="header-title">
         <a class="header-title-link" href="/ ">Zhao Cai | Blog</a>
@@ -84,7 +91,7 @@
         
     
 
-<nav id="sidebar" data-behavior="2">
+<nav id="sidebar" data-behavior="5">
     <div class="sidebar-container">
         
             <div class="sidebar-profile">
@@ -213,26 +220,21 @@
 </nav>
 
             
-            <div id="main" data-behavior="2"
+            <div id="main" data-behavior="5"
                  class="
                         hasCoverMetaIn
                         ">
                 
-    <section class="postShorten-group main-content-wrap">
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
     
     
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/03/30/observer-design-pattern-in-JavaScript/">
-                            A Taste of Observer pattern in JavaScript
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title" itemprop="headline">
+            A Taste of Observer pattern in JavaScript
+        </h1>
+    
+    <div class="post-meta">
     <time itemprop="datePublished" datetime="2017-03-30T18:07:48-04:00">
 	
 		    Mar 30, 2017
@@ -247,10 +249,11 @@
     
 </div>
 
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p> Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. </p>
+</div>
+    
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <p> Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. </p>
 <p> There would be an object (observer collection) maintains a list of events. Those observers (subscriber) will be automatically notified once the event occurs. </p>
 <h4 id="Code-Sample"><a href="#Code-Sample" class="headerlink" title="Code Sample:"></a>Code Sample:</h4><blockquote>
 <ol>
@@ -271,98 +274,77 @@
 <p>Anyhow, I like the concept of decoupling, especially in group work.</p>
 </blockquote>
 
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2017/03/30/observer-design-pattern-in-JavaScript/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
             
         </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
         
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2017/03/24/A-Taste-of-JavaScript-Promise/">
-                            A Taste of JavaScript Promise
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-03-24T21:04:58-04:00">
-	
-		    Mar 24, 2017
-    	
-    </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-
-
-    
-</div>
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/Sub-Pub/">Sub/Pub</a>
 
             </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/24/A-Taste-of-JavaScript-Promise/" data-tooltip="A Taste of JavaScript Promise">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
             
-                <div class="postShorten-content" itemprop="articleBody">
-                    <div class="figure center" style="width:;"><a class="fancybox" href="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" title="JavaScript Promise" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" alt="JavaScript Promise"></a><span class="caption">JavaScript Promise</span></div><div style="clear:both;"></div>
-<blockquote>
-<p>JavaScript Promises are used to track the state of an asynchronous task.</p>
-</blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="comment">/* executor */</span> <span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;...&#125;);</div></pre></td></tr></table></figure>
-<h2 id="Promise-states"><a href="#Promise-states" class="headerlink" title="Promise states"></a>Promise states</h2><ul>
-<li>fulfilled - the action relating to the promise successed</li>
-<li>rejected - the action relating to the promise failed</li>
-<li>pending - hasn’t fulfilled or rejected yet</li>
-<li>settled - has fulfilled or rejected</li>
-</ul>
-<blockquote>
-<p>A promise can be <code>resolved to</code> either a promise or thenable, in which case it will store the promise or thenable for later unwrapping.</p>
-</blockquote>
-<h2 id="how-to-create-a-promise"><a href="#how-to-create-a-promise" class="headerlink" title="how to create a promise"></a>how to create a promise</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</div><div class="line">    <span class="comment">//process a task, possibly async, then...</span></div><div class="line">    <span class="keyword">if</span>(<span class="comment">/* task successed */</span>)&#123;</div><div class="line">        resolve(<span class="string">"it worked!"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span>&#123;</div><div class="line">        reject(<span class="built_in">Error</span>(<span class="string">"it  failed!"</span>));</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<h2 id="how-to-use-promise"><a href="#how-to-use-promise" class="headerlink" title="how to use promise"></a>how to use promise</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">promise.then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(result); <span class="comment">// "it worked!"</span></div><div class="line">&#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(err); <span class="comment">//"it failed!"</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<blockquote>
-<p><code>then()</code> takes two arguments, callback for a success case, and another for the failure case. Both are optional, so you are able to add a callback for the success or failure case only.</p>
-</blockquote>
-<h4 id="Resources"><a href="#Resources" class="headerlink" title="Resources:"></a>Resources:</h4><p>   <a href="http://www.javascriptkit.com/javatutors/javascriptpromises.shtml" target="_blank" rel="external">Guide to JavaScript Promise</a>， <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises#promise-api-reference" target="_blank" rel="external">Promise API Reference</a></p>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2017/03/24/A-Taste-of-JavaScript-Promise/#post-footer" class="postShorten-excerpt_link link">
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
+                <a class="post-action-btn btn btn--default" href="#">
             
-        </div>
-        
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
-        
-        
-        <li class="pagination-number">page 1 of 1</li>
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
     </ul>
 </div>
 
-</section>
+
+        
+            
+        
+    </div>
+</article>
 
 
 
@@ -373,6 +355,84 @@
 </footer>
 
             </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/24/A-Taste-of-JavaScript-Promise/" data-tooltip="A Taste of JavaScript Promise">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
             
         </div>
         
@@ -506,6 +566,8 @@
         <!--SCRIPTS-->
 <script src="/assets/js/script-rt08quwts7iav5x0cfd2ym0gb5qkd1lvrsmwrakxtkhefmaaes4ywkmnjnwf.min.js"></script>
 <!--SCRIPTS END-->
+
+    
 
 
 
