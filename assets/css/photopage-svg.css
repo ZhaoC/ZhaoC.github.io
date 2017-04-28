@@ -469,9 +469,3 @@ div#explosion-circle {
         transform: translateY(0px);
     }
 }
-
-@media screen and (max-width: 1024px) {
-    #svgbody {
-      display:none
-    }
-}

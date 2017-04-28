@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaoc.github.io/"/>
-  <updated>2017-03-31T02:23:57.000Z</updated>
+  <updated>2017-03-31T02:28:53.000Z</updated>
   <id>https://zhaoc.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/"/>
     <id>https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/</id>
     <published>2017-03-30T22:07:48.000Z</published>
-    <updated>2017-03-31T02:23:57.000Z</updated>
+    <updated>2017-03-31T02:28:53.000Z</updated>
     
     <content type="html"><![CDATA[<p> Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. </p>
 <p> There would be an object (observer collection) maintains a list of events. Those observers (subscriber) will be automatically notified once the event occurs. </p>
@@ -53,7 +53,7 @@
       <category term="JavaScript" scheme="https://zhaoc.github.io/categories/JavaScript/"/>
     
     
-      <category term="Sub/Pub" scheme="https://zhaoc.github.io/tags/Sub-Pub/"/>
+      <category term="JavaScript" scheme="https://zhaoc.github.io/tags/JavaScript/"/>
     
   </entry>
   
@@ -64,7 +64,7 @@
     <published>2017-03-25T01:04:58.000Z</published>
     <updated>2017-03-25T14:11:47.000Z</updated>
     
-    <content type="html"><![CDATA[<div class="figure center" style="width:;"><a class="fancybox" href="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" title="JavaScript Promise" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" alt="JavaScript Promise"></a><span class="caption">JavaScript Promise</span></div><div style="clear:both;"></div>
+    <content type="html"><![CDATA[<div class="figure center" style="width:;"><a class="fancybox" href="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" title="JavaScript Promise" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" alt="JavaScript Promise" oncontextmenu="return false;"></a><span class="caption">JavaScript Promise</span></div><div style="clear:both;"></div>
 <blockquote>
 <p>JavaScript Promises are used to track the state of an asynchronous task.</p>
 </blockquote>
@@ -106,33 +106,33 @@
     <published>2017-03-08T22:53:42.000Z</published>
     <updated>2017-03-09T03:06:29.000Z</updated>
     
-    <content type="html"><![CDATA[<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-1.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-1.jpg" alt=""></a></div>
-<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-2.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail2.jpg" alt=""></a></div>
-<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-3.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail3.jpg" alt=""></a></div>
-<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-5.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail5.jpg" alt=""></a></div>
-<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-4.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail4.jpg" alt=""></a></div>
-<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-6.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail6.jpg" alt=""></a></div>
-<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-7.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail7.jpg" alt=""></a></div>
-<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-8.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail8.jpg" alt=""></a></div>
-<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-9.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-9.jpg" alt=""></a></div>
-<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-10.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail10.jpg" alt=""></a></div>
-<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-11.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail11.jpg" alt=""></a></div>
-<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-13.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail13.jpg" alt=""></a></div>
-<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-14.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-14.jpg" alt=""></a></div>
-<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-16.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-16.jpg" alt=""></a></div>
-<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-19.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-19.jpg" alt=""></a></div>
-<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-17.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-17.jpg" alt=""></a></div>
-<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-18.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-18.jpg" alt=""></a></div>
-<div class="figure fig-50" style="width:;"><a class="fancybox" href="/assets/images/raw/image-20.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-20.jpg" alt=""></a></div>
-<div class="figure fig-50" style="width:;"><a class="fancybox" href="/assets/images/raw/image-21.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-21.jpg" alt=""></a></div>
-<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-22.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-22.jpg" alt=""></a></div>
-<div class="figure left" style="width:;"><a class="fancybox" href="/assets/images/raw/image-23.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail23.jpg" alt=""></a></div>
-<div class="figure right" style="width:;"><a class="fancybox" href="/assets/images/raw/image-24.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail24.jpg" alt=""></a></div>
-<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-25.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-25.jpg" alt=""></a></div>
-<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-12.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-12.jpg" alt=""></a></div>
-<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-15.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-15.jpg" alt=""></a></div>
-<!--<div class="figure left" style="width:;"><a class="fancybox" href="/assets/images/raw/image-27.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail27.jpg" alt=""></a></div>
-<div class="figure right" style="width:;"><a class="fancybox" href="/assets/images/raw/image-26.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail26.jpg" alt=""></a></div>–&gt;
+    <content type="html"><![CDATA[<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-1.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-1.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-2.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail2.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-3.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail3.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-5.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail5.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-4.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail4.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-6.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail6.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-7.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail7.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-8.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail8.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-9.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-9.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-10.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail10.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-11.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail11.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-13.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail13.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-14.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-14.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-16.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-16.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-19.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-19.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-17.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-17.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-18.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-18.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-50" style="width:;"><a class="fancybox" href="/assets/images/raw/image-20.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-20.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-50" style="width:;"><a class="fancybox" href="/assets/images/raw/image-21.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-21.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-22.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-22.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure left" style="width:;"><a class="fancybox" href="/assets/images/raw/image-23.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail23.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure right" style="width:;"><a class="fancybox" href="/assets/images/raw/image-24.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail24.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-25.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-25.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-12.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-12.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-15.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-15.jpg" alt="" oncontextmenu="return false;"></a></div>
+<!--<div class="figure left" style="width:;"><a class="fancybox" href="/assets/images/raw/image-27.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail27.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure right" style="width:;"><a class="fancybox" href="/assets/images/raw/image-26.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail26.jpg" alt="" oncontextmenu="return false;"></a></div>–&gt;
 -->]]></content>
     
     <summary type="html">

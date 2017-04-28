@@ -71,7 +71,7 @@
                 href="#about">
         
         
-            <img class="header-picture" src="/assets/images/author.jpg" alt="Author&#39;s picture"/>
+            <img class="header-picture" src="/assets/images/author.jpg" alt="Author&#39;s picture" oncontextmenu="return false;"/>
         
         </a>
     
@@ -227,6 +227,73 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
+                        <a class="link-unstyled" href="/2017/03/30/observer-design-pattern-in-JavaScript/">
+                            A Taste of Observer pattern in JavaScript
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2017-03-30T18:07:48-04:00">
+	
+		    Mar 30, 2017
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <p> Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. </p>
+<p> There would be an object (observer collection) maintains a list of events. Those observers (subscriber) will be automatically notified once the event occurs. </p>
+<h4 id="Code-Sample"><a href="#Code-Sample" class="headerlink" title="Code Sample:"></a>Code Sample:</h4><blockquote>
+<ol>
+<li><p>observer subscribes to an event by the event name. ‘globalBroadcaster’ is an observer collection which stores the events subscribed. ‘handler’ is the action observer will make once the event occurs.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.subscribe(<span class="string">'uniqueEventName'</span>, handler);</div></pre></td></tr></table></figure>
+</li>
+<li><p>Once the event be published, all the subscribers of this event will be notified. parameters could be injected when event published and it can be used by the subscribers. */</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.publish(<span class="string">'uniqueEventName'</span>, parameter1, parameter2, ...);</div></pre></td></tr></table></figure>
+</li>
+<li><p>Observer can unsubsribe the event in the ‘handler’ after being notified. In this case, observer won’t be notified if same event published again.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.unsubscribe(<span class="string">'uniqueEventName'</span>, handler);</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</blockquote>
+<h4 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h4><blockquote>
+<p>The biggest benifit of using Sub/Pub pattern comes from the concept of decoupling. Observer A doesn’t need to worry about how the event published or who announces the event, ‘A’ will process its handler once be notified.</p>
+<p>The disadvantages also come from decoupling modules. It would be hard for one to draw a clearly workflow since some of the actions processed on the fly. It will cause chaos if not implemented properly. </p>
+<p>Anyhow, I like the concept of decoupling, especially in group work.</p>
+</blockquote>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2017/03/30/observer-design-pattern-in-JavaScript/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
                         <a class="link-unstyled" href="/2017/03/24/A-Taste-of-JavaScript-Promise/">
                             A Taste of JavaScript Promise
                         </a>
@@ -250,7 +317,7 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <div class="figure center" style="width:;"><a class="fancybox" href="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" title="JavaScript Promise" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" alt="JavaScript Promise"></a><span class="caption">JavaScript Promise</span></div><div style="clear:both;"></div>
+                    <div class="figure center" style="width:;"><a class="fancybox" href="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" title="JavaScript Promise" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" alt="JavaScript Promise" oncontextmenu="return false;"></a><span class="caption">JavaScript Promise</span></div><div style="clear:both;"></div>
 <blockquote>
 <p>JavaScript Promises are used to track the state of an asynchronous task.</p>
 </blockquote>
@@ -320,7 +387,7 @@
             <i class="fa fa-remove"></i>
         </div>
         
-            <img id="about-card-picture" src="/assets/images/author.jpg" alt="Author&#39;s picture"/>
+            <img id="about-card-picture" src="/assets/images/author.jpg" alt="Author&#39;s picture" oncontextmenu="return false;"/>
         
             <h4 id="about-card-name">Zhao Cai</h4>
         
