@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaoc.github.io/"/>
-  <updated>2017-03-31T02:28:53.000Z</updated>
+  <updated>2017-06-06T21:45:49.000Z</updated>
   <id>https://zhaoc.github.io/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>The Beauty of Diffie-Hellman Key Exchange</title>
+    <link href="https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/"/>
+    <id>https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/</id>
+    <published>2017-06-06T01:32:14.000Z</published>
+    <updated>2017-06-06T21:45:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/post_images/Diffie-Hellman_Key_Exchange.png" title="Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/Diffie-Hellman_Key_Exchange.png" alt="Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)" oncontextmenu="return false;"></a><span class="caption">Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)</span></div><div style="clear:both;"></div>
+<p>Diffie-Hellman is a very simple algorithm which can be used to establish a shared secret between two parties.</p>
+<h3 id="How-it-works"><a href="#How-it-works" class="headerlink" title="How it works"></a>How it works</h3><p> Robot A use its private number <code>a</code> to generate value <code>A</code> and pass it to Robot B along with value <code>g</code> and <code>p</code>. Value <code>g</code>, <code>p</code> and <code>A</code> are all public. Robot B uses the same formula to generate value <code>B</code> using its private value <code>b</code> then transfers value <code>B</code> to Robot A. After all of that, Robot A and B can get same value <code>R</code> without exposing its private values to others.</p>
+<h3 id="Usage-of-D-H-and-Concept-Behind"><a href="#Usage-of-D-H-and-Concept-Behind" class="headerlink" title="Usage of D-H and Concept Behind"></a>Usage of D-H and Concept Behind</h3><p>During the network communications, data can be eaily exposed to attackers. D-H provides a fantastic solution for that. Using D-H algorithm, users can estalish a secret even through public channels.</p>
+<p>The key concept of this algorithm is <a href="https://en.wikipedia.org/wiki/Trapdoor_function" target="_blank" rel="external"><code>Trapdoor Function</code></a> which is widely used in cryptography. In this case, <code>f(x)=g^x mod p</code> is a <code>Trapdoor Function</code>, f(x) can be easily calculated when x is given but the computation of the inverse of f can hardly be done.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;figure center&quot; style=&quot;width:;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/assets/images/post_images/Diffie-Hellman_Key_Exchange.png&quot; title=&quot;Diff
+    
+    </summary>
+    
+    
+      <category term="cryptographic" scheme="https://zhaoc.github.io/tags/cryptographic/"/>
+    
+  </entry>
   
   <entry>
     <title>A Taste of Observer pattern in JavaScript</title>

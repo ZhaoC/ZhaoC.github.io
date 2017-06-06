@@ -226,6 +226,52 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
+                        <a class="link-unstyled" href="/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/">
+                            The Beauty of Diffie-Hellman Key Exchange
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2017-06-05T21:32:14-04:00">
+	
+		    Jun 05, 2017
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/post_images/Diffie-Hellman_Key_Exchange.png" title="Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/Diffie-Hellman_Key_Exchange.png" alt="Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)" oncontextmenu="return false;"></a><span class="caption">Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)</span></div><div style="clear:both;"></div>
+<p>Diffie-Hellman is a very simple algorithm which can be used to establish a shared secret between two parties.</p>
+<h3 id="How-it-works"><a href="#How-it-works" class="headerlink" title="How it works"></a>How it works</h3><p> Robot A use its private number <code>a</code> to generate value <code>A</code> and pass it to Robot B along with value <code>g</code> and <code>p</code>. Value <code>g</code>, <code>p</code> and <code>A</code> are all public. Robot B uses the same formula to generate value <code>B</code> using its private value <code>b</code> then transfers value <code>B</code> to Robot A. After all of that, Robot A and B can get same value <code>R</code> without exposing its private values to others.</p>
+<h3 id="Usage-of-D-H-and-Concept-Behind"><a href="#Usage-of-D-H-and-Concept-Behind" class="headerlink" title="Usage of D-H and Concept Behind"></a>Usage of D-H and Concept Behind</h3><p>During the network communications, data can be eaily exposed to attackers. D-H provides a fantastic solution for that. Using D-H algorithm, users can estalish a secret even through public channels.</p>
+<p>The key concept of this algorithm is <a href="https://en.wikipedia.org/wiki/Trapdoor_function" target="_blank" rel="external"><code>Trapdoor Function</code></a> which is widely used in cryptography. In this case, <code>f(x)=g^x mod p</code> is a <code>Trapdoor Function</code>, f(x) can be easily calculated when x is given but the computation of the inverse of f can hardly be done.</p>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
                         <a class="link-unstyled" href="/2017/03/30/observer-design-pattern-in-JavaScript/">
                             A Taste of Observer pattern in JavaScript
                         </a>
@@ -555,6 +601,25 @@
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/">
+                            <h3 class="media-heading">The Beauty of Diffie-Hellman Key Exchange</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Jun 5, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
@@ -562,7 +627,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                3 posts found
+                4 posts found
             </p>
         </div>
     </div>

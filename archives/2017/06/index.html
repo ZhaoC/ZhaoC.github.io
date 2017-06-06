@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Zhao Cai | Blog">
-    <title>A Taste of Observer pattern in JavaScript - Zhao Cai | Blog</title>
+    <title>Archives: 2017/6 - Zhao Cai | Blog</title>
     <meta name="author" content="Zhao Cai">
     
     
@@ -15,19 +15,12 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. 
- There would be an object (observer collection) maintains a lis">
-<meta property="og:type" content="blog">
-<meta property="og:title" content="A Taste of Observer pattern in JavaScript">
-<meta property="og:url" content="https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/index.html">
+    <meta property="og:type" content="blog">
+<meta property="og:title" content="Zhao Cai | Blog">
+<meta property="og:url" content="https://zhaoc.github.io/archives/2017/06/index.html">
 <meta property="og:site_name" content="Zhao Cai | Blog">
-<meta property="og:description" content="Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. 
- There would be an object (observer collection) maintains a lis">
-<meta property="og:updated_time" content="2017-03-31T02:28:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="A Taste of Observer pattern in JavaScript">
-<meta name="twitter:description" content="Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. 
- There would be an object (observer collection) maintains a lis">
+<meta name="twitter:title" content="Zhao Cai | Blog">
     
     
         
@@ -67,7 +60,7 @@
         
     
 
-<header id="header" data-behavior="5">
+<header id="header" data-behavior="2">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
     <div class="header-title">
         <a class="header-title-link" href="/ ">Zhao Cai | Blog</a>
@@ -91,7 +84,7 @@
         
     
 
-<nav id="sidebar" data-behavior="5">
+<nav id="sidebar" data-behavior="2">
     <div class="sidebar-container">
         
             <div class="sidebar-profile">
@@ -220,131 +213,68 @@
 </nav>
 
             
-            <div id="main" data-behavior="5"
+            <div id="main" data-behavior="2"
                  class="
                         hasCoverMetaIn
                         ">
                 
-<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    <section class="postShorten-group main-content-wrap">
     
     
-        <div class="post-header main-content-wrap text-left">
-    
-        <h1 class="post-title" itemprop="headline">
-            A Taste of Observer pattern in JavaScript
-        </h1>
-    
-    <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-03-30T18:07:48-04:00">
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/">
+                            The Beauty of Diffie-Hellman Key Exchange
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2017-06-05T21:32:14-04:00">
 	
-		    Mar 30, 2017
+		    Jun 05, 2017
     	
     </time>
     
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-
-
-    
 </div>
-
-</div>
-    
-    <div class="post-content markdown" itemprop="articleBody">
-        <div class="main-content-wrap">
-            <p> Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. </p>
-<p> There would be an object (observer collection) maintains a list of events. Those observers (subscriber) will be automatically notified once the event occurs. </p>
-<h4 id="Code-Sample"><a href="#Code-Sample" class="headerlink" title="Code Sample:"></a>Code Sample:</h4><blockquote>
-<ol>
-<li><p>observer subscribes to an event by the event name. ‘globalBroadcaster’ is an observer collection which stores the events subscribed. ‘handler’ is the action observer will make once the event occurs.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.subscribe(<span class="string">'uniqueEventName'</span>, handler);</div></pre></td></tr></table></figure>
-</li>
-<li><p>Once the event be published, all the subscribers of this event will be notified. parameters could be injected when event published and it can be used by the subscribers. */</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.publish(<span class="string">'uniqueEventName'</span>, parameter1, parameter2, ...);</div></pre></td></tr></table></figure>
-</li>
-<li><p>Observer can unsubsribe the event in the ‘handler’ after being notified. In this case, observer won’t be notified if same event published again.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.unsubscribe(<span class="string">'uniqueEventName'</span>, handler);</div></pre></td></tr></table></figure>
-</li>
-</ol>
-</blockquote>
-<h4 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h4><blockquote>
-<p>The biggest benifit of using Sub/Pub pattern comes from the concept of decoupling. Observer A doesn’t need to worry about how the event published or who announces the event, ‘A’ will process its handler once be notified.</p>
-<p>The disadvantages also come from decoupling modules. It would be hard for one to draw a clearly workflow since some of the actions processed on the fly. It will cause chaos if not implemented properly. </p>
-<p>Anyhow, I like the concept of decoupling, especially in group work.</p>
-</blockquote>
-
-            
-        </div>
-    </div>
-    <div id="post-footer" class="post-footer main-content-wrap">
-        
-            <div class="post-footer-tags">
-                <span class="text-color-light text-small">TAGGED IN</span><br/>
-                
-    <a class="tag tag--primary tag--small t-link" href="/tags/JavaScript/">JavaScript</a>
 
             </div>
-        
-        <div class="post-actions-wrap">
-    <nav>
-        <ul class="post-actions post-action-nav">
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/"  data-tooltip="The Beauty of Diffie-Hellman Key Exchange">
-                
-                    <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
-                </a>
-            </li>
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/24/A-Taste-of-JavaScript-Promise/" data-tooltip="A Taste of JavaScript Promise">
-                
-                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <ul class="post-actions post-action-share">
-        <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
-                <i class="fa fa-google-plus"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
-                <i class="fa fa-facebook-official"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
-                <i class="fa fa-twitter"></i>
-            </a>
-        </li>
-        
-        <li class="post-action">
             
-                <a class="post-action-btn btn btn--default" href="#">
+                <div class="postShorten-content" itemprop="articleBody">
+                    <div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/post_images/Diffie-Hellman_Key_Exchange.png" title="Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/Diffie-Hellman_Key_Exchange.png" alt="Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)" oncontextmenu="return false;"></a><span class="caption">Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)</span></div><div style="clear:both;"></div>
+<p>Diffie-Hellman is a very simple algorithm which can be used to establish a shared secret between two parties.</p>
+<h3 id="How-it-works"><a href="#How-it-works" class="headerlink" title="How it works"></a>How it works</h3><p> Robot A use its private number <code>a</code> to generate value <code>A</code> and pass it to Robot B along with value <code>g</code> and <code>p</code>. Value <code>g</code>, <code>p</code> and <code>A</code> are all public. Robot B uses the same formula to generate value <code>B</code> using its private value <code>b</code> then transfers value <code>B</code> to Robot A. After all of that, Robot A and B can get same value <code>R</code> without exposing its private values to others.</p>
+<h3 id="Usage-of-D-H-and-Concept-Behind"><a href="#Usage-of-D-H-and-Concept-Behind" class="headerlink" title="Usage of D-H and Concept Behind"></a>Usage of D-H and Concept Behind</h3><p>During the network communications, data can be eaily exposed to attackers. D-H provides a fantastic solution for that. Using D-H algorithm, users can estalish a secret even through public channels.</p>
+<p>The key concept of this algorithm is <a href="https://en.wikipedia.org/wiki/Trapdoor_function" target="_blank" rel="external"><code>Trapdoor Function</code></a> which is widely used in cryptography. In this case, <code>f(x)=g^x mod p</code> is a <code>Trapdoor Function</code>, f(x) can be easily calculated when x is given but the computation of the inverse of f can hardly be done.</p>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
             
-                <i class="fa fa-list"></i>
-            </a>
-        </li>
+        </div>
+        
+    </article>
+    
+    <div class="pagination-bar">
+    <ul class="pagination">
+        
+        
+        <li class="pagination-number">page 1 of 1</li>
     </ul>
 </div>
 
-
-        
-            
-        
-    </div>
-</article>
+</section>
 
 
 
@@ -355,84 +285,6 @@
 </footer>
 
             </div>
-            
-                <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
-                    <div class="post-actions-wrap">
-    <nav>
-        <ul class="post-actions post-action-nav">
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/"  data-tooltip="The Beauty of Diffie-Hellman Key Exchange">
-                
-                    <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
-                </a>
-            </li>
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/24/A-Taste-of-JavaScript-Promise/" data-tooltip="A Taste of JavaScript Promise">
-                
-                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <ul class="post-actions post-action-share">
-        <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
-                <i class="fa fa-google-plus"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
-                <i class="fa fa-facebook-official"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
-                <i class="fa fa-twitter"></i>
-            </a>
-        </li>
-        
-        <li class="post-action">
-            
-                <a class="post-action-btn btn btn--default" href="#">
-            
-                <i class="fa fa-list"></i>
-            </a>
-        </li>
-    </ul>
-</div>
-
-
-                </div>
-                <div id="share-options-bar" class="share-options-bar" data-behavior="5">
-    <ul class="share-options">
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
-                <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
-            </a>
-        </li>
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
-                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
-            </a>
-        </li>
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
-                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div id="share-options-mask" class="share-options-mask"></div>
-
             
         </div>
         
@@ -585,8 +437,6 @@
         <!--SCRIPTS-->
 <script src="/assets/js/script-rt08quwts7iav5x0cfd2ym0gb5qkd1lvrsmwrakxtkhefmaaes4ywkmnjnwf.min.js"></script>
 <!--SCRIPTS END-->
-
-    
 
 
 
