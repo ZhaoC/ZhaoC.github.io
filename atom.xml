@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaoc.github.io/"/>
-  <updated>2017-06-06T21:45:49.000Z</updated>
+  <updated>2017-06-06T21:48:50.000Z</updated>
   <id>https://zhaoc.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/"/>
     <id>https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/</id>
     <published>2017-06-06T01:32:14.000Z</published>
-    <updated>2017-06-06T21:45:49.000Z</updated>
+    <updated>2017-06-06T21:48:50.000Z</updated>
     
     <content type="html"><![CDATA[<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/post_images/Diffie-Hellman_Key_Exchange.png" title="Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/Diffie-Hellman_Key_Exchange.png" alt="Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)" oncontextmenu="return false;"></a><span class="caption">Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)</span></div><div style="clear:both;"></div>
 <p>Diffie-Hellman is a very simple algorithm which can be used to establish a shared secret between two parties.</p>
@@ -87,7 +87,7 @@
     <link href="https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/"/>
     <id>https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/</id>
     <published>2017-03-25T01:04:58.000Z</published>
-    <updated>2017-03-25T14:11:47.000Z</updated>
+    <updated>2017-06-11T23:13:20.000Z</updated>
     
     <content type="html"><![CDATA[<div class="figure center" style="width:;"><a class="fancybox" href="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" title="JavaScript Promise" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" alt="JavaScript Promise" oncontextmenu="return false;"></a><span class="caption">JavaScript Promise</span></div><div style="clear:both;"></div>
 <blockquote>
@@ -109,6 +109,10 @@
 <p><code>then()</code> takes two arguments, callback for a success case, and another for the failure case. Both are optional, so you are able to add a callback for the success or failure case only.</p>
 </blockquote>
 <h4 id="Resources"><a href="#Resources" class="headerlink" title="Resources:"></a>Resources:</h4><p>   <a href="http://www.javascriptkit.com/javatutors/javascriptpromises.shtml" target="_blank" rel="external">Guide to JavaScript Promise</a>， <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises#promise-api-reference" target="_blank" rel="external">Promise API Reference</a></p>
+<hr>
+<h3 id="Update-2017-06-11"><a href="#Update-2017-06-11" class="headerlink" title="Update (2017/06/11)"></a>Update (2017/06/11)</h3><blockquote>
+<p>The purpose of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" target="_blank" rel="external">async/await</a> function is to simplify the behavior of using promises synchronously and to perform some behavior on a group of <code>Promises</code>. Just like <code>Promises</code> are similar to structured callbacks, <code>async/await</code> is similar to combining generators and promises.  -MDN</p>
+</blockquote>
 ]]></content>
     
     <summary type="html">

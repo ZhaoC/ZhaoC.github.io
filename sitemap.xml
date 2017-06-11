@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/</loc>
+    
+    <lastmod>2017-06-11T23:13:20.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/</loc>
     
-    <lastmod>2017-06-06T21:45:49.000Z</lastmod>
+    <lastmod>2017-06-06T21:48:50.000Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/</loc>
     
     <lastmod>2017-03-31T02:28:53.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/</loc>
-    
-    <lastmod>2017-03-25T14:11:47.000Z</lastmod>
     
   </url>
   
