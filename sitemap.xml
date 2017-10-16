@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/</loc>
+    
+    <lastmod>2017-10-16T00:39:42.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/</loc>
     
     <lastmod>2017-10-15T16:18:31.000Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/</loc>
     
     <lastmod>2017-10-11T02:40:58.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/</loc>
-    
-    <lastmod>2017-10-11T02:36:41.000Z</lastmod>
     
   </url>
   
