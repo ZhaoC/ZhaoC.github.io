@@ -1,5 +1,10 @@
+@media only screen and (max-width: 1000px) {
+    #fixed-div {
+        display: none;
+    }
+}
 body {
-    background-color: rgb(199, 199, 199)
+    background-color: rgb(255, 255, 255)
 }
 ul.tree,
 ul.tree ul {
@@ -52,4 +57,10 @@ ul.tree li:last-child:before {
 
 .level3 {
     .tree-child-text-font(500, 18px);
+}
+
+#fixed-div {
+    position: fixed;
+    top: 1em;
+    right: 1em;
 }
