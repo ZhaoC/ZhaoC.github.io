@@ -4,7 +4,7 @@
     <title>My Secret Base :)</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Zhao Cai">   
+    <meta name="author" content="Zhao Cai">
     <link rel="icon" href="https://zhaoc.github.io/assets/images/favicon.png">
     <!-- in order to dynamic compie less stylesheet, make sure it loaded before less.js -->
     <link href="style.less" rel="stylesheet/less" type="text/css" />
@@ -16,54 +16,113 @@
     </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
     <!-- TODO: create javascript to create DOM from a json data file -->
+    <!-- TODO: add mark for different resource -->
 </head>
 
 <body>
     <div>
-            <ul class="tree">
-                    <li class="level1">JavaScript
+        <ul class="tree">
+            <li class="level1">Front-End Concept
+                <ul>
+                    <li class="level2">Conventions
                         <ul>
-                            <li class="level2">CSS
-                                <ul>
-                                    <li class="level3"> [ less.js ]
-                                        <a href="https://github.com/less/less.js/">https://github.com/less/less.js/</a>
-                                    </li>
-                                    <li class="level3"> [ yahoo/pure.css ]
-                                        <a href="https://purecss.io/tables/">https://purecss.io/tables/</a>
-                                    </li>
-                                    <li class="level3"> [ normalize.css ]
-                                        <a href="https://github.com/necolas/normalize.css">https://github.com/necolas/normalize.css</a>
-                                    </li>
-                                    <li class="level3"> [ adminlte ]
-                                        <a href="https://adminlte.io/">https://adminlte.io/</a>
-                                    </li>
-                                </ul>
+                            <li class="level3"> [ html head ]
+                                <a href="https://github.com/joshbuchea/HEAD">https://github.com/joshbuchea/HEAD</a>
                             </li>
-                            <li class="level2">JS Components
-                                <ul>
-                                    <li class="level3"> [ jsgrid ]
-                                        <a href="http://js-grid.com/">http://js-grid.com/</a>
-                                    </li>
-                                    <li class="level3"> [ jspanel ]
-                                        <a href="http://jspanel.de/">http://jspanel.de/</a>
-                                    </li>
-                                    <li class="level3"> [ jstree ]
-                                        <a href="https://github.com/vakata/jstree/">https://github.com/vakata/jstree/</a>
-                                    </li>
-                                </ul>
+                            <li class="level3"> [ check-list ]
+                                <a href="https://github.com/thedaviddias/Front-End-Checklist">https://github.com/thedaviddias/Front-End-Checklist</a>
                             </li>
-                        </ul>
-                    </li>
-                    <li class="level1">Java
-                        <ul>
-                            <li class="level2">...</li>
+                            <li class="level3"> [ whatwg community ]
+                                <a href="https://whatwg.org/">https://whatwg.org/</a>
+                            </li>
+                            <li class="level3"> [ w3c web standards ]
+                                <a href="https://www.w3.org/TR/">https://www.w3.org/TR/</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
+            </li>
+            <li class="level1">Blogs | News
+                <ul>
+                    <li class="level2">Learn from the Best
+                        <ul>
+                            <li class="level3"> [ hack news ]
+                                <a href="https://news.ycombinator.com/news">https://news.ycombinator.com/news</a>
+                            </li>
+                            <li class="level3"> [ mozilla blog ]
+                                <a href="https://hacks.mozilla.org/">https://hacks.mozilla.org/</a>
+                                <a href="https://developer.mozilla.org/en-US/">https://developer.mozilla.org/en-US/</a>
+                            </li>
+                            <li class="level3"> [ google developer ]
+                                <a href="https://developers.googleblog.com/">https://developers.googleblog.com/</a>
+                            </li>
+                            <li class="level3"> [ uber engineering ]
+                                <a href="https://eng.uber.com/">https://eng.uber.com/</a>
+                            </li>
+                            <li class="level3"> [ github developer ]
+                                <a href="https://developer.github.com/">https://developer.github.com/</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="level1">JavaScript
+                <ul>
+                    <li class="level2">CSS
+                        <ul>
+                            <li class="level3"> [ less.js ]
+                                <a href="https://github.com/less/less.js/">https://github.com/less/less.js/</a>
+                            </li>
+                            <li class="level3"> [ yahoo/pure.css ]
+                                <a href="https://purecss.io/tables/">https://purecss.io/tables/</a>
+                            </li>
+                            <li class="level3"> [ normalize.css ]
+                                <a href="https://github.com/necolas/normalize.css">https://github.com/necolas/normalize.css</a>
+                            </li>
+                            <li class="level3"> [ adminlte ]
+                                <a href="https://adminlte.io/">https://adminlte.io/</a>
+                            </li>
+                            <li class="level3"> [ flex-box ]
+                                <a href="https://github.com/philipwalton/solved-by-flexbox">https://github.com/philipwalton/solved-by-flexbox</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level2">JS Components
+                        <ul>
+                            <li class="level3"> [ jsgrid ]
+                                <a href="http://js-grid.com/">http://js-grid.com/</a>
+                            </li>
+                            <li class="level3"> [ jspanel ]
+                                <a href="http://jspanel.de/">http://jspanel.de/</a>
+                            </li>
+                            <li class="level3"> [ jstree ]
+                                <a href="https://github.com/vakata/jstree/">https://github.com/vakata/jstree/</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="level1">Utilities
+                <ul>
+                    <li class="level2">Online Editor
+                        <ul>
+                            <li class="level3"> [ sql fiddle ]
+                                <a href="http://sqlfiddle.com/">http://sqlfiddle.com/</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="level1">Java
+                <ul>
+                    <li class="level2">...</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <div id="fixed-div">
-            <pre style="font: 10px/5px monospace;"><span style="color: #ffffff;"></span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#
+        <pre style="font: 10px/5px monospace;"><span style="color: #ffffff;"></span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#
                 </span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">#
                 </span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">##########################################################################
                 </span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">##########################################################################
@@ -140,7 +199,7 @@
                 </span><span style="color: #ffffff;">#</span><span style="color: #ffffff;">###############</span><span style="color: #fffefd;">#</span><span style="color: #fffffd;">#</span><span style="color: #feffff;">##</span><span style="color: #fffafe;">#</span><span style="color: #dacfd3;">#</span><span style="color: #f1e3f0;">#</span><span style="color: #f7eae4;">#</span><span style="color: #f8eae1;">#</span><span style="color: #f8eadd;">#</span><span style="color: #9f8a99;">#</span><span style="color: #ffffff;">#####</span><span style="color: #fffffd;">#</span><span style="color: #fefffd;">#</span><span style="color: #f9fffd;">#</span><span style="color: #fcffff;">#</span><span style="color: #fffcff;">#</span><span style="color: #fcf5fd;">#</span><span style="color: #fffdff;">#</span><span style="color: #fcfefd;">#</span><span style="color: #fefffb;">#</span><span style="color: #fffffd;">#</span><span style="color: #fffcff;">#</span><span style="color: #fefffd;">#</span><span style="color: #fffdff;">#</span><span style="color: #fffaff;">#</span><span style="color: #fffcff;">#</span><span style="color: #fefefe;">#</span><span style="color: #fffcff;">#</span><span style="color: #f6e8e8;">#</span><span style="color: #f3e1dd;">#</span><span style="color: #f4e7df;">#</span><span style="color: #ece3de;">#</span><span style="color: #e7e3e2;">#</span><span style="color: #fff9ff;">#</span><span style="color: #feffff;">#</span><span style="color: #fbfffd;">#</span><span style="color: #fcffff;">#</span><span style="color: #fffeff;">#</span><span style="color: #ffffff;">################
                 </span></pre>
     </div>
-   
+
 </body>
 
 </html>
