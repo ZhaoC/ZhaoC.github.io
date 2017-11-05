@@ -20,4 +20,4 @@ var animOne = bodymovin.loadAnimation(animDataOne);
 animOne.setSpeed(1.2);
 
 var animTwo = bodymovin.loadAnimation(animDataTwo);
-animTwo.setSpeed(1.3);
+animTwo.setSpeed(1.9);
