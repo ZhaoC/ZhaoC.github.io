@@ -8,4 +8,3 @@ var animDataOne = {
 };
 
 var animOne = bodymovin.loadAnimation(animDataOne);
-animOne.setSpeed(4.5);
