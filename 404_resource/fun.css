@@ -12,8 +12,26 @@ body {
   height: 100%;
 }
 
+
 a {
   text-decoration: none !important;
+}
+
+#fixed-div-top-center {
+  position: fixed;
+  top: 0.1em;
+  margin: 0 auto;
+}
+
+#fixed-left-bottom {
+  position: fixed;
+  top: 0.1em;
+  left: 0.1em;
+}
+#fixed-right-bottom {
+  position: fixed;
+  top: 0.1em;
+  right: 0.1em;
 }
 
 .blink_me {
