@@ -227,6 +227,64 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
+                        <a class="link-unstyled" href="/2017/11/05/Usage-of-fetch/">
+                            Usage of fetch()
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2017-11-05T19:43:59-05:00">
+	
+		    Nov 05, 2017
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <blockquote>
+<p>“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - <a href="http://www.math.tamu.edu/~cyan/Rota/mitless.html" target="_blank" rel="external">Gian-Carlo Rota</a></p>
+</blockquote>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/post_images/ship.png" title="" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/ship.png" alt="" oncontextmenu="return false;"></a></div><div style="clear:both;"></div>
+<h2 id=""><a href="#" class="headerlink" title=".  ."></a>.  .</h2><p>fetch() is a global method provided by Fetch API which can be used to <code>GET</code> or <code>POST</code> data asynchronously through the network. </p>
+<h2 id="GET"><a href="#GET" class="headerlink" title="GET"></a><code>GET</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">fetch(<span class="string">"url"</span>, &#123;</div><div class="line">    <span class="attr">method</span>: <span class="string">"GET"</span>,</div><div class="line">    <span class="attr">mode</span>: <span class="string">'cors'</span></div><div class="line">    &#125;</div><div class="line">    <span class="comment">// default method is 'GET' if not provided</span></div><div class="line">    <span class="comment">// add "mode: 'cors'" to send cross orign request</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">response</span> =&gt;</span> response.json()</div><div class="line">    <span class="comment">// methed json() will convert the ReadableStream to json data format</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">data</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'Json data retrieved:'</span>, data)</div><div class="line">    <span class="comment">// data is ready for use</span></div><div class="line">);</div><div class="line"></div><div class="line"><span class="comment">// you can also use methods below to extract a body </span></div><div class="line"><span class="comment">// arrayBuffer(), blob(), text(), formData()</span></div></pre></td></tr></table></figure>
+<h2 id="POST"><a href="#POST" class="headerlink" title="POST"></a><code>POST</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> dataToServer = &#123;....&#125;;</div><div class="line"></div><div class="line">fetch(<span class="string">"url"</span>, &#123;</div><div class="line">    <span class="attr">method</span>: <span class="string">"POST"</span>,</div><div class="line">    <span class="attr">headers</span>: &#123;</div><div class="line">        <span class="attr">Accept</span>: <span class="string">"application/json"</span>,</div><div class="line">        <span class="string">"Content-Type"</span>: <span class="string">"application/json"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">body</span>: <span class="built_in">JSON</span>.stringify(dataToServer)</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// set headers as needed</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">response</span> =&gt;</span> response.text()</div><div class="line">    <span class="comment">// response from server</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">result</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'Result content:'</span>, result)</div><div class="line">).catch(</div><div class="line">    <span class="function"><span class="params">err</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'error meesage'</span>, err.messge)</div><div class="line">);</div></pre></td></tr></table></figure>
+<h4 id="Difference-between-fetch-and-jQuery-ajax"><a href="#Difference-between-fetch-and-jQuery-ajax" class="headerlink" title="Difference between fetch() and jQuery.ajax()"></a>Difference between fetch() and jQuery.ajax()</h4><p>From <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="external">Fetch API</a>:</p>
+<blockquote>
+<p>The Promise returned from fetch() won’t reject on HTTP error status even if the response is an HTTP 404 or 500. Instead, it will resolve normally (with ok status set to false), and it will only reject on network failure or if anything prevented the request from completing.<br>By default, fetch won’t send or receive any cookies from the server, resulting in unauthenticated requests if the site relies on maintaining a user session (to send cookies, the credentials init option must be set).</p>
+</blockquote>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2017/11/05/Usage-of-fetch/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
                         <a class="link-unstyled" href="/2017/10/10/Create-Your-Own-JavaScript-Library/">
                             Create Your Own JavaScript Library
                         </a>
@@ -709,6 +767,25 @@
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
+                            <h3 class="media-heading">Usage of fetch()</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Nov 5, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
@@ -716,7 +793,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                5 posts found
+                6 posts found
             </p>
         </div>
     </div>

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Zhao Cai | Blog">
-    <title>A Taste of Observer pattern in JavaScript - Zhao Cai | Blog</title>
+    <title>Usage of fetch() - Zhao Cai | Blog</title>
     <meta name="author" content="Zhao Cai">
     
     
@@ -15,19 +15,27 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. 
- There would be an object (observer collection) maintains a lis">
+    <meta name="description" content="“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - Gian-Carlo Rota
+
+
+.  .fetch() is a global method provided by Fetch API which can be u">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="A Taste of Observer pattern in JavaScript">
-<meta property="og:url" content="https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/index.html">
+<meta property="og:title" content="Usage of fetch()">
+<meta property="og:url" content="https://zhaoc.github.io/2017/11/05/Usage-of-fetch/index.html">
 <meta property="og:site_name" content="Zhao Cai | Blog">
-<meta property="og:description" content="Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. 
- There would be an object (observer collection) maintains a lis">
-<meta property="og:updated_time" content="2017-03-31T02:28:53.000Z">
+<meta property="og:description" content="“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - Gian-Carlo Rota
+
+
+.  .fetch() is a global method provided by Fetch API which can be u">
+<meta property="og:image" content="https://zhaoc.github.io/assets/images/post_images/ship.png">
+<meta property="og:updated_time" content="2017-11-06T02:01:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="A Taste of Observer pattern in JavaScript">
-<meta name="twitter:description" content="Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. 
- There would be an object (observer collection) maintains a lis">
+<meta name="twitter:title" content="Usage of fetch()">
+<meta name="twitter:description" content="“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - Gian-Carlo Rota
+
+
+.  .fetch() is a global method provided by Fetch API which can be u">
+<meta name="twitter:image" content="https://zhaoc.github.io/assets/images/post_images/ship.png">
     
     
         
@@ -231,13 +239,13 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            A Taste of Observer pattern in JavaScript
+            Usage of fetch()
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-03-30T18:07:48-04:00">
+    <time itemprop="datePublished" datetime="2017-11-05T19:43:59-05:00">
 	
-		    Mar 30, 2017
+		    Nov 05, 2017
     	
     </time>
     
@@ -253,25 +261,16 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p> Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. </p>
-<p> There would be an object (observer collection) maintains a list of events. Those observers (subscriber) will be automatically notified once the event occurs. </p>
-<h4 id="Code-Sample"><a href="#Code-Sample" class="headerlink" title="Code Sample:"></a>Code Sample:</h4><blockquote>
-<ol>
-<li><p>observer subscribes to an event by the event name. ‘globalBroadcaster’ is an observer collection which stores the events subscribed. ‘handler’ is the action observer will make once the event occurs.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.subscribe(<span class="string">'uniqueEventName'</span>, handler);</div></pre></td></tr></table></figure>
-</li>
-<li><p>Once the event be published, all the subscribers of this event will be notified. parameters could be injected when event published and it can be used by the subscribers. */</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.publish(<span class="string">'uniqueEventName'</span>, parameter1, parameter2, ...);</div></pre></td></tr></table></figure>
-</li>
-<li><p>Observer can unsubsribe the event in the ‘handler’ after being notified. In this case, observer won’t be notified if same event published again.</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.unsubscribe(<span class="string">'uniqueEventName'</span>, handler);</div></pre></td></tr></table></figure>
-</li>
-</ol>
+            <blockquote>
+<p>“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - <a href="http://www.math.tamu.edu/~cyan/Rota/mitless.html" target="_blank" rel="external">Gian-Carlo Rota</a></p>
 </blockquote>
-<h4 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h4><blockquote>
-<p>The biggest benifit of using Sub/Pub pattern comes from the concept of decoupling. Observer A doesn’t need to worry about how the event published or who announces the event, ‘A’ will process its handler once be notified.</p>
-<p>The disadvantages also come from decoupling modules. It would be hard for one to draw a clearly workflow since some of the actions processed on the fly. It will cause chaos if not implemented properly. </p>
-<p>Anyhow, I like the concept of decoupling, especially in group work.</p>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/post_images/ship.png" title="" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/ship.png" alt="" oncontextmenu="return false;"></a></div><div style="clear:both;"></div>
+<h2 id=""><a href="#" class="headerlink" title=".  ."></a>.  .</h2><p>fetch() is a global method provided by Fetch API which can be used to <code>GET</code> or <code>POST</code> data asynchronously through the network. </p>
+<h2 id="GET"><a href="#GET" class="headerlink" title="GET"></a><code>GET</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">fetch(<span class="string">"url"</span>, &#123;</div><div class="line">    <span class="attr">method</span>: <span class="string">"GET"</span>,</div><div class="line">    <span class="attr">mode</span>: <span class="string">'cors'</span></div><div class="line">    &#125;</div><div class="line">    <span class="comment">// default method is 'GET' if not provided</span></div><div class="line">    <span class="comment">// add "mode: 'cors'" to send cross orign request</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">response</span> =&gt;</span> response.json()</div><div class="line">    <span class="comment">// methed json() will convert the ReadableStream to json data format</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">data</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'Json data retrieved:'</span>, data)</div><div class="line">    <span class="comment">// data is ready for use</span></div><div class="line">);</div><div class="line"></div><div class="line"><span class="comment">// you can also use methods below to extract a body </span></div><div class="line"><span class="comment">// arrayBuffer(), blob(), text(), formData()</span></div></pre></td></tr></table></figure>
+<h2 id="POST"><a href="#POST" class="headerlink" title="POST"></a><code>POST</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> dataToServer = &#123;....&#125;;</div><div class="line"></div><div class="line">fetch(<span class="string">"url"</span>, &#123;</div><div class="line">    <span class="attr">method</span>: <span class="string">"POST"</span>,</div><div class="line">    <span class="attr">headers</span>: &#123;</div><div class="line">        <span class="attr">Accept</span>: <span class="string">"application/json"</span>,</div><div class="line">        <span class="string">"Content-Type"</span>: <span class="string">"application/json"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">body</span>: <span class="built_in">JSON</span>.stringify(dataToServer)</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// set headers as needed</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">response</span> =&gt;</span> response.text()</div><div class="line">    <span class="comment">// response from server</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">result</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'Result content:'</span>, result)</div><div class="line">).catch(</div><div class="line">    <span class="function"><span class="params">err</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'error meesage'</span>, err.messge)</div><div class="line">);</div></pre></td></tr></table></figure>
+<h4 id="Difference-between-fetch-and-jQuery-ajax"><a href="#Difference-between-fetch-and-jQuery-ajax" class="headerlink" title="Difference between fetch() and jQuery.ajax()"></a>Difference between fetch() and jQuery.ajax()</h4><p>From <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="external">Fetch API</a>:</p>
+<blockquote>
+<p>The Promise returned from fetch() won’t reject on HTTP error status even if the response is an HTTP 404 or 500. Instead, it will resolve normally (with ok status set to false), and it will only reject on network failure or if anything prevented the request from completing.<br>By default, fetch won’t send or receive any cookies from the server, resulting in unauthenticated requests if the site relies on maintaining a user session (to send cookies, the credentials init option must be set).</p>
 </blockquote>
 
             
@@ -282,7 +281,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/JavaScript/">JavaScript</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/JavaScript-Util/">JavaScript/Util</a>
 
             </div>
         
@@ -291,7 +290,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/"  data-tooltip="The Beauty of Diffie-Hellman Key Exchange">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -299,7 +298,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/24/A-Taste-of-JavaScript-Promise/" data-tooltip="A Taste of JavaScript Promise">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/10/Create-Your-Own-JavaScript-Library/" data-tooltip="Create Your Own JavaScript Library">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -314,17 +313,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -362,7 +361,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/"  data-tooltip="The Beauty of Diffie-Hellman Key Exchange">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -370,7 +369,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/24/A-Taste-of-JavaScript-Promise/" data-tooltip="A Taste of JavaScript Promise">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/10/10/Create-Your-Own-JavaScript-Library/" data-tooltip="Create Your Own JavaScript Library">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -385,17 +384,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -415,17 +414,17 @@
                 <div id="share-options-bar" class="share-options-bar" data-behavior="5">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
                 <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
                 <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
                 <i class="fa fa-twitter"></i><span>Share on Twitter</span>
             </a>
         </li>
