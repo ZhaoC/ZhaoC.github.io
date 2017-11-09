@@ -68,21 +68,26 @@
                                 coreA.href = levelTwoChildItem.url;
                                 coreA.innerHTML = levelTwoChildItem.url +"&nbsp; &nbsp;";
 
-                                var iconOne = document.createElement("i");
-                                iconOne.className = "fa fa-circle fa-stack-2x";
+                                // var iconOne = document.createElement("i");
+                                // iconOne.className = "fa fa-circle fa-stack-2x";
 
-                                var iconTwo = document.createElement("i");
-                                iconTwo.className = "fa fa-flag fa-stack-1x fa-inverse";
+                                // var iconTwo = document.createElement("i");
+                                // iconTwo.className = "fa fa-flag fa-stack-1x fa-inverse";
 
-                                var span = document.createElement("span");
-                                span.className = "fa-stack";
-                                span.title = levelTwoChildItem.description;
+                                // var span = document.createElement("span");
+                                // span.className = "fa-stack";
+                                // span.title = levelTwoChildItem.description;
 
-                                span.appendChild(iconOne);
-                                span.appendChild(iconTwo);                                
+                                // span.appendChild(iconOne);
+                                // span.appendChild(iconTwo);                    
+
+                                var icon = document.createElement("i");
+                                icon.className = "fa fa-snowflake-o fa-spin";    
+                                icon.style = "color: skyblue;";
+                                icon.title = levelTwoChildItem.description;        
 
                                 levelThreeLI.appendChild(coreA);
-                                levelThreeLI.appendChild(span);
+                                levelThreeLI.appendChild(icon);
                                 levelTwoUL.appendChild(levelThreeLI);                                
                             }
 
