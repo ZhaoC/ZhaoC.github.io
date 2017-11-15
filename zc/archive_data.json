@@ -10,22 +10,22 @@
                         {
                             "title": "html head",
                             "url": "https://github.com/joshbuchea/HEAD",
-                            "description": ""
+                            "description": "A list of everything that *could* go in the <head> of your document"
                         },
                         {
                             "title": "check-list",
                             "url": "https://github.com/thedaviddias/Front-End-Checklist",
-                            "description": ""
+                            "description": "The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production."
                         },
                         {
                             "title": "whatwg community",
                             "url": "https://whatwg.org/",
-                            "description": ""
+                            "description": "The Web Hypertext Application Technology Working Group (WHATWG) is a community of people interested in evolving the web through standards and tests."
                         },
                         {
                             "title": "w3c web standards",
                             "url": "https://www.w3.org/TR/",
-                            "description": ""
+                            "description": "The W3C technical report development process is the set of steps and requirements followed by W3C Working Groups to standardize Web technology."
                         }
                         
                     ]
@@ -82,34 +82,28 @@
                         {
                             "title": "less.js",
                             "url": "https://github.com/less/less.js/",
-                            "description": ""
+                            "description": "The dynamic stylesheet language."
                         },
                         {
                             "title": "yahoo/pure.css",
                             "url": "https://purecss.io/tables/",
-                            "description": ""
+                            "description": "A set of small, responsive CSS modules that you can use in every web project."
                         },
                         {
                             "title": "normalize.css",
                             "url": "https://github.com/necolas/normalize.css",
-                            "description": ""
+                            "description": "A modern alternative to CSS resets"
                         },
                         {
                             "title": "adminlte",
                             "url": "https://adminlte.io/",
-                            "description": ""
+                            "description": "An open source admin dashboard & control panel theme. Built on top of Bootstrap 3, AdminLTE provides a range of responsive, reusable, and commonly used components."
                         },
                         {
                             "title": "flex-box",
                             "url": "https://github.com/philipwalton/solved-by-flexbox",
-                            "description": ""
-                        },
-                        {
-                            "title": "color-picker",
-                            "url": "https://www.w3schools.com/cssref/css_colors.asp",
-                            "description": "from w3school"
-                        }
-                        
+                            "description": "A showcase of problems once hard or impossible to solve with CSS alone, now made trivially easy with Flexbox."
+                        }                        
                     ]
                 },
                 {
@@ -118,17 +112,17 @@
                         {
                             "title": "jsgrid",
                             "url": "http://js-grid.com/",
-                            "description": ""
+                            "description": "jsGrid is a lightweight client-side data grid control based on jQuery. "
                         },
                         {
                             "title": "jspanel",
                             "url": "http://jspanel.de/",
-                            "description": ""
+                            "description": "A jsPanel is highly configurable by numerous of options, properties, methods and events. "
                         },
                         {
                             "title": "jstree",
                             "url": "https://github.com/vakata/jstree/",
-                            "description": ""
+                            "description": "jsTree is jquery plugin, that provides interactive trees."
                         }
                     ]
                 },
@@ -138,12 +132,17 @@
                         {
                             "title": "time zone library",
                             "url": "https://github.com/smallwins/spacetime",
-                            "description": ""
+                            "description": "A simple way to manipulate, compare, and format dates and times across the Earth"
                         },
                         {
                             "title": "jSchema data modeling",
                             "url": "https://github.com/ignoreintuition/jSchema",
-                            "description": ""
+                            "description": "Data Modeling in JavaScript jSchema is a framework for modeling data in JavaScript."
+                        },
+                        {
+                            "title": "momentjs datetime model",
+                            "url": "https://momentjs.com/",
+                            "description":"A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates."
                         }
                     ]
                 },
@@ -151,9 +150,9 @@
                     "LevelTwoName": "Animation",
                     "LevelTwoChilds": [
                         {
-                            "title": "bodymovein",
-                            "url": "https://github.com/bodymovin/bodymovin",
-                            "description": ""
+                            "title": "Lottie",
+                            "url": "https://github.com/airbnb/lottie-web",
+                            "description": "Lottie is a mobile library for Web, and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile!"
                         }
                     ]
                 }
