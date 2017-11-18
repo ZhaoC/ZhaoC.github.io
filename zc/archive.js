@@ -38,8 +38,16 @@ fetch("./archive_data.json").then(
 
                     var coreA = document.createElement("a");
                     coreA.style = "text-decoration:none;";
+
+                    // when url string is too long, use alias instead
+                    if(typeof levelTwoChildItem.alias !== "undefined"){
+                        coreA.innerHTML = levelTwoChildItem.alias +"&nbsp; &nbsp;";
+                    }
+                    else{
+                        coreA.innerHTML = levelTwoChildItem.url +"&nbsp; &nbsp;";
+                    }
                     coreA.href = levelTwoChildItem.url;
-                    coreA.innerHTML = levelTwoChildItem.url +"&nbsp; &nbsp;";
+                    
 
                     // var iconOne = document.createElement("i");
                     // iconOne.className = "fa fa-circle fa-stack-2x";

@@ -41,32 +41,32 @@
                         {
                             "title": "hack news",
                             "url": "https://news.ycombinator.com/news",
-                            "description": ""
+                            "description": " thrending tech news "
                         },
                         {
                             "title": "mozilla blog",
                             "url": "https://hacks.mozilla.org/",
-                            "description": ""
+                            "description": " new resource from mozilla "
                         },
                         {
                             "title": "mozilla developer",
                             "url": "https://developer.mozilla.org/en-US/",
-                            "description": ""
+                            "description": " mozilla web tech guide "
                         },
                         {
                             "title": "google developer",
                             "url": "https://developers.googleblog.com/",
-                            "description": ""
+                            "description": " google programming tech guide "
                         },
                         {
                             "title": "uber engineering",
                             "url": "https://eng.uber.com/",
-                            "description": ""
+                            "description": " uber ..."
                         },
                         {
                             "title": "github developer",
                             "url": "https://developer.github.com/",
-                            "description": ""
+                            "description": " github ..."
                         }
                         
                     ]
@@ -153,6 +153,22 @@
                             "title": "Lottie",
                             "url": "https://github.com/airbnb/lottie-web",
                             "description": "Lottie is a mobile library for Web, and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile!"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Manual Resource",
+                    "LevelTwoChilds": [
+                        {
+                            "title": "JS Memory Mangement",
+                            "url": "https://blog.sessionstack.com/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks-3f28b94cfbec",
+                            "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language.",
+                            "alias": "how-javascript-works-memory-management"
+                        },
+                        {
+                            "title": "JS Core Concept Intro",
+                            "url": "https://github.com/getify/You-Dont-Know-JS",
+                            "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language."
                         }
                     ]
                 }
