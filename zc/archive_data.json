@@ -157,6 +157,37 @@
                     ]
                 },
                 {
+                    "LevelTwoName": "NodeJS",
+                    "LevelTwoChilds": [
+                        {
+                            "title": "NodeJS Documentation",
+                            "url": "https://nodejs.org/docs/latest/api/modules.html",
+                            "description": "Node.js v9.1.0 Documentation"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "VueJS",
+                    "LevelTwoChilds": [
+                        {
+                            "title": "VueJS Flux-like Implementation",
+                            "url": "https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch",
+                            "description": "VueJS State Management",
+                            "alias": "Simple-State-Management-from-Scratch"
+                        },
+                        {
+                            "title": "VueJS Style Guide",
+                            "url": "https://vuejs.org/v2/style-guide/",
+                            "description": "The official style guide for Vue-specific code."
+                        },
+                        {
+                            "title": "Vuex",
+                            "url": "https://vuex.vuejs.org/en/",
+                            "description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion."
+                        }
+                    ]
+                },
+                {
                     "LevelTwoName": "Manual Resource",
                     "LevelTwoChilds": [
                         {
