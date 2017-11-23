@@ -2,37 +2,6 @@
     "root": "UrlArchive",
     "data": [
         {
-            "LevelOneName" : "Front-End Concept",
-            "LevelOneChilds": [
-                {
-                    "LevelTwoName": "Conventions",
-                    "LevelTwoChilds": [
-                        {
-                            "title": "html head",
-                            "url": "https://github.com/joshbuchea/HEAD",
-                            "description": "A list of everything that *could* go in the <head> of your document"
-                        },
-                        {
-                            "title": "check-list",
-                            "url": "https://github.com/thedaviddias/Front-End-Checklist",
-                            "description": "The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production."
-                        },
-                        {
-                            "title": "whatwg community",
-                            "url": "https://whatwg.org/",
-                            "description": "The Web Hypertext Application Technology Working Group (WHATWG) is a community of people interested in evolving the web through standards and tests."
-                        },
-                        {
-                            "title": "w3c web standards",
-                            "url": "https://www.w3.org/TR/",
-                            "description": "The W3C technical report development process is the set of steps and requirements followed by W3C Working Groups to standardize Web technology."
-                        }
-                        
-                    ]
-                }
-            ]
-        },
-        {
             "LevelOneName" : "Blogs | News",
             "LevelOneChilds": [
                 {
@@ -67,6 +36,42 @@
                             "title": "github developer",
                             "url": "https://developer.github.com/",
                             "description": " github ..."
+                        }
+                        
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName" : "Front-End Concept",
+            "LevelOneChilds": [
+                {
+                    "LevelTwoName": "Conventions",
+                    "LevelTwoChilds": [
+                        {
+                            "title": "html head",
+                            "url": "https://github.com/joshbuchea/HEAD",
+                            "description": "A list of everything that *could* go in the <head> of your document"
+                        },
+                        {
+                            "title": "html-tags",
+                            "url": "https://www.w3schools.com/Tags/tag_link.asp",
+                            "description": "an explanation of tags used in HTML docs"
+                        },
+                        {
+                            "title": "check-list",
+                            "url": "https://github.com/thedaviddias/Front-End-Checklist",
+                            "description": "The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production."
+                        },
+                        {
+                            "title": "whatwg community",
+                            "url": "https://whatwg.org/",
+                            "description": "The Web Hypertext Application Technology Working Group (WHATWG) is a community of people interested in evolving the web through standards and tests."
+                        },
+                        {
+                            "title": "w3c web standards",
+                            "url": "https://www.w3.org/TR/",
+                            "description": "The W3C technical report development process is the set of steps and requirements followed by W3C Working Groups to standardize Web technology."
                         }
                         
                     ]
@@ -115,6 +120,11 @@
                             "description": "jsGrid is a lightweight client-side data grid control based on jQuery. "
                         },
                         {
+                            "title": "ace-editor",
+                            "url": "https://github.com/ajaxorg/ace",
+                            "description": "Ace is a standalone code editor written in JavaScript."
+                        },
+                        {
                             "title": "jspanel",
                             "url": "http://jspanel.de/",
                             "description": "A jsPanel is highly configurable by numerous of options, properties, methods and events. "
@@ -123,6 +133,11 @@
                             "title": "jstree",
                             "url": "https://github.com/vakata/jstree/",
                             "description": "jsTree is jquery plugin, that provides interactive trees."
+                        },
+                        {
+                            "title": "notifyjs",
+                            "url": "https://notifyjs.com/",
+                            "description": "Notify.js is a jQuery plugin to provide simple yet fully customisable notifications."
                         }
                     ]
                 },
@@ -163,6 +178,11 @@
                             "title": "NodeJS Documentation",
                             "url": "https://nodejs.org/docs/latest/api/modules.html",
                             "description": "Node.js v9.1.0 Documentation"
+                        },
+                        {
+                            "title": "NodeJS Best Practices",
+                            "url": "https://github.com/i0natan/nodebestpractices",
+                            "description": "This doc includes nodejs best practices, style guides, and architectural tips."
                         }
                     ]
                 },
