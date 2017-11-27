@@ -1,4 +1,7 @@
 var rootObj = document.querySelector(".tree");
+
+$.LoadingOverlay("show");
+
 fetch("./archive_data.json").then(
     content => content.json()
 ).then(
@@ -25,7 +28,7 @@ fetch("./archive_data.json").then(
 
                 var levelTwoLI = document.createElement("li");
                 levelTwoLI.className = "level2";
-                levelTwoLI.innerText = levelTwoName;
+                levelTwoLI.innerHTML = levelTwoName + " <font size='4' color='#00BFFF' >("+levelTwoChilds.length+")</font>";
 
                 var levelTwoUL = document.createElement("ul");
                                                 
@@ -78,5 +81,21 @@ fetch("./archive_data.json").then(
             levelOneLI.appendChild(levelOneUL);
             rootObj.appendChild(levelOneLI);
         }
+
+        // set onclick event
+        $(".level2").click(function(e){
+            // apply onclick event only to its parent element
+            if (e.target !== this)
+                return;
+
+            if($(this).children(':visible').length === 0){
+                $(this).children().show();
+            } else {
+                $(this).children().hide();
+            }            
+
+        });
+
+        $.LoadingOverlay("hide");
     }
 )

@@ -188,6 +188,12 @@
                     "LevelTwoName": "CSS",
                     "LevelTwoChilds": [
                         {
+                            "title": "CSS Color Picker",
+                            "url": "https://www.w3schools.com/cssref/css_colors.asp",
+                            "description": "color picker",
+                            "alias": "css-color-picker"
+                        },
+                        {
                             "title": "Less.js",
                             "url": "https://github.com/less/less.js/",
                             "description": "The dynamic stylesheet language."
@@ -287,6 +293,12 @@
                 {
                     "LevelTwoName": "Animation",
                     "LevelTwoChilds": [
+                        {
+                            "title": "Overlay Spinning Bar",
+                            "url": "https://gasparesganga.com/labs/jquery-loading-overlay/",
+                            "description": "easy spinning bar",
+                            "alias": "jquery-loading-overlay"
+                        },
                         {
                             "title": "Lottie",
                             "url": "https://github.com/airbnb/lottie-web",
