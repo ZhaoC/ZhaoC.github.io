@@ -50,6 +50,7 @@ fetch("./archive_data.json").then(
                         coreA.innerHTML = levelTwoChildItem.url +"&nbsp; &nbsp;";
                     }
                     coreA.href = levelTwoChildItem.url;
+                    coreA.title = levelTwoChildItem.description;
                     
 
                     // var iconOne = document.createElement("i");
@@ -68,7 +69,7 @@ fetch("./archive_data.json").then(
                     var icon = document.createElement("i");
                     icon.className = "fa fa-snowflake-o fa-spin";    
                     icon.style = "color: skyblue;";
-                    icon.title = levelTwoChildItem.description;        
+                    // icon.title = levelTwoChildItem.description;        
 
                     levelThreeLI.appendChild(coreA);
                     levelThreeLI.appendChild(icon);
@@ -93,7 +94,6 @@ fetch("./archive_data.json").then(
             } else {
                 $(this).children().hide();
             }            
-
         });
 
         $.LoadingOverlay("hide");

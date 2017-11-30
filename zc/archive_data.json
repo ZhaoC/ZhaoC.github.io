@@ -53,11 +53,6 @@
                             "description": "风起于青萍之末，浪成于微澜之间。"
                         },
                         {
-                            "title": "js Lambda",
-                            "url": "https://coolshell.cn/articles/10822.html",
-                            "description": "酷壳 CoolShell | 函数式编程"
-                        },
-                        {
                             "title": "HTTPS implementation",
                             "url": "https://coolshell.cn/articles/18094.html",
                             "description": "酷壳 CoolShell | 启用HTTPS"
@@ -310,6 +305,11 @@
                             "description": "Dynamics.js is a JavaScript library to create physics-based animations."
                         },
                         {
+                            "title": "P5.js",
+                            "url": "https://github.com/processing/p5.js",
+                            "description": "p5.js is a JavaScript library that starts with the original goal of Processing, to make coding accessible for artists, designers, educators, and beginners, and reinterprets this for today's web."
+                        },
+                        {
                             "title": "Rainyday.js",
                             "url": "https://github.com/maroslaw/rainyday.js",
                             "description": "A simple script for simulating raindrops falling on a glass surface."
@@ -329,6 +329,11 @@
                 {
                     "LevelTwoName": "SVG",
                     "LevelTwoChilds": [
+                        {
+                            "title": "Supper Tiny SVG Icons",
+                            "url": "https://github.com/edent/SuperTinyIcons",
+                            "description": "Super Tiny Social Icons."
+                        },
                         {
                             "title": "D3.js",
                             "url": "https://github.com/d3/d3",
