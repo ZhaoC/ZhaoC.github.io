@@ -1,0 +1,60 @@
+{
+    "root": "UrlArchive",
+    "data": [{
+        "LevelOneName": "Blogs | News",
+        "LevelOneChilds": [{
+                "LevelTwoName": "Learn from the Best",
+                "LevelTwoChilds": [{
+                        "title": "Hack News",
+                        "url": "https://news.ycombinator.com/news",
+                        "description": " thrending tech news "
+                    },
+                    {
+                        "title": "Mozilla Blog",
+                        "url": "https://hacks.mozilla.org/",
+                        "description": " new resource from mozilla "
+                    },
+                    {
+                        "title": "Mozilla Developer",
+                        "url": "https://developer.mozilla.org/en-US/",
+                        "description": " mozilla web tech guide "
+                    },
+                    {
+                        "title": "Google Developer",
+                        "url": "https://developers.googleblog.com/",
+                        "description": " google programming tech guide "
+                    },
+                    {
+                        "title": "Uber Engineering",
+                        "url": "https://eng.uber.com/",
+                        "description": " uber ..."
+                    },
+                    {
+                        "title": "Github Developer",
+                        "url": "https://developer.github.com/",
+                        "description": " github ..."
+                    },
+                    {
+                        "title": "Spotify Labs",
+                        "url": "https://labs.spotify.com/",
+                        "description": "spotify ..."
+                    }
+                ]
+            },
+            {
+                "LevelTwoName": "Blogger",
+                "LevelTwoChilds": [{
+                        "title": "jawil",
+                        "url": "https://github.com/jawil",
+                        "description": "风起于青萍之末，浪成于微澜之间。"
+                    },
+                    {
+                        "title": "HTTPS implementation",
+                        "url": "https://coolshell.cn/articles/18094.html",
+                        "description": "酷壳 CoolShell | 启用HTTPS"
+                    }
+                ]
+            }
+        ]
+    }]
+}
