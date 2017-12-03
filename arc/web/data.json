@@ -268,45 +268,6 @@
                     ]
                 },
                 {
-                    "LevelTwoName": "NodeJS",
-                    "LevelTwoChilds": [{
-                            "title": "NodeJS Documentation",
-                            "url": "https://nodejs.org/docs/latest/api/modules.html",
-                            "description": "Node.js v9.1.0 Documentation"
-                        },
-                        {
-                            "title": "node-http-proxy",
-                            "url": "https://github.com/nodejitsu/node-http-proxy",
-                            "description": "node-http-proxy is an HTTP programmable proxying library that supports websockets. It is suitable for implementing components such as reverse proxies and load balancers."
-                        },
-                        {
-                            "title": "NodeJS Best Practices",
-                            "url": "https://github.com/i0natan/nodebestpractices",
-                            "description": "This doc includes nodejs best practices, style guides, and architectural tips."
-                        }
-                    ]
-                },
-                {
-                    "LevelTwoName": "VueJS",
-                    "LevelTwoChilds": [{
-                            "title": "VueJS Flux-like Implementation",
-                            "url": "https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch",
-                            "description": "VueJS State Management",
-                            "alias": "Simple-State-Management-from-Scratch"
-                        },
-                        {
-                            "title": "VueJS Style Guide",
-                            "url": "https://vuejs.org/v2/style-guide/",
-                            "description": "The official style guide for Vue-specific code."
-                        },
-                        {
-                            "title": "Vuex",
-                            "url": "https://vuex.vuejs.org/en/",
-                            "description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion."
-                        }
-                    ]
-                },
-                {
                     "LevelTwoName": "Manual Resource",
                     "LevelTwoChilds": [{
                             "title": "JS Memory Mangement",
@@ -320,6 +281,63 @@
                             "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language."
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Node.js",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                        "title": "v9.1.0 Documentation",
+                        "url": "https://nodejs.org/docs/latest/api/modules.html",
+                        "description": "Node.js v9.1.0 Documentation"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                        "title": "NodeJS Best Practices",
+                        "url": "https://github.com/i0natan/nodebestpractices",
+                        "description": "This doc includes nodejs best practices, style guides, and architectural tips."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                        "title": "node-http-proxy",
+                        "url": "https://github.com/nodejitsu/node-http-proxy",
+                        "description": "node-http-proxy is an HTTP programmable proxying library that supports websockets. It is suitable for implementing components such as reverse proxies and load balancers."
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Vue.js",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                        "title": "Flux-like Implementation",
+                        "url": "https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch",
+                        "description": "VueJS State Management",
+                        "alias": "Simple-State-Management-from-Scratch"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                        "title": "VueJS Style Guide",
+                        "url": "https://vuejs.org/v2/style-guide/",
+                        "description": "The official style guide for Vue-specific code."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                        "title": "Vuex",
+                        "url": "https://vuex.vuejs.org/en/",
+                        "description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion."
+                    }]
                 }
             ]
         }
