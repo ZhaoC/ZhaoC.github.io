@@ -17,6 +17,7 @@ function loadData(url){
     
                 var levelOneLI = document.createElement("li");
                 levelOneLI.className = "level1";
+                // levelOneLI.style = "cursor:pointer";
                 levelOneLI.innerText = levelOneName;
     
                 var levelOneUL = document.createElement("ul");
@@ -29,6 +30,7 @@ function loadData(url){
     
                     var levelTwoLI = document.createElement("li");
                     levelTwoLI.className = "level2";
+                    // levelTwoLI.style = "cursor:pointer";
                     levelTwoLI.innerHTML = levelTwoName + " <font size='4' color='#00BFFF' >("+levelTwoChilds.length+")</font>";
     
                     var levelTwoUL = document.createElement("ul");
@@ -71,7 +73,7 @@ function loadData(url){
             }
     
             // set onclick event
-            $(".level2").click(function(e){
+            $(".level1, .level2").click(function(e){
                 // apply onclick event only to its parent element
                 if (e.target !== this)
                     return;

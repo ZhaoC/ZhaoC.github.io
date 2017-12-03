@@ -111,6 +111,125 @@
             ]
         },
         {
+            "LevelOneName": "V8 Engine dddwe",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Documentation",
+                "LevelTwoChilds": [{
+                    "title": "V8 wiki",
+                    "url": "https://github.com/v8/v8/wiki/Introduction",
+                    "description": "V8 wiki"
+                },
+                {
+                    "title": "Hidden Class & Inline Caching in V8",
+                    "url": "http://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html",
+                    "description": "...",
+                    "alias": "v8-hidden-class-and-inline-caching"
+                }]
+            }]
+        },
+        {
+            "LevelOneName": "Node.js",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                        "title": "v9.1.0",
+                        "url": "https://nodejs.org/docs/latest/api/modules.html",
+                        "description": "Node.js v9.1.0 Documentation"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                        "title": "NodeJS Best Practices",
+                        "url": "https://github.com/i0natan/nodebestpractices",
+                        "description": "This doc includes nodejs best practices, style guides, and architectural tips."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                            "title": "node-http-proxy",
+                            "url": "https://github.com/nodejitsu/node-http-proxy",
+                            "description": "node-http-proxy is an HTTP programmable proxying library that supports websockets. It is suitable for implementing components such as reverse proxies and load balancers."
+                        },
+                        {
+                            "title": "Publish Local Node.js App",
+                            "url": "https://www.pluralsight.com/guides/node-js/exposing-your-local-node-js-app-to-the-world",
+                            "description": "Exposing your local Node.js app to the world",
+                            "alias": "exposing-your-local-node-js-app-to-the-world"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Vue.js",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                        "title": "Flux-like Structure",
+                        "url": "https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch",
+                        "description": "VueJS State Management",
+                        "alias": "Simple-State-Management-from-Scratch"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                        "title": "VueJS Style Guide",
+                        "url": "https://vuejs.org/v2/style-guide/",
+                        "description": "The official style guide for Vue-specific code."
+                    },
+                    {
+                        "title":"Vue App Step-by-Step Tutorial",
+                        "url": "https://segmentfault.com/a/1190000009275424",
+                        "description": "Vue Backend Setup",
+                        "alias": "segmentfault-vue-app-setup"
+                    }
+                ]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                            "title": "Vuex",
+                            "url": "https://vuex.vuejs.org/en/",
+                            "description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion."
+                        },
+                        {
+                            "title": "Github Thrending for Vue",
+                            "url": "https://github.com/trending/vue",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Vue Element Admin",
+                            "url": "https://github.com/PanJiaChen/vue-element-admin",
+                            "description": "Vue Admin Style Page Library"
+                        },
+                        {
+                            "title": "Element",
+                            "url": "https://github.com/ElemeFE/element",
+                            "description": "A Vue.js 2.0 UI Toolkit for Web."
+                        },
+                        {
+                            "title": "iView",
+                            "url": "https://github.com/iview/iview",
+                            "description": "A Vue.js 2.0 UI Toolkit for Web."
+                        },
+                        {
+                            "title": "Vue Material",
+                            "url": "https://vuematerial.io/",
+                            "description": "Vue components in material design."
+                        },
+                        {
+                            "title": "Made with Vue.js",
+                            "url": "https://madewithvuejs.com/",
+                            "description": "Pages built on top of Vue.js"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "LevelOneName": "Front-end Development",
             "LevelOneChilds": [{
                     "LevelTwoName": "CSS",
@@ -222,6 +341,11 @@
                             "alias": "jquery-loading-overlay"
                         },
                         {
+                            "title": "Animate+",
+                            "url": "https://github.com/bendc/animateplus",
+                            "description": "Animate Plus is a JavaScript animation library focusing on performance and authoring flexibility."
+                        },
+                        {
                             "title": "Lottie",
                             "url": "https://github.com/airbnb/lottie-web",
                             "description": "Lottie is a mobile library for Web, and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile!"
@@ -245,6 +369,11 @@
                             "title": "Snabbt.js",
                             "url": "https://github.com/daniel-lundin/snabbt.js",
                             "description": "Fast animations with Javascript and CSS transforms."
+                        },
+                        {
+                            "title": "Scrollama.js",
+                            "url": "https://github.com/russellgoldenberg/scrollama",
+                            "description": "Scrollama is a modern & lightweight JavaScript library for scrollytelling using IntersectionObserver in favor of scroll events."
                         },
                         {
                             "title": "Scroll Reveal",
@@ -281,63 +410,6 @@
                             "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language."
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "LevelOneName": "Node.js",
-            "LevelOneChilds": [{
-                    "LevelTwoName": "Documentation",
-                    "LevelTwoChilds": [{
-                        "title": "v9.1.0 Documentation",
-                        "url": "https://nodejs.org/docs/latest/api/modules.html",
-                        "description": "Node.js v9.1.0 Documentation"
-                    }]
-                },
-                {
-                    "LevelTwoName": "Best Practice",
-                    "LevelTwoChilds": [{
-                        "title": "NodeJS Best Practices",
-                        "url": "https://github.com/i0natan/nodebestpractices",
-                        "description": "This doc includes nodejs best practices, style guides, and architectural tips."
-                    }]
-                },
-                {
-                    "LevelTwoName": "Implementation",
-                    "LevelTwoChilds": [{
-                        "title": "node-http-proxy",
-                        "url": "https://github.com/nodejitsu/node-http-proxy",
-                        "description": "node-http-proxy is an HTTP programmable proxying library that supports websockets. It is suitable for implementing components such as reverse proxies and load balancers."
-                    }]
-                }
-            ]
-        },
-        {
-            "LevelOneName": "Vue.js",
-            "LevelOneChilds": [{
-                    "LevelTwoName": "Documentation",
-                    "LevelTwoChilds": [{
-                        "title": "Flux-like Implementation",
-                        "url": "https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch",
-                        "description": "VueJS State Management",
-                        "alias": "Simple-State-Management-from-Scratch"
-                    }]
-                },
-                {
-                    "LevelTwoName": "Best Practice",
-                    "LevelTwoChilds": [{
-                        "title": "VueJS Style Guide",
-                        "url": "https://vuejs.org/v2/style-guide/",
-                        "description": "The official style guide for Vue-specific code."
-                    }]
-                },
-                {
-                    "LevelTwoName": "Implementation",
-                    "LevelTwoChilds": [{
-                        "title": "Vuex",
-                        "url": "https://vuex.vuejs.org/en/",
-                        "description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion."
-                    }]
                 }
             ]
         }
