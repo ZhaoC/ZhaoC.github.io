@@ -111,21 +111,57 @@
             ]
         },
         {
-            "LevelOneName": "V8 Engine dddwe",
+            "LevelOneName": "V8 Engine",
             "LevelOneChilds": [{
                 "LevelTwoName": "Documentation",
                 "LevelTwoChilds": [{
-                    "title": "V8 wiki",
-                    "url": "https://github.com/v8/v8/wiki/Introduction",
-                    "description": "V8 wiki"
+                        "title": "V8 wiki",
+                        "url": "https://github.com/v8/v8/wiki/Introduction",
+                        "description": "V8 wiki"
+                    },
+                    {
+                        "title": "Hidden Class & Inline Caching in V8",
+                        "url": "http://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html",
+                        "description": "...",
+                        "alias": "v8-hidden-class-and-inline-caching"
+                    }
+                ]
+            }]
+        },
+        {
+            "LevelOneName": "JavaScript Core",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                            "title": "Speaking JS",
+                            "url": "http://speakingjs.com/",
+                            "description": "JavaScript Core Concept"
+                        },
+                        {
+                            "title": "JS Core Concept Intro",
+                            "url": "https://github.com/getify/You-Dont-Know-JS",
+                            "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language."
+                        }
+                    ]
                 },
                 {
-                    "title": "Hidden Class & Inline Caching in V8",
-                    "url": "http://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html",
-                    "description": "...",
-                    "alias": "v8-hidden-class-and-inline-caching"
-                }]
-            }]
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                        "title": "JS Memory Mangement",
+                        "url": "https://blog.sessionstack.com/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks-3f28b94cfbec",
+                        "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language.",
+                        "alias": "how-javascript-works-memory-management"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                        "title": "JavaScriprt Tool Kits",
+                        "url": "https://github.com/proYang/outils",
+                        "description": "JS Tool Kit."
+                    }]
+                }
+            ]
         },
         {
             "LevelOneName": "Node.js",
@@ -176,17 +212,17 @@
                 {
                     "LevelTwoName": "Best Practice",
                     "LevelTwoChilds": [{
-                        "title": "VueJS Style Guide",
-                        "url": "https://vuejs.org/v2/style-guide/",
-                        "description": "The official style guide for Vue-specific code."
-                    },
-                    {
-                        "title":"Vue App Step-by-Step Tutorial",
-                        "url": "https://segmentfault.com/a/1190000009275424",
-                        "description": "Vue Backend Setup",
-                        "alias": "segmentfault-vue-app-setup"
-                    }
-                ]
+                            "title": "VueJS Style Guide",
+                            "url": "https://vuejs.org/v2/style-guide/",
+                            "description": "The official style guide for Vue-specific code."
+                        },
+                        {
+                            "title": "Vue App Step-by-Step Tutorial",
+                            "url": "https://segmentfault.com/a/1190000009275424",
+                            "description": "Vue Backend Setup",
+                            "alias": "segmentfault-vue-app-setup"
+                        }
+                    ]
                 },
                 {
                     "LevelTwoName": "Implementation",
@@ -325,14 +361,6 @@
                     ]
                 },
                 {
-                    "LevelTwoName": "Controller Helper",
-                    "LevelTwoChilds": [{
-                        "title": "JavaScriprt Function Wrapper",
-                        "url": "https://github.com/proYang/outils",
-                        "description": "前端业务代码工具库."
-                    }]
-                },
-                {
                     "LevelTwoName": "Animation",
                     "LevelTwoChilds": [{
                             "title": "Overlay Spinning Bar",
@@ -393,21 +421,6 @@
                             "title": "D3.js",
                             "url": "https://github.com/d3/d3",
                             "description": "D3 (or D3.js) is a JavaScript library for visualizing data using web standards. D3 helps you bring data to life using SVG, Canvas and HTML."
-                        }
-                    ]
-                },
-                {
-                    "LevelTwoName": "Manual Resource",
-                    "LevelTwoChilds": [{
-                            "title": "JS Memory Mangement",
-                            "url": "https://blog.sessionstack.com/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks-3f28b94cfbec",
-                            "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language.",
-                            "alias": "how-javascript-works-memory-management"
-                        },
-                        {
-                            "title": "JS Core Concept Intro",
-                            "url": "https://github.com/getify/You-Dont-Know-JS",
-                            "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language."
                         }
                     ]
                 }
