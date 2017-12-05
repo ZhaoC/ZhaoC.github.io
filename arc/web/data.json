@@ -105,6 +105,12 @@
                             "title": "Certbot",
                             "url": "https://github.com/certbot/certbot",
                             "description": "Certbot, previously the Let's Encrypt Client, is EFF's tool to obtain certs from Let's Encrypt, and (optionally) auto-enable HTTPS on your server. It can also act as a client for any other CA that uses the ACME protocol."
+                        },
+                        {
+                            "title": "Common Web Security Setup",
+                            "url": "https://codeburst.io/common-security-issues-in-web-applications-part-1-af339360c646",
+                            "description": "...",
+                            "alias": "common-security-issues-in-web-applications"
                         }
                     ]
                 }
@@ -270,6 +276,11 @@
             "LevelOneChilds": [{
                     "LevelTwoName": "CSS",
                     "LevelTwoChilds": [{
+                            "title": "Uncss",
+                            "url": "https://github.com/giakki/uncss",
+                            "description": "UnCSS is a tool that removes unused CSS from your stylesheets. It works across multiple files and supports Javascript-injected CSS."
+                        },
+                        {
                             "title": "CSS Color Picker",
                             "url": "https://www.w3schools.com/cssref/css_colors.asp",
                             "description": "color picker",

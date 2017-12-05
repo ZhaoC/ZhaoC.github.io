@@ -29,6 +29,32 @@
             }]
         },
         {
+            "LevelOneName": "Browser",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Console API",
+                "LevelTwoChilds": [{
+                    "title": "Chrome Console",
+                    "url": "https://developers.google.com/chrome-developer-tools/docs/console-api/",
+                    "description": "..."
+                },
+                {
+                    "title": "Firefox Console",
+                    "url": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+                    "description": "..."
+                },
+                {
+                    "title": "Internet Explorer Console",
+                    "url": "http://msdn.microsoft.com/en-us/library/ie/hh772183.aspx",
+                    "description": "..."
+                },
+                {
+                    "title": "Node.js Console",
+                    "url": "https://nodejs.org/api/console.html",
+                    "description": "..."
+                }]
+            }]
+        },
+        {
             "LevelOneName": "Admin Tools",
             "LevelOneChilds": [{
                 "LevelTwoName": "Resource",
