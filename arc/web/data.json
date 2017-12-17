@@ -34,8 +34,12 @@
                             "title": "W3C Web Standards",
                             "url": "https://www.w3.org/TR/",
                             "description": "The W3C technical report development process is the set of steps and requirements followed by W3C Working Groups to standardize Web technology."
+                        },
+                        {
+                            "title": "Promises A+",
+                            "url": "https://promisesaplus.com/implementations",
+                            "description": "promises implementation standard"
                         }
-
                     ]
                 },
                 {
@@ -95,6 +99,16 @@
                     ]
                 },
                 {
+                    "LevelTwoName": "Web Design Pattern",
+                    "LevelTwoChilds": [
+                        {
+                            "title": "ReactiveX",
+                            "url": "http://reactivex.io/",
+                            "description": "ReactiveX is a library for composing asynchronous and event-based programs by using observable sequences."
+                        }
+                    ]
+                },
+                {
                     "LevelTwoName": "Web Security",
                     "LevelTwoChilds": [{
                             "title": "Let's Encrypt",
@@ -111,6 +125,21 @@
                             "url": "https://codeburst.io/common-security-issues-in-web-applications-part-1-af339360c646",
                             "description": "...",
                             "alias": "common-security-issues-in-web-applications"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Web Utils",
+                    "LevelTwoChilds": [
+                        {
+                            "title": "Web Trends",
+                            "url": "https://trends.google.com/trends/",
+                            "description": "..."
+                        },
+                        {
+                            "title": "MongoDB Altas",
+                            "url": "https://www.mongodb.com/cloud/atlas",
+                            "description": "Database as a Service"
                         }
                     ]
                 }
@@ -147,6 +176,12 @@
                             "title": "JS Core Concept Intro",
                             "url": "https://github.com/getify/You-Dont-Know-JS",
                             "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language."
+                        },
+                        {
+                            "title": "JavaScript Factory Functions With ES6",
+                            "url": "https://medium.com/javascript-scene/javascript-factory-functions-with-es6-4d224591a8b1",
+                            "description": "...",
+                            "alias": "javascript-factory-functions-with-es6"
                         }
                     ]
                 },
@@ -165,6 +200,12 @@
                         "title": "JavaScriprt Tool Kits",
                         "url": "https://github.com/proYang/outils",
                         "description": "JS Tool Kit."
+                    },
+                    {
+                        "title": "freeCodeCamp",
+                        "url": "https://www.freecodecamp.org/map#nested-collapseBasicJavaScript",
+                        "description": "freeCodeCamp JavaScript Section",
+                        "alias": "javascript-basics"
                     }]
                 }
             ]
@@ -185,6 +226,11 @@
                         "title": "NodeJS Best Practices",
                         "url": "https://github.com/i0natan/nodebestpractices",
                         "description": "This doc includes nodejs best practices, style guides, and architectural tips."
+                    },
+                    {
+                        "title": "Express.js",
+                        "url": "https://expressjs.com/",
+                        "description": "Fast, unopinionated, minimalist web framework for Node.js"
                     }]
                 },
                 {
@@ -201,6 +247,14 @@
                             "alias": "exposing-your-local-node-js-app-to-the-world"
                         }
                     ]
+                },
+                {
+                    "LevelTwoName": "Package Management",
+                    "LevelTwoChilds": [{
+                        "title": "Yarn",
+                        "url": "https://yarnpkg.com/en/",
+                        "description": "Yarn is a deterministic package management tool which could be faster than npm"
+                    }]
                 }
             ]
         },
