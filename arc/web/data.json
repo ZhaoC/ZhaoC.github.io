@@ -99,8 +99,13 @@
                     ]
                 },
                 {
-                    "LevelTwoName": "Web Design Pattern",
+                    "LevelTwoName": "Web Design",
                     "LevelTwoChilds": [
+                        {
+                            "title": "The Twelve-Factor App",
+                            "url": "https://12factor.net/",
+                            "description": "The twelve-factor app is a methodology for building software-as-a-service apps.."
+                        },
                         {
                             "title": "ReactiveX",
                             "url": "http://reactivex.io/",
@@ -111,6 +116,12 @@
                 {
                     "LevelTwoName": "Web Security",
                     "LevelTwoChilds": [{
+                            "title": "Cross-Origin Resource Sharing",
+                            "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS",
+                            "description": "...",
+                            "alias": "CROS"
+                        },
+                        {
                             "title": "Let's Encrypt",
                             "url": "https://letsencrypt.org/",
                             "description": "Let’s Encrypt is a free, automated, and open Certificate Authority."
@@ -176,12 +187,6 @@
                             "title": "JS Core Concept Intro",
                             "url": "https://github.com/getify/You-Dont-Know-JS",
                             "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language."
-                        },
-                        {
-                            "title": "JavaScript Factory Functions With ES6",
-                            "url": "https://medium.com/javascript-scene/javascript-factory-functions-with-es6-4d224591a8b1",
-                            "description": "...",
-                            "alias": "javascript-factory-functions-with-es6"
                         }
                     ]
                 },
@@ -197,15 +202,26 @@
                 {
                     "LevelTwoName": "Implementation",
                     "LevelTwoChilds": [{
-                        "title": "JavaScriprt Tool Kits",
+                        "title": "JavaScriprt Tool Kit - A",
                         "url": "https://github.com/proYang/outils",
                         "description": "JS Tool Kit."
+                    },
+                    {
+                        "title": "JS Tool Kit - B",
+                        "url": "https://github.com/Chalarangelo/30-seconds-of-code",
+                        "description": "Curated collection of useful Javascript snippets that you can understand in 30 seconds or less."
                     },
                     {
                         "title": "freeCodeCamp",
                         "url": "https://www.freecodecamp.org/map#nested-collapseBasicJavaScript",
                         "description": "freeCodeCamp JavaScript Section",
                         "alias": "javascript-basics"
+                    },
+                    {
+                        "title": "JavaScript Factory Functions With ES6",
+                        "url": "https://medium.com/javascript-scene/javascript-factory-functions-with-es6-4d224591a8b1",
+                        "description": "...",
+                        "alias": "javascript-factory-functions-with-es6"
                     }]
                 }
             ]
@@ -234,7 +250,7 @@
                     }]
                 },
                 {
-                    "LevelTwoName": "Implementation",
+                    "LevelTwoName": "NodeJS Implementation",
                     "LevelTwoChilds": [{
                             "title": "node-http-proxy",
                             "url": "https://github.com/nodejitsu/node-http-proxy",
@@ -254,6 +270,50 @@
                         "title": "Yarn",
                         "url": "https://yarnpkg.com/en/",
                         "description": "Yarn is a deterministic package management tool which could be faster than npm"
+                    }]
+                },
+                {
+                    "LevelTwoName": "NodeJS Log/Error Handler",
+                    "LevelTwoChilds": [{
+                        "title": "Boom Error Handler",
+                        "url": "https://github.com/hapijs/boom",
+                        "description": "HTTP-friendly error objects"
+                    },
+                    {
+                        "title": "Pino Light-Weight Logger",
+                        "url": "https://github.com/pinojs/pino",
+                        "description": "Extremely fast node.js logger"
+                    },
+                    {
+                        "title": "Winston Logger",
+                        "url": "https://github.com/winstonjs/winston",
+                        "description": "A logger for just about everything"
+                    }]
+                },
+                {
+                    "LevelTwoName": "NodeJS Automation Testing",
+                    "LevelTwoChilds": [{
+                        "title": "Night Watch",
+                        "url": "http://nightwatchjs.org/",
+                        "description": "Write End-to-End tests in Node.js quickly and effortlessly that run against a Selenium/WebDriver server."
+                    },
+                    {
+                        "title": "Grunt Task Runner",
+                        "url": "https://github.com/gruntjs/grunt",
+                        "description": "A JavaScript Task Runner."
+                    }]
+                },
+                {
+                    "LevelTwoName": "NodeJS Security",
+                    "LevelTwoChilds": [{
+                        "title": "Joi Object Schema Validation",
+                        "url": "https://github.com/hapijs/joi",
+                        "description": "joi allows you to create blueprints or schemas for JavaScript objects (an object that stores information) to ensure validation of key information."
+                    },
+                    {
+                        "title": "Helmet HTTP Headers",
+                        "url": "https://helmetjs.github.io/",
+                        "description": "Helmet helps you secure your Express apps by setting various HTTP headers."
                     }]
                 }
             ]
@@ -402,8 +462,9 @@
                     ]
                 },
                 {
-                    "LevelTwoName": "Data Models",
-                    "LevelTwoChilds": [{
+                    "LevelTwoName": "Data Model",
+                    "LevelTwoChilds": [
+                        {
                             "title": "Facebook Immutable collections",
                             "url": "https://github.com/facebook/immutable-js",
                             "description": "Immutable persistent data collections for Javascript which increase efficiency and simplicity."
@@ -472,6 +533,11 @@
                             "title": "Scroll Reveal",
                             "url": "https://github.com/jlmakes/scrollreveal",
                             "description": "Easy scroll animations for web and mobile browsers."
+                        },
+                        {
+                            "title": "Popmotion",
+                            "url": "https://popmotion.io/",
+                            "description": "A Swiss Army knife for animators and interaction developers"
                         }
                     ]
                 },
