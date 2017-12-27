@@ -1,0 +1,38 @@
+{
+    "root": "UrlArchive",
+    "data": [{
+        "LevelOneName": "Docs",
+        "LevelOneChilds": [{
+                "LevelTwoName": "Official Documentation",
+                "LevelTwoChilds": [{
+                    "title": "Java Generics",
+                    "url": "https://docs.oracle.com/javase/tutorial/java/generics/why.html",
+                    "alias": "java-generics",
+                    "description": "..."
+                }]
+            },
+            {
+                "LevelTwoName": "Bloger Articles",
+                "LevelTwoChilds": [{
+                        "title": "Base64",
+                        "url": "https://my.oschina.net/benhaile/blog/267738",
+                        "alias": "java8-base64",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Java8 JRE",
+                        "url": "https://my.oschina.net/benhaile/blog/211804",
+                        "alias": "java8-jre",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Java8 StampedLock",
+                        "url": "https://my.oschina.net/benhaile/blog/264383",
+                        "alias": "java8-stamped-lock",
+                        "description": "..."
+                    }
+                ]
+            }
+        ]
+    }]
+}

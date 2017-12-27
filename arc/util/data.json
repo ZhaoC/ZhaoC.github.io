@@ -1,25 +1,6 @@
 {
     "root": "UrlArchive",
-    "data": [{
-            "LevelOneName": "Skill",
-            "LevelOneChilds": [{
-                    "LevelTwoName": "Communication",
-                    "LevelTwoChilds": [{
-                        "title": "Speaking I/O",
-                        "url": "http://speaking.io/",
-                        "description": "..."
-                    }]
-                },
-                {
-                    "LevelTwoName": "Presentation",
-                    "LevelTwoChilds": [{
-                        "title": "Speaker Deck",
-                        "url": "https://speakerdeck.com/",
-                        "description": "a slides sharing host"
-                    }]
-                }
-            ]
-        },
+    "data": [
         {
             "LevelOneName": "Editor",
             "LevelOneChilds": [{

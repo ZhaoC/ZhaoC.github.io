@@ -1,0 +1,36 @@
+{
+    "root": "UrlArchive",
+    "data": [{
+            "LevelOneName": "Soft Skill",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Communication",
+                    "LevelTwoChilds": [{
+                        "title": "Speaking I/O",
+                        "url": "http://speaking.io/",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Presentation",
+                    "LevelTwoChilds": [{
+                        "title": "Speaker Deck",
+                        "url": "https://speakerdeck.com/",
+                        "description": "a slides sharing host"
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Skill Incubator",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Tensor Flow",
+                "LevelTwoChilds": [{
+                    "title": "Standford Tensor Flow Class Note",
+                    "url": "https://web.stanford.edu/class/cs20si/syllabus.html",
+                    "alias": "standford-tensor-flow-class-note",
+                    "description": "Tensorflow for Deep Learning Research"
+                }]
+            }]
+        }
+    ]
+}
