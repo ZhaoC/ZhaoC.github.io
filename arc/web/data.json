@@ -31,9 +31,14 @@
                             "description": "The Web Hypertext Application Technology Working Group (WHATWG) is a community of people interested in evolving the web through standards and tests."
                         },
                         {
-                            "title": "W3C Web Standards",
+                            "title": "W3C Web Standards (List)",
                             "url": "https://www.w3.org/TR/",
                             "description": "The W3C technical report development process is the set of steps and requirements followed by W3C Working Groups to standardize Web technology."
+                        },
+                        {
+                            "title": "Web Workers",
+                            "url": "https://www.w3.org/TR/workers/",
+                            "description": "worker allows for thread-like operation with message-passing as the coordination mechanism"
                         },
                         {
                             "title": "Promises A+",
@@ -100,8 +105,7 @@
                 },
                 {
                     "LevelTwoName": "Web Design",
-                    "LevelTwoChilds": [
-                        {
+                    "LevelTwoChilds": [{
                             "title": "The Twelve-Factor App",
                             "url": "https://12factor.net/",
                             "description": "The twelve-factor app is a methodology for building software-as-a-service apps.."
@@ -141,8 +145,7 @@
                 },
                 {
                     "LevelTwoName": "Web Utils",
-                    "LevelTwoChilds": [
-                        {
+                    "LevelTwoChilds": [{
                             "title": "Web Trends",
                             "url": "https://trends.google.com/trends/",
                             "description": "..."
@@ -202,184 +205,26 @@
                 {
                     "LevelTwoName": "Implementation",
                     "LevelTwoChilds": [{
-                        "title": "JavaScriprt Tool Kit - A",
-                        "url": "https://github.com/proYang/outils",
-                        "description": "JS Tool Kit."
-                    },
-                    {
-                        "title": "JS Tool Kit - B",
-                        "url": "https://github.com/Chalarangelo/30-seconds-of-code",
-                        "description": "Curated collection of useful Javascript snippets that you can understand in 30 seconds or less."
-                    },
-                    {
-                        "title": "freeCodeCamp",
-                        "url": "https://www.freecodecamp.org/map#nested-collapseBasicJavaScript",
-                        "description": "freeCodeCamp JavaScript Section",
-                        "alias": "javascript-basics"
-                    },
-                    {
-                        "title": "JavaScript Factory Functions With ES6",
-                        "url": "https://medium.com/javascript-scene/javascript-factory-functions-with-es6-4d224591a8b1",
-                        "description": "...",
-                        "alias": "javascript-factory-functions-with-es6"
-                    }]
-                }
-            ]
-        },
-        {
-            "LevelOneName": "Node.js",
-            "LevelOneChilds": [{
-                    "LevelTwoName": "Documentation",
-                    "LevelTwoChilds": [{
-                        "title": "v9.1.0",
-                        "url": "https://nodejs.org/docs/latest/api/modules.html",
-                        "description": "Node.js v9.1.0 Documentation"
-                    }]
-                },
-                {
-                    "LevelTwoName": "Best Practice",
-                    "LevelTwoChilds": [{
-                        "title": "NodeJS Best Practices",
-                        "url": "https://github.com/i0natan/nodebestpractices",
-                        "description": "This doc includes nodejs best practices, style guides, and architectural tips."
-                    },
-                    {
-                        "title": "Express.js",
-                        "url": "https://expressjs.com/",
-                        "description": "Fast, unopinionated, minimalist web framework for Node.js"
-                    }]
-                },
-                {
-                    "LevelTwoName": "NodeJS Implementation",
-                    "LevelTwoChilds": [{
-                            "title": "node-http-proxy",
-                            "url": "https://github.com/nodejitsu/node-http-proxy",
-                            "description": "node-http-proxy is an HTTP programmable proxying library that supports websockets. It is suitable for implementing components such as reverse proxies and load balancers."
+                            "title": "JavaScriprt Tool Kit - A",
+                            "url": "https://github.com/proYang/outils",
+                            "description": "JS Tool Kit."
                         },
                         {
-                            "title": "Publish Local Node.js App",
-                            "url": "https://www.pluralsight.com/guides/node-js/exposing-your-local-node-js-app-to-the-world",
-                            "description": "Exposing your local Node.js app to the world",
-                            "alias": "exposing-your-local-node-js-app-to-the-world"
-                        }
-                    ]
-                },
-                {
-                    "LevelTwoName": "Package Management",
-                    "LevelTwoChilds": [{
-                        "title": "Yarn",
-                        "url": "https://yarnpkg.com/en/",
-                        "description": "Yarn is a deterministic package management tool which could be faster than npm"
-                    }]
-                },
-                {
-                    "LevelTwoName": "NodeJS Log/Error Handler",
-                    "LevelTwoChilds": [{
-                        "title": "Boom Error Handler",
-                        "url": "https://github.com/hapijs/boom",
-                        "description": "HTTP-friendly error objects"
-                    },
-                    {
-                        "title": "Pino Light-Weight Logger",
-                        "url": "https://github.com/pinojs/pino",
-                        "description": "Extremely fast node.js logger"
-                    },
-                    {
-                        "title": "Winston Logger",
-                        "url": "https://github.com/winstonjs/winston",
-                        "description": "A logger for just about everything"
-                    }]
-                },
-                {
-                    "LevelTwoName": "NodeJS Automation Testing",
-                    "LevelTwoChilds": [{
-                        "title": "Night Watch",
-                        "url": "http://nightwatchjs.org/",
-                        "description": "Write End-to-End tests in Node.js quickly and effortlessly that run against a Selenium/WebDriver server."
-                    },
-                    {
-                        "title": "Grunt Task Runner",
-                        "url": "https://github.com/gruntjs/grunt",
-                        "description": "A JavaScript Task Runner."
-                    }]
-                },
-                {
-                    "LevelTwoName": "NodeJS Security",
-                    "LevelTwoChilds": [{
-                        "title": "Joi Object Schema Validation",
-                        "url": "https://github.com/hapijs/joi",
-                        "description": "joi allows you to create blueprints or schemas for JavaScript objects (an object that stores information) to ensure validation of key information."
-                    },
-                    {
-                        "title": "Helmet HTTP Headers",
-                        "url": "https://helmetjs.github.io/",
-                        "description": "Helmet helps you secure your Express apps by setting various HTTP headers."
-                    }]
-                }
-            ]
-        },
-        {
-            "LevelOneName": "Vue.js",
-            "LevelOneChilds": [{
-                    "LevelTwoName": "Documentation",
-                    "LevelTwoChilds": [{
-                        "title": "Flux-like Structure",
-                        "url": "https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch",
-                        "description": "VueJS State Management",
-                        "alias": "Simple-State-Management-from-Scratch"
-                    }]
-                },
-                {
-                    "LevelTwoName": "Best Practice",
-                    "LevelTwoChilds": [{
-                            "title": "VueJS Style Guide",
-                            "url": "https://vuejs.org/v2/style-guide/",
-                            "description": "The official style guide for Vue-specific code."
+                            "title": "JS Tool Kit - B",
+                            "url": "https://github.com/Chalarangelo/30-seconds-of-code",
+                            "description": "Curated collection of useful Javascript snippets that you can understand in 30 seconds or less."
                         },
                         {
-                            "title": "Vue App Step-by-Step Tutorial",
-                            "url": "https://segmentfault.com/a/1190000009275424",
-                            "description": "Vue Backend Setup",
-                            "alias": "segmentfault-vue-app-setup"
-                        }
-                    ]
-                },
-                {
-                    "LevelTwoName": "Implementation",
-                    "LevelTwoChilds": [{
-                            "title": "Vuex",
-                            "url": "https://vuex.vuejs.org/en/",
-                            "description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion."
+                            "title": "freeCodeCamp",
+                            "url": "https://www.freecodecamp.org/map#nested-collapseBasicJavaScript",
+                            "description": "freeCodeCamp JavaScript Section",
+                            "alias": "javascript-basics"
                         },
                         {
-                            "title": "Github Thrending for Vue",
-                            "url": "https://github.com/trending/vue",
-                            "description": "..."
-                        },
-                        {
-                            "title": "Vue Element Admin",
-                            "url": "https://github.com/PanJiaChen/vue-element-admin",
-                            "description": "Vue Admin Style Page Library"
-                        },
-                        {
-                            "title": "Element",
-                            "url": "https://github.com/ElemeFE/element",
-                            "description": "A Vue.js 2.0 UI Toolkit for Web."
-                        },
-                        {
-                            "title": "iView",
-                            "url": "https://github.com/iview/iview",
-                            "description": "A Vue.js 2.0 UI Toolkit for Web."
-                        },
-                        {
-                            "title": "Vue Material",
-                            "url": "https://vuematerial.io/",
-                            "description": "Vue components in material design."
-                        },
-                        {
-                            "title": "Made with Vue.js",
-                            "url": "https://madewithvuejs.com/",
-                            "description": "Pages built on top of Vue.js"
+                            "title": "JavaScript Factory Functions With ES6",
+                            "url": "https://medium.com/javascript-scene/javascript-factory-functions-with-es6-4d224591a8b1",
+                            "description": "...",
+                            "alias": "javascript-factory-functions-with-es6"
                         }
                     ]
                 }
@@ -463,8 +308,7 @@
                 },
                 {
                     "LevelTwoName": "Data Model",
-                    "LevelTwoChilds": [
-                        {
+                    "LevelTwoChilds": [{
                             "title": "Facebook Immutable collections",
                             "url": "https://github.com/facebook/immutable-js",
                             "description": "Immutable persistent data collections for Javascript which increase efficiency and simplicity."
@@ -552,6 +396,191 @@
                             "title": "D3.js",
                             "url": "https://github.com/d3/d3",
                             "description": "D3 (or D3.js) is a JavaScript library for visualizing data using web standards. D3 helps you bring data to life using SVG, Canvas and HTML."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Vue.js",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                        "title": "Flux-like Structure",
+                        "url": "https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch",
+                        "description": "VueJS State Management",
+                        "alias": "Simple-State-Management-from-Scratch"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                            "title": "VueJS Style Guide",
+                            "url": "https://vuejs.org/v2/style-guide/",
+                            "description": "The official style guide for Vue-specific code."
+                        },
+                        {
+                            "title": "Vue App Step-by-Step Tutorial",
+                            "url": "https://segmentfault.com/a/1190000009275424",
+                            "description": "Vue Backend Setup",
+                            "alias": "segmentfault-vue-app-setup"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                            "title": "Vuex",
+                            "url": "https://vuex.vuejs.org/en/",
+                            "description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion."
+                        },
+                        {
+                            "title": "Vue Element Admin",
+                            "url": "https://github.com/PanJiaChen/vue-element-admin",
+                            "description": "Vue Admin Style Page Library"
+                        },
+                        {
+                            "title": "Element",
+                            "url": "https://github.com/ElemeFE/element",
+                            "description": "A Vue.js 2.0 UI Toolkit for Web."
+                        },
+                        {
+                            "title": "iView",
+                            "url": "https://github.com/iview/iview",
+                            "description": "A Vue.js 2.0 UI Toolkit for Web."
+                        },
+                        {
+                            "title": "Vue Material",
+                            "url": "https://vuematerial.io/",
+                            "description": "Vue components in material design."
+                        },
+                        {
+                            "title": "Made with Vue.js",
+                            "url": "https://madewithvuejs.com/",
+                            "description": "Pages built on top of Vue.js"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Node.js",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "NodeJS Core",
+                    "LevelTwoChilds": [{
+                            "title": "Documentation",
+                            "url": "https://nodejs.org/en/docs/guides/",
+                            "description": "Node.js Documentation"
+                        },
+                        {
+                            "title": "NodeJS Best Practices",
+                            "url": "https://github.com/i0natan/nodebestpractices",
+                            "description": "This doc includes nodejs best practices, style guides, and architectural tips."
+                        },
+                        {
+                            "title": "libuv",
+                            "url": "http://libuv.org/",
+                            "description": "a multi-platform support library with a focus on asynchronous I/O"
+                        },
+                        {
+                            "title": "Node Wenworker Threads",
+                            "url": "https://github.com/audreyt/node-webworker-threads",
+                            "alias": "node-webworker-threads",
+                            "description": "Lightweight Web Worker API implementation with native threads"
+                        },
+                        {
+                            "title": "Thread Pool (stackoverflow)",
+                            "url": "https://stackoverflow.com/questions/22644328/when-is-the-thread-pool-used",
+                            "alias": "when-is-the-thread-pool-used",
+                            "description": "..."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Express Framework",
+                    "LevelTwoChilds": [{
+                            "title": "Express.js",
+                            "url": "https://expressjs.com/",
+                            "description": "Fast, unopinionated, minimalist web framework for Node.js"
+                        },
+                        {
+                            "title": "Express-Nodejs Tutorial",
+                            "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website",
+                            "alias": "express-nodejs-tutorial",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Express Middleware",
+                            "url": "http://expressjs.com/en/resources/middleware.html",
+                            "description": "express.js official middleware provided"
+                        },
+                        {
+                            "title": "Express Template Engines",
+                            "url": "https://github.com/expressjs/express/wiki#template-engines",
+                            "alias": "express-template-engines",
+                            "description": "express template engines wiki"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Utils",
+                    "LevelTwoChilds": [{
+                            "title": "Node HTTP Proxy",
+                            "url": "https://github.com/nodejitsu/node-http-proxy",
+                            "description": "node-http-proxy is an HTTP programmable proxying library that supports websockets. It is suitable for implementing components such as reverse proxies and load balancers."
+                        },
+                        {
+                            "title": "Nodemon",
+                            "url": "https://nodemon.io/",
+                            "description": "Nodemon is a utility that will monitor for any changes in your source and automatically restart your server."
+                        },
+                        {
+                            "title": "Boom Error Handler",
+                            "url": "https://github.com/hapijs/boom",
+                            "description": "HTTP-friendly error objects"
+                        },
+                        {
+                            "title": "Pino Light-Weight Logger",
+                            "url": "https://github.com/pinojs/pino",
+                            "description": "Extremely fast node.js logger"
+                        },
+                        {
+                            "title": "Winston Logger",
+                            "url": "https://github.com/winstonjs/winston",
+                            "description": "A logger for just about everything"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Automation Testing",
+                    "LevelTwoChilds": [{
+                            "title": "Night Watch",
+                            "url": "http://nightwatchjs.org/",
+                            "description": "Write End-to-End tests in Node.js quickly and effortlessly that run against a Selenium/WebDriver server."
+                        },
+                        {
+                            "title": "Grunt Task Runner",
+                            "url": "https://github.com/gruntjs/grunt",
+                            "description": "A JavaScript Task Runner."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Security",
+                    "LevelTwoChilds": [{
+                            "title": "Joi Object Schema Validation",
+                            "url": "https://github.com/hapijs/joi",
+                            "description": "joi allows you to create blueprints or schemas for JavaScript objects (an object that stores information) to ensure validation of key information."
+                        },
+                        {
+                            "title": "Helmet HTTP Headers",
+                            "url": "https://helmetjs.github.io/",
+                            "description": "Helmet helps you secure your Express apps by setting various HTTP headers."
+                        },
+                        {
+                            "title": "Passport",
+                            "url": "https://github.com/jaredhanson/passport",
+                            "description": "Passport is Express-compatible authentication middleware for Node.js."
                         }
                     ]
                 }

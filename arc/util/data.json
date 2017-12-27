@@ -1,24 +1,24 @@
 {
     "root": "UrlArchive",
-    "data": [
-        {
+    "data": [{
             "LevelOneName": "Skill",
             "LevelOneChilds": [{
-                "LevelTwoName": "Communication",
-                "LevelTwoChilds": [{
-                    "title": "Speaking I/O",
-                    "url": "http://speaking.io/",
-                    "description": "..."
-                }]
-            },
-            {
-                "LevelTwoName": "Presentation",
-                "LevelTwoChilds": [{
-                    "title": "Speaker Deck",
-                    "url": "https://speakerdeck.com/",
-                    "description": "a slides sharing host"
-                }]
-            }]
+                    "LevelTwoName": "Communication",
+                    "LevelTwoChilds": [{
+                        "title": "Speaking I/O",
+                        "url": "http://speaking.io/",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Presentation",
+                    "LevelTwoChilds": [{
+                        "title": "Speaker Deck",
+                        "url": "https://speakerdeck.com/",
+                        "description": "a slides sharing host"
+                    }]
+                }
+            ]
         },
         {
             "LevelOneName": "Editor",
@@ -32,36 +32,105 @@
             }]
         },
         {
-            "LevelOneName": "Application Container/Server",
+            "LevelOneName": "Thrending Viewer",
             "LevelOneChilds": [{
-                "LevelTwoName": "Tomcat",
+                "LevelTwoName": "Web Techs",
                 "LevelTwoChilds": [{
-                        "title": "Meet Tomcat Catalina",
-                        "url": "https://www.mulesoft.com/tcat/tomcat-catalina",
-                        "description": "Intro of tomcat catalina"
+                        "title": "Thrending Framework",
+                        "url": "http://hotframeworks.com/",
+                        "description": "Find your new favorite web framework"
                     },
                     {
-                        "title": "Tomcat Optimization",
-                        "url": "https://www.mulesoft.com/tcat/tomcat-performance",
-                        "description": "Tuning Tomcat Performance For Optimum Speed"
+                        "title": "Github Thrending for Vue",
+                        "url": "https://github.com/trending/vue",
+                        "description": "..."
                     }
                 ]
-            },
-            {
-                "LevelTwoName": "Ngrok",
-                "LevelTwoChilds": [{
-                        "title": "ngrok official website",
-                        "url": "https://ngrok.com/",
-                        "description": "Secure tunnels to localhost"
-                    }
-                ]
-            },
-            {
-                "LevelTwoName": "Kubernetes",
-                "LevelTwoChilds": [{
+            }]
+        },
+        {
+            "LevelOneName": "Application Container/Server",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Tomcat",
+                    "LevelTwoChilds": [{
+                            "title": "Meet Tomcat Catalina",
+                            "url": "https://www.mulesoft.com/tcat/tomcat-catalina",
+                            "description": "Intro of tomcat catalina"
+                        },
+                        {
+                            "title": "Tomcat Optimization",
+                            "url": "https://www.mulesoft.com/tcat/tomcat-performance",
+                            "description": "Tuning Tomcat Performance For Optimum Speed"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Kubernetes",
+                    "LevelTwoChilds": [{
                         "title": "Kubernetes official website",
                         "url": "https://kubernetes.io/",
                         "description": "Production-Grade Container Orchestration"
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Web App Public Release",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Generic",
+                    "LevelTwoChilds": [{
+                            "title": "ngrok official website",
+                            "url": "https://ngrok.com/",
+                            "description": "Secure tunnels to localhost"
+                        },
+                        {
+                            "title": "mLab (MongoDB)",
+                            "url": "https://mlab.com/",
+                            "description": "mLab is the leading Database-as-a-Service for MongoDB"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS",
+                    "LevelTwoChilds": [{
+                        "title": "Publish Local Node.js App",
+                        "url": "https://www.pluralsight.com/guides/node-js/exposing-your-local-node-js-app-to-the-world",
+                        "description": "Exposing your local Node.js app to the world",
+                        "alias": "exposing-your-local-node-js-app-to-the-world"
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Database",
+            "LevelOneChilds": [{
+                "LevelTwoName": "MongoDB",
+                "LevelTwoChilds": [{
+                        "title": "Robo 3T (Client Tool)",
+                        "url": "http://robomongo.org",
+                        "description": "Native cross-platform MongoDB management tool"
+                    },
+                    {
+                        "title": "mongoose",
+                        "url": "http://mongoosejs.com/",
+                        "description": "mongodb object modeling for node.js"
+                    }
+                ]
+            }]
+        },
+        {
+            "LevelOneName": "Package Manager",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Home Brew",
+                "LevelTwoChilds": [{
+                        "title": "Home Brew Service",
+                        "url": "https://github.com/Homebrew/homebrew-services",
+                        "description": "Integrates Homebrew formulae with macOS's launchctl manager."
+                    },
+                    {
+                        "title": "Yarn",
+                        "url": "https://yarnpkg.com/en/",
+                        "description": "Yarn is a deterministic package management tool which could be faster than npm"
                     }
                 ]
             }]
@@ -71,25 +140,26 @@
             "LevelOneChilds": [{
                 "LevelTwoName": "Console API",
                 "LevelTwoChilds": [{
-                    "title": "Chrome Console",
-                    "url": "https://developers.google.com/chrome-developer-tools/docs/console-api/",
-                    "description": "..."
-                },
-                {
-                    "title": "Firefox Console",
-                    "url": "https://developer.mozilla.org/en-US/docs/Web/API/console",
-                    "description": "..."
-                },
-                {
-                    "title": "Internet Explorer Console",
-                    "url": "http://msdn.microsoft.com/en-us/library/ie/hh772183.aspx",
-                    "description": "..."
-                },
-                {
-                    "title": "Node.js Console",
-                    "url": "https://nodejs.org/api/console.html",
-                    "description": "..."
-                }]
+                        "title": "Chrome Console",
+                        "url": "https://developers.google.com/chrome-developer-tools/docs/console-api/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Firefox Console",
+                        "url": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Internet Explorer Console",
+                        "url": "http://msdn.microsoft.com/en-us/library/ie/hh772183.aspx",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Node.js Console",
+                        "url": "https://nodejs.org/api/console.html",
+                        "description": "..."
+                    }
+                ]
             }]
         },
         {
@@ -120,9 +190,7 @@
                     {
                         "title": "Lakka Offical Site",
                         "url": "http://www.lakka.tv/",
-                        "description": "Lakka is a lightweight Linux distribution that transforms a small computer into a full blown retrogaming console.",
-                        "link1": "https://www.loveroms.com/roms/",
-                        "link2": "http://coolrom.com/roms/"
+                        "description": "Lakka is a lightweight Linux distribution that transforms a small computer into a full blown retrogaming console."
                     },
                     {
                         "title": "Lakka-File Access",

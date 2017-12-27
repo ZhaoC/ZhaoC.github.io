@@ -1,8 +1,8 @@
 {
     "root": "UrlArchive",
     "data": [{
-        "LevelOneName": "Community",
-        "LevelOneChilds": [{
+            "LevelOneName": "Community",
+            "LevelOneChilds": [{
                 "LevelTwoName": "Learn from the Best",
                 "LevelTwoChilds": [{
                         "title": "Hack News",
@@ -40,13 +40,11 @@
                         "description": "spotify ..."
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "LevelOneName": "Blogger",
-        "LevelOneChilds": [
-            {
+            }]
+        },
+        {
+            "LevelOneName": "Blogger",
+            "LevelOneChilds": [{
                 "LevelTwoName": "Mixins",
                 "LevelTwoChilds": [{
                         "title": "jawil",
@@ -59,7 +57,7 @@
                         "description": "酷壳 CoolShell | 启用HTTPS"
                     }
                 ]
-            }
-        ]
-    }]
+            }]
+        }
+    ]
 }
