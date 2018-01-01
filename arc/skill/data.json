@@ -17,6 +17,15 @@
                         "url": "https://speakerdeck.com/",
                         "description": "a slides sharing host"
                     }]
+                },
+                {
+                    "LevelTwoName": "Journey",
+                    "LevelTwoChilds": [{
+                        "title": "Stanford University Podcast",
+                        "url": "https://ecorner.stanford.edu/series/dfj-entrepreneurial-thought-leaders/",
+                        "alias": "dfj-entrepreneurial-thought-leaders",
+                        "description": "Entrepreneurial journey."
+                    }]
                 }
             ]
         },

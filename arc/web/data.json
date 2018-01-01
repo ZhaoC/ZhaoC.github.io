@@ -314,6 +314,11 @@
                             "description": "Immutable persistent data collections for Javascript which increase efficiency and simplicity."
                         },
                         {
+                            "title": "Decimal.js",
+                            "url": "https://github.com/MikeMcl/decimal.js",
+                            "description": "handle floating number operation."
+                        },
+                        {
                             "title": "jsSpacetime",
                             "url": "https://github.com/smallwins/spacetime",
                             "description": "A simple way to manipulate, compare, and format dates and times across the Earth"
@@ -333,6 +338,10 @@
                 {
                     "LevelTwoName": "Animation",
                     "LevelTwoChilds": [{
+                            "title": "JavaScript Animation Engine",
+                            "url": "https://github.com/juliangarnier/anime",
+                            "description": "JavaScript Animation Engine"
+                        },{
                             "title": "Overlay Spinning Bar",
                             "url": "https://gasparesganga.com/labs/jquery-loading-overlay/",
                             "description": "easy spinning bar",
@@ -473,6 +482,11 @@
                             "description": "Node.js Documentation"
                         },
                         {
+                            "title": "Node.js Presentation by Ryan Dahl",
+                            "url": "https://www.youtube.com/watch?v=jo_B4LTHi3I",
+                            "description": "Node.js Introduction"
+                        },
+                        {
                             "title": "NodeJS Best Practices",
                             "url": "https://github.com/i0natan/nodebestpractices",
                             "description": "This doc includes nodejs best practices, style guides, and architectural tips."
@@ -548,6 +562,11 @@
                             "title": "Winston Logger",
                             "url": "https://github.com/winstonjs/winston",
                             "description": "A logger for just about everything"
+                        },
+                        {
+                            "title": "AMQP lib & Client for Node.js",
+                            "url": "https://github.com/squaremo/amqp.node",
+                            "description": "A library for making AMQP 0-9-1 clients for Node.JS, and an AMQP 0-9-1 client for Node.JS v0.8-0.12, v4-v9, and the intervening io.js releases."
                         }
                     ]
                 },

@@ -43,21 +43,41 @@
             }]
         },
         {
-            "LevelOneName": "Blogger",
+            "LevelOneName": "Blogger/Labs",
             "LevelOneChilds": [{
-                "LevelTwoName": "Mixins",
-                "LevelTwoChilds": [{
-                        "title": "jawil",
-                        "url": "https://github.com/jawil",
-                        "description": "风起于青萍之末，浪成于微澜之间。"
-                    },
-                    {
-                        "title": "HTTPS implementation",
-                        "url": "https://coolshell.cn/articles/18094.html",
-                        "description": "酷壳 CoolShell | 启用HTTPS"
-                    }
-                ]
-            }]
+                    "LevelTwoName": "Sencha Labs",
+                    "LevelTwoChilds": [{
+                            "title": "Secha Labs Official Site",
+                            "url": "http://www.senchalabs.org/",
+                            "description": "sencha open source projects."
+                        }, 
+                        {
+                            "title": "A Tornado of Razorblades - Archive",
+                            "url": "http://adam.herokuapp.com/past/",
+                            "description": "Blog of ADAM WIGGINS"
+                        },
+                        {
+                            "title": "HTTPS implementation",
+                            "url": "https://coolshell.cn/articles/18094.html",
+                            "description": "酷壳 CoolShell | 启用HTTPS"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Mixins",
+                    "LevelTwoChilds": [{
+                            "title": "Jawil",
+                            "url": "https://github.com/jawil",
+                            "description": "风起于青萍之末，浪成于微澜之间。"
+                        },
+                        {
+                            "title": "HTTPS implementation",
+                            "url": "https://coolshell.cn/articles/18094.html",
+                            "description": "酷壳 CoolShell | 启用HTTPS"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
