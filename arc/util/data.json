@@ -108,6 +108,14 @@
                         "description": "Exposing your local Node.js app to the world",
                         "alias": "exposing-your-local-node-js-app-to-the-world"
                     }]
+                },
+                {
+                    "LevelTwoName": "Security",
+                    "LevelTwoChilds": [{
+                        "title": "Certbot HTTPS",
+                        "url": "https://certbot.eff.org/",
+                        "description": "Automatically enable HTTPS on your website with EFF's Certbot, deploying Let's Encrypt certificates."
+                    }]
                 }
             ]
         },
@@ -150,6 +158,11 @@
                         "title": "GitHub Helper",
                         "url": "https://help.github.com/categories/bootcamp/",
                         "description": "github bootcamp"
+                    },
+                    {
+                        "title": "Github Markdown",
+                        "url": "https://guides.github.com/features/mastering-markdown/",
+                        "description": "Github Markdown Guides."
                     }
                 ]
             }]
@@ -176,6 +189,15 @@
                     {
                         "title": "Node.js Console",
                         "url": "https://nodejs.org/api/console.html",
+                        "description": "..."
+                    }
+                ]
+            },
+            {
+                "LevelTwoName": "Implementation",
+                "LevelTwoChilds": [{
+                        "title": "Chrome DevTools Protocol View",
+                        "url": "https://chromedevtools.github.io/devtools-protocol/",
                         "description": "..."
                     }
                 ]
@@ -237,6 +259,16 @@
                         "title": "The Legend of Zelda",
                         "url": "https://www.zelda.com/",
                         "description": "The Legend of Zelda"
+                    },
+                    {
+                        "title": "Itch Game Center",
+                        "url": "https://itch.io/",
+                        "description": "Game community."
+                    },
+                    {
+                        "title": "3D/AR/VR Game Design",
+                        "url": "https://sketchfab.com/",
+                        "description": "Discover things in 3D, AR, and VR."
                     }
                 ]
             },

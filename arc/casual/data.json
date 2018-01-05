@@ -40,6 +40,17 @@
                     "description": "Tensorflow for Deep Learning Research"
                 }]
             }]
+        },
+        {
+            "LevelOneName": "Casual Things",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Audio",
+                "LevelTwoChilds": [{
+                    "title": "Looplabs",
+                    "url": "https://looplabs.com/explore",
+                    "description": "Audio Studio."
+                }]
+            }]   
         }
     ]
 }

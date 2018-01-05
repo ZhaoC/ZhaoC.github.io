@@ -38,6 +38,11 @@
                         "title": "Spotify Labs",
                         "url": "https://labs.spotify.com/",
                         "description": "spotify ..."
+                    },
+                    {
+                        "title": "Secha Labs Official Site",
+                        "url": "http://www.senchalabs.org/",
+                        "description": "sencha open source projects."
                     }
                 ]
             }]
@@ -45,13 +50,21 @@
         {
             "LevelOneName": "Blogger/Labs",
             "LevelOneChilds": [{
-                    "LevelTwoName": "Sencha Labs",
+                    "LevelTwoName": "Mediums",
                     "LevelTwoChilds": [{
-                            "title": "Secha Labs Official Site",
-                            "url": "http://www.senchalabs.org/",
-                            "description": "sencha open source projects."
-                        }, 
+                            "title": "Dan Abramov",
+                            "url": "https://medium.com/@dan_abramov",
+                            "description": "Working on @reactjs. Co-author of Redux and Create React App."
+                        },
                         {
+                            "title": "TJ Holowaychuk",
+                            "url": "https://medium.com/@tjholowaychuk",
+                            "description": "Code..."
+                        }
+                    ]
+                }, {
+                    "LevelTwoName": "Blogger",
+                    "LevelTwoChilds": [{
                             "title": "A Tornado of Razorblades - Archive",
                             "url": "http://adam.herokuapp.com/past/",
                             "description": "Blog of ADAM WIGGINS"

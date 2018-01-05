@@ -44,6 +44,18 @@
                             "title": "Promises A+",
                             "url": "https://promisesaplus.com/implementations",
                             "description": "promises implementation standard"
+                        },
+                        {
+                            "title": "Service Workers",
+                            "url": "https://jakearchibald.github.io/isserviceworkerready/resources.html",
+                            "description": "...",
+                            "alias": "is-service-worker-ready"
+                        },
+                        {
+                            "title": "Hardware Intergration for Web",
+                            "url": "https://www.w3.org/Mobile/mobile-web-app-state/#Sensors_and_hardware_integration",
+                            "description": "",
+                            "alias": "ensors_and_hardware_integration"
                         }
                     ]
                 },
@@ -88,6 +100,11 @@
                             "url": "https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/",
                             "description": "Progressive Web Apps are experiences that combine the best of the web and the best of apps.",
                             "alias": "google/progressive-web-app"
+                        },
+                        {
+                            "title": "Progressive Web App Samples",
+                            "url": "https://pwa.rocks/",
+                            "description": "A website with PWA demos."
                         },
                         {
                             "title": "The Cost of Javascript",
@@ -154,6 +171,11 @@
                             "title": "MongoDB Altas",
                             "url": "https://www.mongodb.com/cloud/atlas",
                             "description": "Database as a Service"
+                        },
+                        {
+                            "title" : "Service Workers (UPUP)",
+                            "url": "https://www.talater.com/upup/",
+                            "description": "Support website in offline mode."
                         }
                     ]
                 }
@@ -332,6 +354,21 @@
                             "title": "Momentjs",
                             "url": "https://momentjs.com/",
                             "description": "A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Controller",
+                    "LevelTwoChilds": [{
+                            "title": "Lodash",
+                            "url": "https://github.com/lodash/lodash/",
+                            "description": "JavaScript utility library"
+                        },
+                        {
+                            "title": "Promise Blue Bird",
+                            "description": "...",
+                            "url": "http://bluebirdjs.com/docs/api/promise.promisifyall.html",                            
+                            "alias": "promisify-all-api"
                         }
                     ]
                 },
@@ -600,6 +637,36 @@
                             "title": "Passport",
                             "url": "https://github.com/jaredhanson/passport",
                             "description": "Passport is Express-compatible authentication middleware for Node.js."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "React.js",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                        "title": "",
+                        "url": "https://reactjs.org/docs/",
+                        "description": "React.js Official Site"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                            "title": "Ruanyf React Demos",
+                            "url": "https://github.com/ruanyf/react-demos",
+                            "description": "React Demos"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                            "title": "React Material Design",
+                            "url": "http://www.material-ui.com/",
+                            "description": "React components that implement Google's Material Design."
                         }
                     ]
                 }
