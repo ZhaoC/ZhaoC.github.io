@@ -42,7 +42,18 @@
             }]
         },
         {
-            "LevelOneName": "Casual Things",
+            "LevelOneName": "Travel",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Japan",
+                "LevelTwoChilds": [{
+                    "title": "Guides",
+                    "url": "https://www.jnto.go.jp/",
+                    "description": "..."
+                }]
+            }]   
+        },
+        {
+            "LevelOneName": "Casual Media",
             "LevelOneChilds": [{
                 "LevelTwoName": "Audio",
                 "LevelTwoChilds": [{

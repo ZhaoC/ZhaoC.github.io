@@ -46,6 +46,11 @@
                             "description": "promises implementation standard"
                         },
                         {
+                            "title": "Await/Async",
+                            "url": "http://nikgrozev.com/2017/10/01/async-await/",
+                            "description": "Await and Async Explained with Diagrams and Examples."
+                        },
+                        {
                             "title": "Service Workers",
                             "url": "https://jakearchibald.github.io/isserviceworkerready/resources.html",
                             "description": "...",
@@ -56,6 +61,11 @@
                             "url": "https://www.w3.org/Mobile/mobile-web-app-state/#Sensors_and_hardware_integration",
                             "description": "",
                             "alias": "ensors_and_hardware_integration"
+                        },
+                        {
+                            "title": "Everything HTTP (bagder Gitbook)",
+                            "url": "https://www.gitbook.com/@bagder",
+                            "description": "Books: 'Http2 Explained' & 'Everything curl' "
                         }
                     ]
                 },
@@ -173,7 +183,7 @@
                             "description": "Database as a Service"
                         },
                         {
-                            "title" : "Service Workers (UPUP)",
+                            "title": "Service Workers (UPUP)",
                             "url": "https://www.talater.com/upup/",
                             "description": "Support website in offline mode."
                         }
@@ -367,7 +377,7 @@
                         {
                             "title": "Promise Blue Bird",
                             "description": "...",
-                            "url": "http://bluebirdjs.com/docs/api/promise.promisifyall.html",                            
+                            "url": "http://bluebirdjs.com/docs/api/promise.promisifyall.html",
                             "alias": "promisify-all-api"
                         }
                     ]
@@ -378,7 +388,7 @@
                             "title": "JavaScript Animation Engine",
                             "url": "https://github.com/juliangarnier/anime",
                             "description": "JavaScript Animation Engine"
-                        },{
+                        }, {
                             "title": "Overlay Spinning Bar",
                             "url": "https://gasparesganga.com/labs/jquery-loading-overlay/",
                             "description": "easy spinning bar",
@@ -442,6 +452,20 @@
                             "title": "D3.js",
                             "url": "https://github.com/d3/d3",
                             "description": "D3 (or D3.js) is a JavaScript library for visualizing data using web standards. D3 helps you bring data to life using SVG, Canvas and HTML."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Media Content Processor",
+                    "LevelTwoChilds": [{
+                            "title": "Video.js",
+                            "url": "https://github.com/videojs/video.js/",
+                            "description": "open source HTML5 & Flash video player."
+                        },
+                        {
+                            "title": "jsMPEG",
+                            "url": "https://github.com/phoboslab/jsmpeg",
+                            "description": "MPEG1 Video Decoder in JavaScript."
                         }
                     ]
                 }
@@ -574,6 +598,14 @@
                     ]
                 },
                 {
+                    "LevelTwoName": "Socket.io Framework",
+                    "LevelTwoChilds": [{
+                        "title": "Socket.io",
+                        "url": "https://github.com/socketio/socket.io",
+                        "description": "Socket.IO enables real-time bidirectional event-based communication."
+                    }]
+                },
+                {
                     "LevelTwoName": "NodeJS Utils",
                     "LevelTwoChilds": [{
                             "title": "Node HTTP Proxy",
@@ -604,6 +636,16 @@
                             "title": "AMQP lib & Client for Node.js",
                             "url": "https://github.com/squaremo/amqp.node",
                             "description": "A library for making AMQP 0-9-1 clients for Node.JS, and an AMQP 0-9-1 client for Node.JS v0.8-0.12, v4-v9, and the intervening io.js releases."
+                        },
+                        {
+                            "title": "Busboy",
+                            "url": "https://github.com/mscdex/busboy",
+                            "description": "A streaming parser for HTML form data for node.js."
+                        },
+                        {
+                            "title": "Multer",
+                            "url": "https://github.com/expressjs/multer",
+                            "description": "Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files."
                         }
                     ]
                 },
@@ -643,32 +685,31 @@
             ]
         },
         {
-            "LevelOneName": "React.js",
+            "LevelOneName": "React",
             "LevelOneChilds": [{
                     "LevelTwoName": "Documentation",
                     "LevelTwoChilds": [{
-                        "title": "",
-                        "url": "https://reactjs.org/docs/",
-                        "description": "React.js Official Site"
-                    }]
+                            "title": "React Official Site",
+                            "url": "https://reactjs.org/docs/",
+                            "description": "React.js Official Site"
+                        }
+                    ]
                 },
                 {
                     "LevelTwoName": "Best Practice",
                     "LevelTwoChilds": [{
-                            "title": "Ruanyf React Demos",
-                            "url": "https://github.com/ruanyf/react-demos",
-                            "description": "React Demos"
-                        }
-                    ]
+                        "title": "Ruanyf React Demos",
+                        "url": "https://github.com/ruanyf/react-demos",
+                        "description": "React Demos"
+                    }]
                 },
                 {
                     "LevelTwoName": "Implementation",
                     "LevelTwoChilds": [{
-                            "title": "React Material Design",
-                            "url": "http://www.material-ui.com/",
-                            "description": "React components that implement Google's Material Design."
-                        }
-                    ]
+                        "title": "React Material Design",
+                        "url": "http://www.material-ui.com/",
+                        "description": "React components that implement Google's Material Design."
+                    }]
                 }
             ]
         }
