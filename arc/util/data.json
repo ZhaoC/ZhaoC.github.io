@@ -187,6 +187,11 @@
                             "title": "Signing commits with GPG",
                             "url": "https://help.github.com/articles/signing-commits-with-gpg/",
                             "description": "Use GPG keys to sign your work locally and verify work from trusted collaborators."
+                        },
+                        {
+                            "title": "Git History Revision",
+                            "url": "https://www.jianshu.com/p/8f46e13a8ada",
+                            "description": "how to rewrite git history record."
                         }
                     ]
                 }

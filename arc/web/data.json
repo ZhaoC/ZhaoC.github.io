@@ -5,6 +5,11 @@
             "LevelOneChilds": [{
                     "LevelTwoName": "Web Conventions",
                     "LevelTwoChilds": [{
+                            "title": "ECMA Script",
+                            "url": "https://www.ecma-international.org/publications/standards/Ecma-262.htm",
+                            "alias": "ecma-international-standards",
+                            "description": "ECMA Standards"
+                        },{
                             "title": "HTML5",
                             "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
                             "description": "HTML5 is the latest evolution of the standard that defines HTML.",
@@ -646,6 +651,21 @@
                             "title": "Multer",
                             "url": "https://github.com/expressjs/multer",
                             "description": "Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files."
+                        },
+                        {
+                            "title": "Uppy",
+                            "url": "https://github.com/transloadit/uppy",
+                            "description": "file uploader for web browsers."
+                        },
+                        {
+                            "title": "Fake Data Generator",
+                            "url": "https://github.com/Marak/faker.js",
+                            "description": "generate massive amounts of fake data in Node.js and the browser."
+                        },
+                        {
+                            "title": "Sharp Image Resizer",
+                            "url": "https://github.com/lovell/sharp",
+                            "description": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP and TIFF images. Uses the libvips library."
                         }
                     ]
                 },
@@ -660,6 +680,42 @@
                             "title": "Grunt Task Runner",
                             "url": "https://github.com/gruntjs/grunt",
                             "description": "A JavaScript Task Runner."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Data Store",
+                    "LevelTwoChilds": [{
+                            "title": "Lowdb (Small Local Json DB)",
+                            "url": "https://github.com/typicode/lowdb",
+                            "description": "lowdb is a small local JSON database powered by Lodash (supports Node, Electron and the browser)"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Module Management",
+                    "LevelTwoChilds": [{
+                            "title": "Node Prune",
+                            "url": "https://github.com/tj/node-prune",
+                            "description": "Remove unnecessary files from node_modules."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS IoT",
+                    "LevelTwoChilds": [{
+                            "title": "Home Automation",
+                            "url": "https://github.com/deepsyx/home-automation",
+                            "description": "Raspberry Pi 3 based home automation with NodeJS and React Native."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Gimmick",
+                    "LevelTwoChilds": [{
+                            "title": "Node Notifier",
+                            "url": "https://github.com/mikaelbr/node-notifier",
+                            "description": "A Node.js module for sending notifications on native Mac, Windows and Linux."
                         }
                     ]
                 },
@@ -709,6 +765,11 @@
                         "title": "React Material Design",
                         "url": "http://www.material-ui.com/",
                         "description": "React components that implement Google's Material Design."
+                    },
+                    {
+                        "title": "Storybook",
+                        "url": "https://github.com/storybooks/storybook",
+                        "description": "Storybook is a development environment for UI components."
                     }]
                 }
             ]
