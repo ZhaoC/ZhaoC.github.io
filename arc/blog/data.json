@@ -57,6 +57,11 @@
             "LevelOneChilds": [{
                     "LevelTwoName": "Mediums",
                     "LevelTwoChilds": [{
+                            "title": "Eric Elliott",
+                            "url": "https://medium.com/@_ericelliott",
+                            "description": "..."
+                        },
+                        {
                             "title": "Dan Abramov",
                             "url": "https://medium.com/@dan_abramov",
                             "description": "Working on @reactjs. Co-author of Redux and Create React App."
@@ -115,6 +120,23 @@
                     "title": "Robust Client-Side JavaScript",
                     "url": "https://molily.de/robust-javascript/",
                     "description": "..."
+                },
+                {
+                    "title": "Inheritance in JavaScript",
+                    "url": "https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a",
+                    "alias": "common-misconceptions-about-inheritance-in-javascript",
+                    "description": "Common Misconceptions About Inheritance in JavaScript."
+                },
+                {
+                    "title": "Functional Programming",
+                    "description": "The Two Pillars of JavaScript — Pt 2: Functional Programming",
+                    "url": "https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4",
+                    "alias": "js-functional-programming"                    
+                },
+                {
+                    "title": "Functional Light JS (Online Book)",
+                    "url": "https://github.com/getify/Functional-Light-JS",
+                    "description": "Pragmatic, balanced FP in JavaScript."
                 }]
             }]
         },

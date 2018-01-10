@@ -192,6 +192,12 @@
                             "title": "Git History Revision",
                             "url": "https://www.jianshu.com/p/8f46e13a8ada",
                             "description": "how to rewrite git history record."
+                        },
+                        {
+                            "title": "12 Github Hidden Features",
+                            "url": "https://hackernoon.com/12-cool-things-you-can-do-with-github-f3e0424cf2f0",
+                            "description": "...",
+                            "alias": "12-cool-things-you-can-do-with-github"
                         }
                     ]
                 }
