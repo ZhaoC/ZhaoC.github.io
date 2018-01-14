@@ -128,15 +128,14 @@
                     "description": "Common Misconceptions About Inheritance in JavaScript."
                 },
                 {
-                    "title": "Functional Programming",
-                    "description": "The Two Pillars of JavaScript — Pt 2: Functional Programming",
-                    "url": "https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4",
-                    "alias": "js-functional-programming"                    
-                },
-                {
                     "title": "Functional Light JS (Online Book)",
                     "url": "https://github.com/getify/Functional-Light-JS",
                     "description": "Pragmatic, balanced FP in JavaScript."
+                },
+                {
+                    "title": "Programming JavaScript Applications (Online Book)",
+                    "url": "oreilly-programming-JavaScript",
+                    "description": "Eric Elliott Online Book..."
                 }]
             }]
         },
