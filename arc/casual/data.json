@@ -29,7 +29,7 @@
                 }
             ]
         },
-        {
+        { 
             "LevelOneName": "Skill Incubator",
             "LevelOneChilds": [{
                 "LevelTwoName": "Tensor Flow",
@@ -38,6 +38,14 @@
                     "url": "https://web.stanford.edu/class/cs20si/syllabus.html",
                     "alias": "standford-tensor-flow-class-note",
                     "description": "Tensorflow for Deep Learning Research"
+                }]
+            },
+            {
+                "LevelTwoName": "OpenCV",
+                "LevelTwoChilds": [{
+                    "title": "OpenCV + Node.js",
+                    "url": "https://github.com/justadudewhohacks/opencv4nodejs",
+                    "description": "Asynchronous OpenCV 3.x API for node.js"
                 }]
             }]
         },

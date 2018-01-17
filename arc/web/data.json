@@ -71,6 +71,11 @@
                             "title": "Everything HTTP (bagder Gitbook)",
                             "url": "https://www.gitbook.com/@bagder",
                             "description": "Books: 'Http2 Explained' & 'Everything curl' "
+                        },
+                        {
+                            "title": "Content Security Policy",
+                            "url": "https://www.w3.org/TR/CSP2/",
+                            "description": "This document defines a policy language used to declare a set of content restrictions for a web resource, and a mechanism for transmitting the policy from a server to a client where the policy is enforced."
                         }
                     ]
                 },
@@ -340,6 +345,11 @@
                             "title": "Sweet Alert",
                             "url": "https://github.com/t4t5/sweetalert",
                             "description": "A beautiful replacement for JavaScript's 'alert' "
+                        },
+                        {
+                            "title": "ECharts (Charting)",
+                            "url": "https://github.com/ecomfe/echarts",
+                            "description": "A powerful, interactive charting and visualization library for browser."
                         }
                     ]
                 },
@@ -666,6 +676,11 @@
                             "title": "Sharp Image Resizer",
                             "url": "https://github.com/lovell/sharp",
                             "description": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP and TIFF images. Uses the libvips library."
+                        },
+                        {
+                            "title": "Lodash/FP (Functional Programming)",
+                            "url": "https://lodash.com/",
+                            "description": "FP friendly style by exporting an instance of lodash with its methods wrapped to produce immutable auto-curried iteratee-first data-last methods."
                         }
                     ]
                 },
