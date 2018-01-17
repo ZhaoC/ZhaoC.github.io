@@ -293,6 +293,12 @@
                             "description": "The dynamic stylesheet language."
                         },
                         {
+                            "title": "Less vs. CSS",
+                            "url": "https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus",
+                            "alias": "an-introduction-to-css-preprocessors-sass-less",
+                            "description": "Less, CSS and SASS comparision."
+                        },
+                        {
                             "title": "Yahoo Pure.css",
                             "url": "https://purecss.io/tables/",
                             "description": "A set of small, responsive CSS modules that you can use in every web project."

@@ -55,6 +55,12 @@
                             "title": "Tomcat Optimization",
                             "url": "https://www.mulesoft.com/tcat/tomcat-performance",
                             "description": "Tuning Tomcat Performance For Optimum Speed"
+                        },
+                        {
+                            "title": "Tomcat Remote Debug On Eclipse",
+                            "url": "https://stackoverflow.com/questions/3835612/remote-debugging-tomcat-with-eclipse",
+                            "alias": "remote-debugging-tomcat-with-eclipse",
+                            "description": "..."
                         }
                     ]
                 },

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/</loc>
+    
+    <lastmod>2018-01-17T22:51:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zhaoc.github.io/2017/11/25/Efficient-JavaScript/</loc>
     
     <lastmod>2018-01-03T22:55:52.000Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/</loc>
     
     <lastmod>2017-10-16T00:39:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/</loc>
-    
-    <lastmod>2017-10-15T16:18:31.000Z</lastmod>
     
   </url>
   
