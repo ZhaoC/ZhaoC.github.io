@@ -21,11 +21,6 @@
                     "description": "Asynchronous Programming at Netflix."
                 },
                 {
-                    "title": "Asynchronous Programming Demo *",
-                    "url": "https://www.youtube.com/watch?v=gawmdhCNy-A",
-                    "description": "Asynchronous Programming at Netflix."
-                },
-                {
                     "title": "FP Concept Training",
                     "url": "http://reactivex.io/learnrx/",
                     "description": "FP Playground"
