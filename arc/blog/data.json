@@ -134,8 +134,14 @@
                 },
                 {
                     "title": "Programming JavaScript Applications (Online Book)",
-                    "url": "oreilly-programming-JavaScript",
+                    "url": "http://chimera.labs.oreilly.com/books/1234000000262/index.html",
+                    "alias": "oreilly-programming-JavaScript",
                     "description": "Eric Elliott Online Book..."
+                },
+                {
+                    "title": "ECMAScript 6 (Online Book)",
+                    "url": "http://es6.ruanyifeng.com/",
+                    "description": "ES6 Tutorial Online Book..."
                 }]
             }]
         },
