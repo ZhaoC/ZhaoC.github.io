@@ -82,6 +82,12 @@
                             "url": "https://developers.google.com/web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content",
                             "alias": "setup-css-preprocessors",
                             "description": "..."
+                        },
+                        {
+                            "title": "JS Proxy",
+                            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+                            "alias": "js-global_object-proxy",
+                            "description": "..."
                         }
                     ]
                 },
@@ -275,7 +281,7 @@
                             "alias": "javascript-factory-functions-with-es6"
                         }
                     ]
-                }
+                } 
             ]
         },
         {
@@ -798,6 +804,14 @@
                         "url": "https://github.com/storybooks/storybook",
                         "description": "Storybook is a development environment for UI components."
                     }]
+                },
+                {
+                    "LevelTwoName": "Server Rendered",
+                    "LevelTwoChilds": [{
+                        "title": "Next.js",
+                        "url": "https://github.com/zeit/next.js",
+                        "description": "Next.js is a minimalistic framework for server-rendered React applications."
+                    }]
                 }
             ]
         },
@@ -818,6 +832,11 @@
                             "title": "TS Live Guide",
                             "url": "https://channel9.msdn.com/Events/Build/2017/B8088/",
                             "description": "New feature in TS 2017."
+                        },
+                        {
+                            "title": "TS Official Site",
+                            "url": "https://www.typescriptlang.org/",
+                            "description": "Details for TS."
                         }
                     ]
                 },

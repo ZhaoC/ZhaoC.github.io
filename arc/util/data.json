@@ -37,7 +37,7 @@
                     {
                         "title": "Built with Thrends",
                         "url": "https://trends.builtwith.com/",
-                        "description": "Web Tecjnology Usage Thrends."
+                        "description": "Web Technology Usage Thrends."
                     }
                 ]
             }]
@@ -248,6 +248,14 @@
         {
             "LevelOneName": "Admin Tools",
             "LevelOneChilds": [{
+                    "LevelTwoName": "Regular Expression",
+                    "LevelTwoChilds": [{
+                        "title": "RegExp Online Tools",
+                        "url": "https://regex101.com/",
+                        "description": "..."
+                    }]
+                },
+                {
                     "LevelTwoName": "Bash",
                     "LevelTwoChilds": [{
                         "title": "Bash Tips",
