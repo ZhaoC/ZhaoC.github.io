@@ -3,6 +3,15 @@
     "data": [{
         "LevelOneName": "Programming",
         "LevelOneChilds": [{
+            "LevelTwoName": "Project Design",
+            "LevelTwoChilds": [{
+                    "title": "Best Practices for JavaScript projects",
+                    "url": "https://github.com/wearehive/project-guidelines",
+                    "description": "A set of best practices for JavaScript projects."
+                }
+            ]
+        },
+        {
             "LevelTwoName": "Functional Programming",
             "LevelTwoChilds": [{
                     "title": "Observable Streams",
