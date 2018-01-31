@@ -18,7 +18,7 @@
     <meta name="description" content="“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - Gian-Carlo Rota
 
 
-.  .fetch() is a global method provided by Fetch API which can be u">
+fetch() is a global method provided by Fetch API which can be used">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="Usage of fetch()">
 <meta property="og:url" content="https://zhaoc.github.io/2017/11/05/Usage-of-fetch/index.html">
@@ -26,15 +26,15 @@
 <meta property="og:description" content="“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - Gian-Carlo Rota
 
 
-.  .fetch() is a global method provided by Fetch API which can be u">
+fetch() is a global method provided by Fetch API which can be used">
 <meta property="og:image" content="https://zhaoc.github.io/assets/images/post_images/ship.png">
-<meta property="og:updated_time" content="2017-11-06T02:01:16.000Z">
+<meta property="og:updated_time" content="2018-01-31T23:12:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Usage of fetch()">
 <meta name="twitter:description" content="“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - Gian-Carlo Rota
 
 
-.  .fetch() is a global method provided by Fetch API which can be u">
+fetch() is a global method provided by Fetch API which can be used">
 <meta name="twitter:image" content="https://zhaoc.github.io/assets/images/post_images/ship.png">
     
     
@@ -265,7 +265,7 @@
 <p>“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - <a href="http://www.math.tamu.edu/~cyan/Rota/mitless.html" target="_blank" rel="external">Gian-Carlo Rota</a></p>
 </blockquote>
 <div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/post_images/ship.png" title="" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/ship.png" alt="" oncontextmenu="return false;"></a></div><div style="clear:both;"></div>
-<h2 id=""><a href="#" class="headerlink" title=".  ."></a>.  .</h2><p>fetch() is a global method provided by Fetch API which can be used to <code>GET</code> or <code>POST</code> data asynchronously through the network. </p>
+<p>fetch() is a global method provided by Fetch API which can be used to <code>GET</code> or <code>POST</code> data asynchronously through the network. </p>
 <h2 id="GET"><a href="#GET" class="headerlink" title="GET"></a><code>GET</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">fetch(<span class="string">"url"</span>, &#123;</div><div class="line">    <span class="attr">method</span>: <span class="string">"GET"</span>,</div><div class="line">    <span class="attr">mode</span>: <span class="string">'cors'</span></div><div class="line">    &#125;</div><div class="line">    <span class="comment">// default method is 'GET' if not provided</span></div><div class="line">    <span class="comment">// add "mode: 'cors'" to send cross orign request</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">response</span> =&gt;</span> response.json()</div><div class="line">    <span class="comment">// methed json() will convert the ReadableStream to json data format</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">data</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'Json data retrieved:'</span>, data)</div><div class="line">    <span class="comment">// data is ready for use</span></div><div class="line">);</div><div class="line"></div><div class="line"><span class="comment">// you can also use methods below to extract a body </span></div><div class="line"><span class="comment">// arrayBuffer(), blob(), text(), formData()</span></div></pre></td></tr></table></figure>
 <h2 id="POST"><a href="#POST" class="headerlink" title="POST"></a><code>POST</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> dataToServer = &#123;....&#125;;</div><div class="line"></div><div class="line">fetch(<span class="string">"url"</span>, &#123;</div><div class="line">    <span class="attr">method</span>: <span class="string">"POST"</span>,</div><div class="line">    <span class="attr">headers</span>: &#123;</div><div class="line">        <span class="attr">Accept</span>: <span class="string">"application/json"</span>,</div><div class="line">        <span class="string">"Content-Type"</span>: <span class="string">"application/json"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">body</span>: <span class="built_in">JSON</span>.stringify(dataToServer)</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// set headers as needed</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">response</span> =&gt;</span> response.text()</div><div class="line">    <span class="comment">// response from server</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">result</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'Result content:'</span>, result)</div><div class="line">).catch(</div><div class="line">    <span class="function"><span class="params">err</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'error meesage'</span>, err.messge)</div><div class="line">);</div></pre></td></tr></table></figure>
 <h4 id="Difference-between-fetch-and-jQuery-ajax"><a href="#Difference-between-fetch-and-jQuery-ajax" class="headerlink" title="Difference between fetch() and jQuery.ajax()"></a>Difference between fetch() and jQuery.ajax()</h4><p>From <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="external">Fetch API</a>:</p>
