@@ -226,6 +226,60 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
+                        <a class="link-unstyled" href="/2018/01/30/JavaScript-Regular-Expression/">
+                            JavaScript Regular Expression
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2018-01-30T21:44:13-05:00">
+	
+		    Jan 30, 2018
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <blockquote>
+<p>Regular Expression (Regex) is a search pattern, which can be used to find certain text in strings. </p>
+</blockquote>
+<h2 id=""><a href="#" class="headerlink" title=".."></a>..</h2><p><code>Case 1</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringA = <span class="string">"This is a test string"</span>;</div><div class="line"></div><div class="line"><span class="comment">/* 'g' means global which means to return all matched text in the string */</span></div><div class="line"><span class="comment">/* 'i' means to ignore the case */</span></div><div class="line"><span class="comment">/* check if string contains 'test' */</span></div><div class="line"><span class="keyword">var</span> regexPatternA = <span class="regexp">/test/gi</span>;</div><div class="line"></div><div class="line"><span class="comment">// output: 1</span></div><div class="line"><span class="keyword">var</span> textCountA = testStringA.match(regexPatternA).length;</div></pre></td></tr></table></figure></p>
+<p><code>Case 2</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringB = <span class="string">"This is a test string..."</span>;    </div><div class="line"></div><div class="line"><span class="comment">/* '\' is used to ignore special character */</span></div><div class="line"><span class="comment">/* check if string contains '.' */</span></div><div class="line"><span class="keyword">var</span> regexPatternB = <span class="regexp">/\./gi</span>;</div><div class="line"></div><div class="line"><span class="comment">// output: 3</span></div><div class="line"><span class="keyword">var</span> textCountB = testStringB.match(regexPatternB).length;</div></pre></td></tr></table></figure></p>
+<p><code>Case 3</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringC = <span class="string">"This is a test string with number 12345 ..."</span>;  </div><div class="line"></div><div class="line"><span class="comment">/* '\d+', '\d' means to match digits, '+' means to match one or more digits */</span></div><div class="line"><span class="comment">/* check if string contains '.' */</span></div><div class="line"><span class="keyword">var</span> regexPatternC1 = <span class="regexp">/\d+/gi</span>;</div><div class="line"><span class="keyword">var</span> regexPatternC2 = <span class="regexp">/\d/gi</span>; <span class="comment">// var regexPatternC2 = /[1-9]/gi;</span></div><div class="line"></div><div class="line"><span class="comment">//  output: 1 | ['12345']</span></div><div class="line"><span class="keyword">var</span> textCountC1 = testStringC.match(regexPatternC1).length;</div><div class="line"></div><div class="line"><span class="comment">// output: 5 | ['1', '2', '3', '4', '5']</span></div><div class="line"><span class="keyword">var</span> textCountC2 = testStringC.match(regexPatternC2).length;</div></pre></td></tr></table></figure></p>
+<h4 id="Resource"><a href="#Resource" class="headerlink" title="Resource"></a>Resource</h4><p><a href="https://www.debuggex.com/cheatsheet/regex/javascript" target="_blank" rel="external">Regex Cheatsheet</a></p>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2018/01/30/JavaScript-Regular-Expression/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
                         <a class="link-unstyled" href="/2017/11/25/Efficient-JavaScript/">
                             Efficient JavaScript
                         </a>
@@ -855,6 +909,25 @@
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2018/01/30/JavaScript-Regular-Expression/">
+                            <h3 class="media-heading">JavaScript Regular Expression</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Jan 30, 2018
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
@@ -862,7 +935,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                7 posts found
+                8 posts found
             </p>
         </div>
     </div>

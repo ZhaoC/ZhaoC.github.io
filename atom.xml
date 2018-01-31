@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhaoc.github.io/"/>
-  <updated>2018-01-03T22:55:52.000Z</updated>
+  <updated>2018-01-31T03:52:17.000Z</updated>
   <id>https://zhaoc.github.io/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript Regular Expression</title>
+    <link href="https://zhaoc.github.io/2018/01/30/JavaScript-Regular-Expression/"/>
+    <id>https://zhaoc.github.io/2018/01/30/JavaScript-Regular-Expression/</id>
+    <published>2018-01-31T02:44:13.000Z</published>
+    <updated>2018-01-31T03:52:17.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>Regular Expression (Regex) is a search pattern, which can be used to find certain text in strings. </p>
+</blockquote>
+<h2 id=""><a href="#" class="headerlink" title=".."></a>..</h2><p><code>Case 1</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringA = <span class="string">"This is a test string"</span>;</div><div class="line"></div><div class="line"><span class="comment">/* 'g' means global which means to return all matched text in the string */</span></div><div class="line"><span class="comment">/* 'i' means to ignore the case */</span></div><div class="line"><span class="comment">/* check if string contains 'test' */</span></div><div class="line"><span class="keyword">var</span> regexPatternA = <span class="regexp">/test/gi</span>;</div><div class="line"></div><div class="line"><span class="comment">// output: 1</span></div><div class="line"><span class="keyword">var</span> textCountA = testStringA.match(regexPatternA).length;</div></pre></td></tr></table></figure></p>
+<p><code>Case 2</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringB = <span class="string">"This is a test string..."</span>;    </div><div class="line"></div><div class="line"><span class="comment">/* '\' is used to ignore special character */</span></div><div class="line"><span class="comment">/* check if string contains '.' */</span></div><div class="line"><span class="keyword">var</span> regexPatternB = <span class="regexp">/\./gi</span>;</div><div class="line"></div><div class="line"><span class="comment">// output: 3</span></div><div class="line"><span class="keyword">var</span> textCountB = testStringB.match(regexPatternB).length;</div></pre></td></tr></table></figure></p>
+<p><code>Case 3</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringC = <span class="string">"This is a test string with number 12345 ..."</span>;  </div><div class="line"></div><div class="line"><span class="comment">/* '\d+', '\d' means to match digits, '+' means to match one or more digits */</span></div><div class="line"><span class="comment">/* check if string contains '.' */</span></div><div class="line"><span class="keyword">var</span> regexPatternC1 = <span class="regexp">/\d+/gi</span>;</div><div class="line"><span class="keyword">var</span> regexPatternC2 = <span class="regexp">/\d/gi</span>; <span class="comment">// var regexPatternC2 = /[1-9]/gi;</span></div><div class="line"></div><div class="line"><span class="comment">//  output: 1 | ['12345']</span></div><div class="line"><span class="keyword">var</span> textCountC1 = testStringC.match(regexPatternC1).length;</div><div class="line"></div><div class="line"><span class="comment">// output: 5 | ['1', '2', '3', '4', '5']</span></div><div class="line"><span class="keyword">var</span> textCountC2 = testStringC.match(regexPatternC2).length;</div></pre></td></tr></table></figure></p>
+<h4 id="Resource"><a href="#Resource" class="headerlink" title="Resource"></a>Resource</h4><p><a href="https://www.debuggex.com/cheatsheet/regex/javascript" target="_blank" rel="external">Regex Cheatsheet</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Regular Expression (Regex) is a search pattern, which can be used to find certain text in strings. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript/Util" scheme="https://zhaoc.github.io/tags/JavaScript-Util/"/>
+    
+  </entry>
   
   <entry>
     <title>Efficient JavaScript</title>
