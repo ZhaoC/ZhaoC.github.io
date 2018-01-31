@@ -23,6 +23,57 @@
                         "title": "Google I/O 2017 CodeLabs",
                         "url": "https://codelabs.developers.google.com/io2017?cat=Web",
                         "description": "..."
+                    },
+                    {
+                        "title": "Google Codejam",
+                        "url": "https://code.google.com/codejam/",
+                        "description":"..."
+                    },
+                    {
+                        "title": "Coder Byte",
+                        "url": "https://coderbyte.com/challenges",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Hacker Rank",
+                        "url": "https://www.hackerrank.com/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Leetcode",
+                        "url": "https://leetcode.com/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Atcoder",
+                        "url": "http://atcoder.jp/",
+                        "description":"..."
+                    },
+                    {
+                        "title": "Codin Game",
+                        "url": "https://www.codingame.com/start",
+                        "description": "..."
+                    },
+                    {
+                        "title": "ACM Problem Set",
+                        "url": "http://acm.timus.ru/problemset.aspx",
+                        "description":"..."
+                    },
+                    {
+                        "title": "Code Wars",
+                        "url": "http://www.spoj.com/problems/classical/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Codeeval",
+                        "url": "https://www.codeeval.com/how_it_works/#anchor-for-hacker-deals",
+                        "description":"...",
+                        "alias": "www.codeeval.com"
+                    },
+                    {
+                        "title": "Code Chef",
+                        "url": "https://www.codechef.com/problems/hard",
+                        "description": "..."
                     }]
                 },
                 {
