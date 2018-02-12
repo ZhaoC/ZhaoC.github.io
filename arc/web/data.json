@@ -749,6 +749,11 @@
                             "title": "Node Notifier",
                             "url": "https://github.com/mikaelbr/node-notifier",
                             "description": "A Node.js module for sending notifications on native Mac, Windows and Linux."
+                        },
+                        {
+                            "title": "Node Benchmark",
+                            "url": "https://github.com/nearform/node-clinic",
+                            "description": "A Node.js benchmark toolkit."
                         }
                     ]
                 },

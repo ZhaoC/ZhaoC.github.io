@@ -41,6 +41,16 @@
                     "description": "..."
                 }
             ]
+        },
+        {
+            "LevelTwoName": "Code Testing Design",
+            "LevelTwoChilds": [{
+                    "title": "Best Practices for JavaScript Testing",
+                    "url": "https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3",
+                    "alias": "an-overview-of-javascript-testing-in-2018",
+                    "description": "..."
+                }
+            ]
         }]
     },
     {
