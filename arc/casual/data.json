@@ -66,8 +66,13 @@
                 "LevelTwoName": "Audio",
                 "LevelTwoChilds": [{
                     "title": "Looplabs",
-                    "url": "https://looplabs.com/explore",
+                    "url": "https://looplabs.com/beta",
                     "description": "Audio Studio."
+                },
+                {
+                    "title": "Brian Culbertson ~ Waiting for You",
+                    "url": "https://www.youtube.com/watch?v=vSPHy_yCPCY",
+                    "description": "..."
                 }]
             }]   
         },

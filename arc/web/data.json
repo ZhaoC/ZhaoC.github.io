@@ -78,6 +78,11 @@
                             "description": "This document defines a policy language used to declare a set of content restrictions for a web resource, and a mechanism for transmitting the policy from a server to a client where the policy is enforced."
                         },
                         {
+                            "title": "Web Content Accessibility Guidelines (WCAG) Overview",
+                            "url": "https://www.w3.org/WAI/intro/wcag",
+                            "description": "..."
+                        },
+                        {
                             "title": "JS/CSS Preprocessors",
                             "url": "https://developers.google.com/web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content",
                             "alias": "setup-css-preprocessors",
