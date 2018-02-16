@@ -44,6 +44,7 @@ function loadData(url){
     
                         var coreA = document.createElement("a");
                         coreA.style = "text-decoration:none;";
+                        coreA.target = "_blank";
     
                         // when url string is too long, use alias instead
                         if(typeof levelTwoChildItem.alias !== "undefined"){
