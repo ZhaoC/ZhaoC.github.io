@@ -34,5 +34,25 @@
                 ]
             }
         ]
+    },
+    {
+        "LevelOneName": "J2EE",
+        "LevelOneChilds": [{
+                "LevelTwoName": "JDBC",
+                "LevelTwoChilds": [{
+                    "title": "JDBC Sample",
+                    "url": "https://www.mkyong.com/jdbc/jdbc-transaction-example/",
+                    "description": "..."
+                }]
+            },
+            {
+                "LevelTwoName": "Session",
+                "LevelTwoChilds": [{
+                    "title": "Session Documentation",
+                    "url": "https://www.journaldev.com/1907/java-session-management-servlet-httpsession-url-rewriting",
+                    "alias": "java-session-management",
+                    "description": "..."
+                }]
+            }]
     }]
 }
