@@ -80,6 +80,11 @@
                 }, {
                     "LevelTwoName": "Blogger",
                     "LevelTwoChilds": [{
+                            "title": "Matt Zeunert",
+                            "url": "http://www.mattzeunert.com/writing.html",
+                            "description": "..."
+                        },
+                        {
                             "title": "A Tornado of Razorblades - Archive",
                             "url": "http://adam.herokuapp.com/past/",
                             "description": "Blog of ADAM WIGGINS"
@@ -93,6 +98,11 @@
                             "title": "TJ Holowaychuk (Home Site)",
                             "url": "http://tjholowaychuk.com/",
                             "description": "Photography.."
+                        },
+                        {
+                            "title": "Team Tree House Camp",
+                            "url": "http://blog.teamtreehouse.com/category/learn",
+                            "description": "..."
                         }
                     ]
                 },

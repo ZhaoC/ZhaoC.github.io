@@ -26,6 +26,12 @@
                             "description": "an explanation of tags used in HTML docs"
                         },
                         {
+                            "title": "CSS Media Queries",
+                            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries",
+                            "alias": "Using-media-queries",
+                            "description": "..."
+                        },
+                        {
                             "title": "Front End Checklist",
                             "url": "https://github.com/thedaviddias/Front-End-Checklist",
                             "description": "The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production."
