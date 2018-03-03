@@ -3,7 +3,7 @@
     "data": [{
             "LevelOneName": "Zen of Web",
             "LevelOneChilds": [{
-                    "LevelTwoName": "Code Ninja",
+                    "LevelTwoName": "Code Ninja - JS/CSS",
                     "LevelTwoChilds": [{
                         "title": "w3school",
                         "url": "https://www.w3schools.com/",
@@ -15,18 +15,8 @@
                         "description": "..."
                     },
                     {
-                        "title": "Java Programming Test",
-                        "url": "https://www.indiabix.com/online-test/java-programming-test/",
-                        "description": "..."
-                    },
-                    {
                         "title": "Test Dome - JS",
                         "url": "https://www.testdome.com/d/javascript-interview-questions/2",
-                        "description": "..."
-                    },
-                    {
-                        "title": "Google I/O 2017 CodeLabs",
-                        "url": "https://codelabs.developers.google.com/io2017?cat=Web",
                         "description": "..."
                     },
                     {
@@ -34,6 +24,34 @@
                         "url": "https://code.google.com/codejam/",
                         "description":"..."
                     },
+                    {
+                        "title": "Google I/O 2017 CodeLabs",
+                        "url": "https://codelabs.developers.google.com/io2017?cat=Web",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Code Ninja - Java",
+                    "LevelTwoChilds": [
+                    {
+                        "title": "Java Programming Test",
+                        "url": "https://www.indiabix.com/online-test/java-programming-test/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Test Dome - Java",
+                        "url": "https://www.testdome.com/d/java-interview-questions/4",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Java Challenge",
+                        "url": "https://javachallenge.devpost.com/",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Code Ninja - Mixed",
+                    "LevelTwoChilds": [                    
                     {
                         "title": "Coder Byte",
                         "url": "https://coderbyte.com/challenges",
