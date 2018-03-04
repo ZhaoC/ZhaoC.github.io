@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Zhao Cai | Blog">
-    <title>Archives: 2018 - Zhao Cai | Blog</title>
+    <title>Archives: 2017 - Zhao Cai | Blog</title>
     <meta name="author" content="Zhao Cai">
     
     
@@ -17,7 +17,7 @@
     
     <meta property="og:type" content="blog">
 <meta property="og:title" content="Zhao Cai | Blog">
-<meta property="og:url" content="https://zhaoc.github.io/archives/2018/index.html">
+<meta property="og:url" content="https://zhaoc.github.io/archives/2017/page/2/index.html">
 <meta property="og:site_name" content="Zhao Cai | Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Zhao Cai | Blog">
@@ -227,45 +227,57 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/2018/01/30/JavaScript-Regular-Expression/">
-                            JavaScript Regular Expression
+                        <a class="link-unstyled" href="/2017/03/08/Gallery/">
+                            Photography
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2018-01-30T21:44:13-05:00">
+    <time itemprop="datePublished" datetime="2017-03-08T17:53:42-05:00">
 	
-		    Jan 30, 2018
+		    Mar 08, 2017
     	
     </time>
-    
-        <span>in </span>
-        
-    <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-
-
     
 </div>
 
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <blockquote>
-<p>Regular Expression (Regex) is a search pattern, which can be used to find or replace certain text in strings. </p>
-</blockquote>
-<h3 id="Test-Cases"><a href="#Test-Cases" class="headerlink" title="Test Cases"></a>Test Cases</h3><p><code>Case 1 | Find</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringA = <span class="string">"This is a test string"</span>;</div><div class="line"></div><div class="line"><span class="comment">/* 'g' means global which means to return all matched text in the string */</span></div><div class="line"><span class="comment">/* 'i' means to ignore the case */</span></div><div class="line"><span class="comment">/* check if string contains 'test' */</span></div><div class="line"><span class="keyword">var</span> regexPatternA = <span class="regexp">/test/gi</span>;</div><div class="line"></div><div class="line"><span class="comment">// output: 1</span></div><div class="line"><span class="keyword">var</span> textCountA = testStringA.match(regexPatternA).length;</div></pre></td></tr></table></figure></p>
-<p><code>Case 2 | Find</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringB = <span class="string">"This is a test string..."</span>;    </div><div class="line"></div><div class="line"><span class="comment">/* '\' is used to ignore special character */</span></div><div class="line"><span class="comment">/* check if string contains '.' */</span></div><div class="line"><span class="keyword">var</span> regexPatternB = <span class="regexp">/\./gi</span>;</div><div class="line"></div><div class="line"><span class="comment">// output: 3</span></div><div class="line"><span class="keyword">var</span> textCountB = testStringB.match(regexPatternB).length;</div></pre></td></tr></table></figure></p>
-<p><code>Case 3 | Find</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringC = <span class="string">"This is a test string with number 12345 ..."</span>;  </div><div class="line"></div><div class="line"><span class="comment">/* '\d+', '\d' means to match digits, '+' means to match one or more digits */</span></div><div class="line"><span class="comment">/* check if string contains '.' */</span></div><div class="line"><span class="keyword">var</span> regexPatternC1 = <span class="regexp">/\d+/gi</span>;</div><div class="line"><span class="keyword">var</span> regexPatternC2 = <span class="regexp">/\d/gi</span>; <span class="comment">// var regexPatternC2 = /[1-9]/gi;</span></div><div class="line"></div><div class="line"><span class="comment">//  output: 1 | ['12345']</span></div><div class="line"><span class="keyword">var</span> textCountC1 = testStringC.match(regexPatternC1).length;</div><div class="line"></div><div class="line"><span class="comment">// output: 5 | ['1', '2', '3', '4', '5']</span></div><div class="line"><span class="keyword">var</span> textCountC2 = testStringC.match(regexPatternC2).length;</div></pre></td></tr></table></figure></p>
-<p><code>Case 4 | Replace</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testString = <span class="string">"This is a test string for function xxx "</span>;  </div><div class="line"></div><div class="line"><span class="comment">/* match text 'xxx' */</span></div><div class="line"><span class="keyword">var</span> regexPattern = <span class="regexp">/xxx/gi</span>;</div><div class="line"></div><div class="line"><span class="keyword">var</span> newstring = testString.replace(regexPattern, <span class="string">'Replace'</span>);</div><div class="line"><span class="built_in">console</span>.log(newstring);  <span class="comment">// This is a test string for function Replace</span></div></pre></td></tr></table></figure></p>
-<p><code>Case 5 | Test</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// The Regex test() method will return true or false when match a certain string</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> regexNumTest = <span class="regexp">/\d/g</span>; <span class="comment">// test if string contains digits</span></div><div class="line"><span class="keyword">var</span> regexStartTest = <span class="regexp">/^[A-Z]/g</span>; <span class="comment">// test if string start with any word from A-Z </span></div><div class="line"><span class="keyword">var</span> regexEndTest = <span class="regexp">/[0-9]$/g</span>;   <span class="comment">// test if string end with any digits from 0-9</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> testString = <span class="string">"This is a test string for function test"</span>; </div><div class="line">regexNumTest.test(testString); <span class="comment">// false</span></div><div class="line">regexStartTest.test(testString); <span class="comment">// true</span></div><div class="line">regexEndTest.test(testString); <span class="comment">// false</span></div></pre></td></tr></table></figure></p>
-<h4 id="Resource"><a href="#Resource" class="headerlink" title="Resource"></a>Resource</h4><p><a href="https://www.debuggex.com/cheatsheet/regex/javascript" target="_blank" rel="external">Regex Cheatsheet</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test" target="_blank" rel="external">MDN - Regex Test</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace" target="_blank" rel="external">MDN - String.prototype.replace()</a></p>
-
+                    <div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-1.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-1.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-2.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail2.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-3.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail3.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-5.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail5.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-4.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail4.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-6.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail6.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-7.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail7.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-8.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail8.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-9.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-9.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-10.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail10.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-11.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail11.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-13.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail13.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-14.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-14.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-16.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-16.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-19.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-19.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-17.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-17.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-18.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-18.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-50" style="width:;"><a class="fancybox" href="/assets/images/raw/image-20.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-20.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-50" style="width:;"><a class="fancybox" href="/assets/images/raw/image-21.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-21.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-22.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-22.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure left" style="width:;"><a class="fancybox" href="/assets/images/raw/image-23.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail23.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure right" style="width:;"><a class="fancybox" href="/assets/images/raw/image-24.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail24.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-25.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-25.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-12.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-12.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-15.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-15.jpg" alt="" oncontextmenu="return false;"></a></div>
+<!--<div class="figure left" style="width:;"><a class="fancybox" href="/assets/images/raw/image-27.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail27.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure right" style="width:;"><a class="fancybox" href="/assets/images/raw/image-26.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail26.jpg" alt="" oncontextmenu="return false;"></a></div>–&gt;
+-->
                     
                         
                     
                     
                         <p>
-                            <a href="/2018/01/30/JavaScript-Regular-Expression/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="/2017/03/08/Gallery/#post-footer" class="postShorten-excerpt_link link">
                                 Comment and share
                             </a>
                         </p>
@@ -279,8 +291,17 @@
     <div class="pagination-bar">
     <ul class="pagination">
         
+        <li class="pagination-prev">
+            
+                <a class="btn btn--default btn--small" href="/ ">
+            
+                <i class="fa fa-angle-left text-base icon-mr"></i>
+                    <span>NEWER POSTS</span>
+            </a>
+        </li>
         
-        <li class="pagination-number">page 1 of 1</li>
+        
+        <li class="pagination-number">page 2 of 2</li>
     </ul>
 </div>
 
