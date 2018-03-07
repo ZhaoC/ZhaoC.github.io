@@ -32,15 +32,6 @@
         { 
             "LevelOneName": "Skill Incubator",
             "LevelOneChilds": [{
-                "LevelTwoName": "Tensor Flow",
-                "LevelTwoChilds": [{
-                    "title": "Standford Tensor Flow Class Note",
-                    "url": "https://web.stanford.edu/class/cs20si/syllabus.html",
-                    "alias": "standford-tensor-flow-class-note",
-                    "description": "Tensorflow for Deep Learning Research"
-                }]
-            },
-            {
                 "LevelTwoName": "OpenCV",
                 "LevelTwoChilds": [{
                     "title": "OpenCV + Node.js",
@@ -61,7 +52,7 @@
             }]   
         },
         {
-            "LevelOneName": "Casual Media",
+            "LevelOneName": "Media",
             "LevelOneChilds": [{
                 "LevelTwoName": "Audio",
                 "LevelTwoChilds": [{
@@ -84,6 +75,37 @@
                     "title": "Wood Joints",
                     "url": "https://taguxdesign.com/sunmao.html",
                     "description": "榫卯"
+                }]
+            }]   
+        },
+        { 
+            "LevelOneName": "AI",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Tensor Flow",
+                "LevelTwoChilds": [{
+                    "title": "Standford Tensor Flow Class Note",
+                    "url": "https://web.stanford.edu/class/cs20si/syllabus.html",
+                    "alias": "standford-tensor-flow-class-note",
+                    "description": "Tensorflow for Deep Learning Research"
+                }]
+            },
+            {
+                "LevelTwoName": "Keras - The Python Deep Learning library",
+                "LevelTwoChilds": [{
+                    "title": "Keras Documentation",
+                    "url": "https://keras.io/",
+                    "description": "..."
+                }]
+            }]
+        },
+        {
+            "LevelOneName": "Future",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Quantum Computing",
+                "LevelTwoChilds": [{
+                    "title": "D-Wave",
+                    "url": "https://www.dwavesys.com/home",
+                    "description": "D-Wave Systems, Inc. is a quantum computing company, based in Burnaby, British Columbia, Canada."
                 }]
             }]   
         }
