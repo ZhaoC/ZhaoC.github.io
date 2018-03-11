@@ -72,6 +72,15 @@
                     "description": "Law of UX."
                 }
             ]
+        },
+        {
+            "LevelTwoName": "Mind Map",
+            "LevelTwoChilds": [{
+                    "title": "Online Coggle",
+                    "url": "https://coggle.it/",
+                    "description": "Online Mind Map Design."
+                }
+            ]
         }]
     }]
 }
