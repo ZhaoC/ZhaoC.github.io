@@ -43,6 +43,25 @@
             ]
         },
         {
+            "LevelTwoName": "Metaprogramming",
+            "LevelTwoChilds": [{
+                    "title": "JavaScript - Symbols",
+                    "url": "https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/",
+                    "description": "..."
+                },
+                {
+                    "title": "JavaScript - Reflect",
+                    "url": "https://www.keithcirkel.co.uk/metaprogramming-in-es6-part-2-reflect/",
+                    "description": "..."
+                },
+                {
+                    "title": "JavaScript - Proxies",
+                    "url": "https://www.keithcirkel.co.uk/metaprogramming-in-es6-part-3-proxies/",
+                    "description": "..."
+                }
+            ]
+        },
+        {
             "LevelTwoName": "Code Testing Design",
             "LevelTwoChilds": [{
                     "title": "Best Practices for JavaScript Testing",
