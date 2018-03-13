@@ -285,6 +285,11 @@
                         "title": "Screen Cast",
                         "url": "https://xsavikx.github.io/AndroidScreencast/",
                         "description": "Cast Android screen to PC"
+                    },
+                    {
+                        "title": "Scrcpy (Android Device Controller)",
+                        "url": "https://github.com/Genymobile/scrcpy",
+                        "description": "This application provides display and control of Android devices connected on USB."
                     }]
                 },
                 {
