@@ -85,6 +85,11 @@
                             "description": "..."
                         },
                         {
+                            "title": "Addy Osmani",
+                            "url": "https://addyosmani.com/",
+                            "description": "Engineering manager at Google working on Chrome."
+                        },
+                        {
                             "title": "A Tornado of Razorblades - Archive",
                             "url": "http://adam.herokuapp.com/past/",
                             "description": "Blog of ADAM WIGGINS"

@@ -8,6 +8,11 @@
                     "title": "Best Practices for JavaScript projects",
                     "url": "https://github.com/wearehive/project-guidelines",
                     "description": "A set of best practices for JavaScript projects."
+                },
+                {
+                    "title": "Web Design Fundamentals",
+                    "url": "https://github.com/wxyyxc1992/Web-Series/",
+                    "description": "王下邀月熊 GitHub"
                 }
             ]
         },
@@ -57,6 +62,16 @@
                 {
                     "title": "JavaScript - Proxies",
                     "url": "https://www.keithcirkel.co.uk/metaprogramming-in-es6-part-3-proxies/",
+                    "description": "..."
+                }
+            ]
+        },
+        {
+            "LevelTwoName": "Design Patterns",
+            "LevelTwoChilds": [{
+                    "title": "JavaScript Design Patterns (Online Book)",
+                    "url": "https://addyosmani.com/resources/essentialjsdesignpatterns/book/",
+                    "alias": "essential-jsdesign-patterns",
                     "description": "..."
                 }
             ]
