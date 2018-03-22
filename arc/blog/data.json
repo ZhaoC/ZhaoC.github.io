@@ -90,6 +90,11 @@
                             "description": "Engineering manager at Google working on Chrome."
                         },
                         {
+                            "title": "Programming with Mosh",
+                            "url": "https://www.youtube.com/user/programmingwithmosh/videos",
+                            "description": "A video blogger with content about Node.js/Angular2/etc."
+                        },
+                        {
                             "title": "A Tornado of Razorblades - Archive",
                             "url": "http://adam.herokuapp.com/past/",
                             "description": "Blog of ADAM WIGGINS"
