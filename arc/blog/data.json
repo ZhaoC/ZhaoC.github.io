@@ -25,6 +25,11 @@
                         "description": " google programming tech guide "
                     },
                     {
+                        "title": "Google Web Update (2018)",
+                        "url": "https://developers.google.com/web/updates/2018/",
+                        "description": "Google developer updates in 2018"
+                    },
+                    {
                         "title": "Uber Engineering",
                         "url": "https://eng.uber.com/",
                         "description": " uber ..."

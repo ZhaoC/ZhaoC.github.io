@@ -94,7 +94,7 @@
             }]   
         },
         { 
-            "LevelOneName": "AI",
+            "LevelOneName": "M.L.",
             "LevelOneChilds": [{
                 "LevelTwoName": "Tensor Flow",
                 "LevelTwoChilds": [{
@@ -109,6 +109,14 @@
                 "LevelTwoChilds": [{
                     "title": "Keras Documentation",
                     "url": "https://keras.io/",
+                    "description": "..."
+                }]
+            },
+            {
+                "LevelTwoName": "JS - Deep Learning library",
+                "LevelTwoChilds": [{
+                    "title": "Brain.js",
+                    "url": "https://github.com/BrainJS/brain.js",
                     "description": "..."
                 }]
             }]
