@@ -87,11 +87,16 @@
                     ]
                 },
                 {
-                    "LevelTwoName": "Fluentd (Log Collector)",
+                    "LevelTwoName": "Log Collector",
                     "LevelTwoChilds": [{
                         "title": "Fluentd GitHub",
                         "url": "https://github.com/fluent/fluentd",
                         "description": "Fluentd collects events from various data sources and writes them to files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on."
+                    },
+                    {
+                        "title": "Winston (JS logger)",
+                        "url": "https://github.com/winstonjs/winston",
+                        "description": "A universal logging library (JS)."
                     }]
                 },
                 {

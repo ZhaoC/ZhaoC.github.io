@@ -87,7 +87,7 @@
             ]
         },
         {
-            "LevelTwoName": "Encryption",
+            "LevelTwoName": "Data Encryption",
             "LevelTwoChilds": [{
                     "title": "ROT13",
                     "url": "https://en.wikipedia.org/wiki/ROT13",
@@ -96,11 +96,23 @@
             ]
         },
         {
-            "LevelTwoName": "Application Profilling",
+            "LevelTwoName": "Server/Service Design",
             "LevelTwoChilds": [{
-                    "title": "Winston (JS logger)",
-                    "url": "https://github.com/winstonjs/winston",
-                    "description": "A universal logging library (JS)."
+                    "title": "Enterprise Java Microservices (Online Book)",
+                    "url": "https://livebook.manning.com/#!/book/enterprise-java-microservices/chapter-1/v-6/1",
+                    "alias": "enterprise-java-microservices",
+                    "description": "..."
+                },
+                {
+                    "title": "Microservices (Martin Fowler)",
+                    "url": "https://martinfowler.com/articles/microservices.html",
+                    "description": "..."
+                },
+                {
+                    "title": "Serverless with Claudia",
+                    "url": "https://livebook.manning.com/#!/book/serverless-apps-with-node-and-claudiajs/chapter-1/v-5/",
+                    "alias": "serverless-apps-with-node-and-claudiajs",
+                    "description": "..."
                 }
             ]
         }]
