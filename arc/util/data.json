@@ -101,6 +101,14 @@
                         "url": "https://vwo.com/ab-testing/",
                         "description": "In web analytics, A/B testing is a controlled experiment with two variants, A and B."
                     }]
+                },
+                {
+                    "LevelTwoName": "Mail Service",
+                    "LevelTwoChilds": [{
+                        "title": "Nodemailer",
+                        "url": "https://github.com/nodemailer/nodemailer",
+                        "description": "Send e-mails from Node.js."
+                    }]
                 }
             ]
         },
@@ -145,7 +153,7 @@
             ]
         },
         {
-            "LevelOneName": "Database",
+            "LevelOneName": "Data Store",
             "LevelOneChilds": [{
                 "LevelTwoName": "MongoDB",
                 "LevelTwoChilds": [{
@@ -154,9 +162,21 @@
                         "description": "Native cross-platform MongoDB management tool"
                     },
                     {
-                        "title": "mongoose",
+                        "title": "Mongoose",
                         "url": "http://mongoosejs.com/",
                         "description": "mongodb object modeling for node.js"
+                    }
+                ]
+            }]
+        },
+        {
+            "LevelOneName": "Data Handler",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Data Compression",
+                "LevelTwoChilds": [{
+                        "title": "Zstandard (Real-time comression Tool)",
+                        "url": "https://github.com/facebook/zstd",
+                        "description": "fast real-time compression tool developed by facebook"
                     }
                 ]
             }]

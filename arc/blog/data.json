@@ -178,6 +178,10 @@
                     "title": "Project Guidelines",
                     "url": "https://github.com/wearehive/project-guidelines",
                     "description": "project guidelines"
+                },{
+                    "title": "Software Enginering Research at Google",
+                    "url": "https://research.google.com/pubs/SoftwareEngineering.html",
+                    "description": "..."
                 }]
             }]
         }
