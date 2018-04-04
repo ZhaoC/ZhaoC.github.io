@@ -60,31 +60,13 @@
         {
             "LevelOneName": "Blogger/Labs",
             "LevelOneChilds": [{
-                    "LevelTwoName": "Mediums",
-                    "LevelTwoChilds": [{
-                            "title": "Eric Elliott",
-                            "url": "https://medium.com/@_ericelliott",
-                            "description": "..."
-                        },
-                        {
-                            "title": "Dan Abramov",
-                            "url": "https://medium.com/@dan_abramov",
-                            "description": "Working on @reactjs. Co-author of Redux and Create React App."
-                        },
-                        {
-                            "title": "TJ Holowaychuk (Medium)",
-                            "url": "https://medium.com/@tjholowaychuk",
-                            "description": "Code..."
-                        },
-                        {
-                            "title": "David Gliberson",
-                            "url": "https://hackernoon.com/@david.gilbertson",
-                            "description": "..."
-                        }
-                    ]
-                }, {
                     "LevelTwoName": "Blogger",
                     "LevelTwoChilds": [{
+                            "title": "* Paul Graham",
+                            "url": "http://www.paulgraham.com/",
+                            "description": "Life is short..."
+                        },
+                        {
                             "title": "Matt Zeunert",
                             "url": "http://www.mattzeunert.com/writing.html",
                             "description": "..."
@@ -122,6 +104,30 @@
                     ]
                 },
                 {
+                    "LevelTwoName": "Mediums",
+                    "LevelTwoChilds": [{
+                            "title": "Eric Elliott",
+                            "url": "https://medium.com/@_ericelliott",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Dan Abramov",
+                            "url": "https://medium.com/@dan_abramov",
+                            "description": "Working on @reactjs. Co-author of Redux and Create React App."
+                        },
+                        {
+                            "title": "TJ Holowaychuk (Medium)",
+                            "url": "https://medium.com/@tjholowaychuk",
+                            "description": "Code..."
+                        },
+                        {
+                            "title": "David Gliberson",
+                            "url": "https://hackernoon.com/@david.gilbertson",
+                            "description": "..."
+                        }
+                    ]
+                },
+                {
                     "LevelTwoName": "Mixins",
                     "LevelTwoChilds": [{
                             "title": "Jawil",
@@ -142,32 +148,33 @@
             "LevelOneChilds": [{
                 "LevelTwoName": "Web",
                 "LevelTwoChilds": [{
-                    "title": "Robust Client-Side JavaScript",
-                    "url": "https://molily.de/robust-javascript/",
-                    "description": "..."
-                },
-                {
-                    "title": "Inheritance in JavaScript",
-                    "url": "https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a",
-                    "alias": "common-misconceptions-about-inheritance-in-javascript",
-                    "description": "Common Misconceptions About Inheritance in JavaScript."
-                },
-                {
-                    "title": "Functional Light JS (Online Book)",
-                    "url": "https://github.com/getify/Functional-Light-JS",
-                    "description": "Pragmatic, balanced FP in JavaScript."
-                },
-                {
-                    "title": "Programming JavaScript Applications (Online Book)",
-                    "url": "http://chimera.labs.oreilly.com/books/1234000000262/index.html",
-                    "alias": "oreilly-programming-JavaScript",
-                    "description": "Eric Elliott Online Book..."
-                },
-                {
-                    "title": "ECMAScript 6 (Online Book)",
-                    "url": "http://es6.ruanyifeng.com/",
-                    "description": "ES6 Tutorial Online Book..."
-                }]
+                        "title": "Robust Client-Side JavaScript",
+                        "url": "https://molily.de/robust-javascript/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Inheritance in JavaScript",
+                        "url": "https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a",
+                        "alias": "common-misconceptions-about-inheritance-in-javascript",
+                        "description": "Common Misconceptions About Inheritance in JavaScript."
+                    },
+                    {
+                        "title": "Functional Light JS (Online Book)",
+                        "url": "https://github.com/getify/Functional-Light-JS",
+                        "description": "Pragmatic, balanced FP in JavaScript."
+                    },
+                    {
+                        "title": "Programming JavaScript Applications (Online Book)",
+                        "url": "http://chimera.labs.oreilly.com/books/1234000000262/index.html",
+                        "alias": "oreilly-programming-JavaScript",
+                        "description": "Eric Elliott Online Book..."
+                    },
+                    {
+                        "title": "ECMAScript 6 (Online Book)",
+                        "url": "http://es6.ruanyifeng.com/",
+                        "description": "ES6 Tutorial Online Book..."
+                    }
+                ]
             }]
         },
         {
@@ -178,7 +185,7 @@
                     "title": "Project Guidelines",
                     "url": "https://github.com/wearehive/project-guidelines",
                     "description": "project guidelines"
-                },{
+                }, {
                     "title": "Software Enginering Research at Google",
                     "url": "https://research.google.com/pubs/SoftwareEngineering.html",
                     "description": "..."

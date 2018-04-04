@@ -23,6 +23,14 @@
                     }]
                 },
                 {
+                    "LevelTwoName": "Online Java Tutorial",
+                    "LevelTwoChilds": [{
+                        "title": "Java Point",
+                        "url": "https://www.javatpoint.com/java-tutorial",
+                        "description": "..."
+                    }]
+                },
+                {
                     "LevelTwoName": "Bloger Articles",
                     "LevelTwoChilds": [{
                             "title": "Base64",
