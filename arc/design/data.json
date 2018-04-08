@@ -13,6 +13,11 @@
                     "title": "Web Design Fundamentals",
                     "url": "https://github.com/wxyyxc1992/Web-Series/",
                     "description": "王下邀月熊 GitHub"
+                },
+                {
+                    "title": "JS Guide (Google)",
+                    "url": "https://google.github.io/styleguide/jsguide.html",
+                    "description": "..."
                 }
             ]
         },
@@ -50,7 +55,7 @@
         {
             "LevelTwoName": "Metaprogramming",
             "LevelTwoChilds": [{
-                    "title": "JavaScript - Symbols",
+                    "title": "JavaScript - Symbol",
                     "url": "https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/",
                     "description": "..."
                 },
@@ -60,7 +65,7 @@
                     "description": "..."
                 },
                 {
-                    "title": "JavaScript - Proxies",
+                    "title": "JavaScript - Proxy",
                     "url": "https://www.keithcirkel.co.uk/metaprogramming-in-es6-part-3-proxies/",
                     "description": "..."
                 }

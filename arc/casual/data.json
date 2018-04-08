@@ -132,6 +132,10 @@
                 {
                     "LevelTwoName": "JS - Deep Learning library",
                     "LevelTwoChilds": [{
+                        "title": "TensorFlow.js",
+                        "url": "https://js.tensorflow.org/",
+                        "description": "..."
+                    },{
                         "title": "Brain.js",
                         "url": "https://github.com/BrainJS/brain.js",
                         "description": "..."
