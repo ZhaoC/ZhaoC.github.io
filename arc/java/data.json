@@ -28,6 +28,10 @@
                         "title": "Java Point",
                         "url": "https://www.javatpoint.com/java-tutorial",
                         "description": "..."
+                    },{
+                        "title": "MK Yong",
+                        "url": "https://www.mkyong.com/all-tutorials-on-mkyong-com/",
+                        "description": "..."
                     }]
                 },
                 {
@@ -57,6 +61,13 @@
         {
             "LevelOneName": "J2EE",
             "LevelOneChilds": [{
+                    "LevelTwoName": "Best Practice & Design Patterns",
+                    "LevelTwoChilds": [{
+                        "title": "Core J2EE Patterns",
+                        "url": "http://www.corej2eepatterns.com/",
+                        "description": "..."
+                    }]
+                }, {
                     "LevelTwoName": "JDBC",
                     "LevelTwoChilds": [{
                         "title": "JDBC Sample",
