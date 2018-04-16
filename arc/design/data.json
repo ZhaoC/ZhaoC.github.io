@@ -18,6 +18,11 @@
                     "title": "JS Guide (Google)",
                     "url": "https://google.github.io/styleguide/jsguide.html",
                     "description": "..."
+                },
+                {
+                    "title": "Netflix Open Source Software Center",
+                    "url": "https://netflix.github.io/",
+                    "description": "..."
                 }
             ]
         },
