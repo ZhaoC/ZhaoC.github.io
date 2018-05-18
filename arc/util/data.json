@@ -153,6 +153,11 @@
                         "title": "Certbot HTTPS",
                         "url": "https://certbot.eff.org/",
                         "description": "Automatically enable HTTPS on your website with EFF's Certbot, deploying Let's Encrypt certificates."
+                    },
+                    {
+                        "title": "Key Rotation",
+                        "url": "https://www.vaultproject.io/docs/internals/rotation.html",
+                        "description": "..."
                     }]
                 }
             ]
