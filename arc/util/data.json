@@ -328,6 +328,11 @@
                         "title": "Netdata",
                         "url": "https://github.com/firehol/netdata",
                         "description": "netdata is a system for distributed real-time performance and health monitoring."
+                    },
+                    {
+                        "title": "htop - Unix Interactive process viewer",
+                        "url": "https://hisham.hm/htop/",
+                        "description": "..."
                     }]
                 }
             ]
@@ -345,6 +350,16 @@
                         "title": "Samba Reference Online Book",
                         "url": "https://www.samba.org/samba/docs/using_samba/toc.html",
                         "description": "Using Samba, 2nd Edition"
+                    }
+                ]
+            },
+            {
+                "LevelTwoName": "Web download utility (Protocol)",
+                "LevelTwoChilds": [
+                    {
+                        "title": "aria2 - The ultra fast download utility",
+                        "url": "https://github.com/aria2/aria2",
+                        "description": "aria2 is a utility for downloading files. The supported protocols are HTTP(S), FTP, SFTP, BitTorrent, and Metalink. "
                     }
                 ]
             }]
