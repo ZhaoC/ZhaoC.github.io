@@ -20,6 +20,23 @@
                         "url": "https://docs.oracle.com/javase/tutorial/java/generics/why.html",
                         "alias": "java-generics",
                         "description": "..."
+                    },
+                    {
+                        "title": "Java Class Loader",
+                        "description": "...",
+                        "url": "https://docs.oracle.com/javase/jndi/tutorial/beyond/misc/classloader.html",
+                        "alias": "java-classloader"
+                    },
+                    {
+                        "title": "Java Glossary",
+                        "url": "https://docs.oracle.com/javase/jndi/tutorial/getStarted/concepts/glossary.html",
+                        "description":"...",
+                        "alias": "java-glossary"
+                    },
+                    {
+                        "title": "Environment Properties",
+                        "description": "...",
+                        "url": "https://docs.oracle.com/javase/jndi/tutorial/beyond/env/source.html"
                     }]
                 },
                 {
