@@ -102,6 +102,18 @@
                     }]
                 }
             ]
+        },
+        {
+            "LevelOneName": "Java Implementation",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Apach Open Source",
+                    "LevelTwoChilds": [{
+                        "title": "Lucene - Search Indexing",
+                        "url": "http://lucene.apache.org/",
+                        "description": "Apache LuceneTM is a high-performance, full-featured text search engine library written entirely in Java. It is a technology suitable for nearly any application that requires full-text search, especially cross-platform."
+                    }]
+                }
+            ]
         }
     ]
 }
