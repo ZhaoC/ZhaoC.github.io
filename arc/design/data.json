@@ -151,6 +151,23 @@
                     "description": "Online Mind Map Design."
                 }
             ]
+        },
+        {
+            "LevelTwoName": "Visual Sets",
+            "LevelTwoChilds": [{
+                    "title": "Showcase & Discover Creation Work",
+                    "url": "https://www.behance.net/",
+                    "description": "..."
+                },{
+                    "title": "Dribble",
+                    "url": "https://dribbble.com/",
+                    "description": "Shots"
+                },{
+                    "title": "WLOP",
+                    "url": "https://www.patreon.com/wlop",
+                    "description": "..."
+                }
+            ]
         }]
     }]
 }
