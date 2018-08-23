@@ -17,6 +17,14 @@
                         "url": "http://sqlfiddle.com/",
                         "description": ""
                     }]
+                },
+                {
+                    "LevelTwoName": "Editor Cheet Sheet",
+                    "LevelTwoChilds": [{
+                        "title": "cheat.sh - Online Commands Tool",
+                        "url": "https://github.com/chubin/cheat.sh",
+                        "description": ""
+                    }]
                 }
             ]
         },
