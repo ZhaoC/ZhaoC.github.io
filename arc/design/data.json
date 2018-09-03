@@ -106,7 +106,7 @@
             ]
         },
         {
-            "LevelTwoName": "Server/Service Design",
+            "LevelTwoName": "Microservice Design",
             "LevelTwoChilds": [{
                     "title": "Enterprise Java Microservices (Online Book)",
                     "url": "https://livebook.manning.com/#!/book/enterprise-java-microservices/chapter-1/v-6/1",
@@ -123,6 +123,26 @@
                     "url": "https://livebook.manning.com/#!/book/serverless-apps-with-node-and-claudiajs/chapter-1/v-5/",
                     "alias": "serverless-apps-with-node-and-claudiajs",
                     "description": "..."
+                },
+                {
+                    "title": "Netflix Conductor",
+                    "url": "https://netflix.github.io/conductor/",
+                    "description": "Conductor is Netflix’s microservices orchestration engine as part of its Netflix OSS ecosystem."
+                },
+                {
+                    "title": "Logstash",
+                    "url": "https://www.elastic.co/products/logstash",
+                    "description": "Util to monitor microserivces"
+                },
+                {
+                    "title": "Apache Kafka",
+                    "url": "https://kafka.apache.org/",
+                    "description": "Message queuing."
+                },
+                {
+                    "title": "Tyk ",
+                    "url": "https://tyk.io/",
+                    "description": "Fast, scalable, and modern, Tyk is an out-of-the-box open source API management platform."
                 }
             ]
         }]
