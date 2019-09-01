@@ -10,6 +10,11 @@
                         "description": " thrending tech news "
                     },
                     {
+                        "title": "Eclipse Source",
+                        "url": "https://eclipsesource.com/blogs/",
+                        "description": "EclipseSource – a worldwide expert in Eclipse Technology."
+                    },
+                    {
                         "title": "Mozilla Blog",
                         "url": "https://hacks.mozilla.org/",
                         "description": " new resource from mozilla "
