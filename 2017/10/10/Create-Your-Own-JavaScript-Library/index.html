@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Zhao Cai">
+    <title>Create Your Own JavaScript Library - Zhao Cai</title>
+    <meta name="author" content="Zhao Cai">
+    
+    
+        <link rel="icon" href="https://zhaoc.github.io/assets/images/favicon.png">
+    
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+    
+    <meta name="description" content="Don’t Repeat Yourself
+
+JavaScript has been developed rapidly in past few years. Developers are able to accumulate experience through reduplicated work. However, in order to improve the work efficienc">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="Create Your Own JavaScript Library">
+<meta property="og:url" content="https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/index.html">
+<meta property="og:site_name" content="Zhao Cai">
+<meta property="og:description" content="Don’t Repeat Yourself
+
+JavaScript has been developed rapidly in past few years. Developers are able to accumulate experience through reduplicated work. However, in order to improve the work efficienc">
+<meta property="og:image" content="https://zhaoc.github.io/assets/images/post_images/Create_Personal_JavaScript_Lib.png">
+<meta property="og:updated_time" content="2018-01-17T22:51:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Create Your Own JavaScript Library">
+<meta name="twitter:description" content="Don’t Repeat Yourself
+
+JavaScript has been developed rapidly in past few years. Developers are able to accumulate experience through reduplicated work. However, in order to improve the work efficienc">
+<meta name="twitter:image" content="https://zhaoc.github.io/assets/images/post_images/Create_Personal_JavaScript_Lib.png">
+    
+    
+        
+    
+    
+        <meta property="og:image" content="https://zhaoc.github.io/assets/images/author.jpg"/>
+    
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style-yrst5vo1nxaxbp2g3v9na2wg1lixlpr3ghbjdvskeixmu79deycecx3rh4bt.min.css">
+    <!--STYLES END-->
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-96114025-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+        
+            
+        
+    
+
+<header id="header" data-behavior="5">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a class="header-title-link" href="/ ">Zhao Cai</a>
+    </div>
+    
+        
+            <a  class="header-right-picture "
+                href="#about">
+        
+        
+            <img class="header-picture" src="/assets/images/author.jpg" alt="Author&#39;s picture" oncontextmenu="return false;"/>
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+
+        
+    
+
+<nav id="sidebar" data-behavior="5">
+    <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a href="/#about">
+                    <img class="sidebar-profile-picture" src="/assets/images/author.jpg" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">Zhao Cai</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>What will your verse be?</p>
+</h5>
+                
+            </div>
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/ "
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/2017/03/08/Gallery/"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-photo"></i>
+                        <span class="sidebar-button-desc">Photography</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-tags"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-archives"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="https://github.com/zhaoc" target="_blank">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/atom.xml"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="#about"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-info"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="5"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title" itemprop="headline">
+            Create Your Own JavaScript Library
+        </h1>
+    
+    <div class="post-meta">
+    <time itemprop="datePublished" datetime="2017-10-10T21:26:17-04:00">
+	
+		    Oct 10, 2017
+    	
+    </time>
+    
+</div>
+
+</div>
+    
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <blockquote>
+<p>Don’t Repeat Yourself</p>
+</blockquote>
+<p>JavaScript has been developed rapidly in past few years. Developers are able to accumulate experience through reduplicated work. However, in order to improve the work efficiency and code quality, it is suggested to organize and maintain your codebase in a elegant way - Write your own JS Library.</p>
+<h2 id="How"><a href="#How" class="headerlink" title="How"></a>How</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">window</span>)</span>&#123;  <span class="comment">/* function scope starts here */</span></div><div class="line"><span class="meta">    'use strict'</span>;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">define_library</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">var</span> LogDecorator = &#123;&#125;; <span class="comment">// will be returned as a global variable</span></div><div class="line">        <span class="keyword">var</span> logging = <span class="literal">true</span>; <span class="comment">// disable/enable logging globally</span></div><div class="line">        <span class="keyword">var</span> logPrefix = <span class="string">"----------------Start---------------------"</span>;</div><div class="line">        <span class="keyword">var</span> logSuffix = <span class="string">"-----------------End---------------------"</span>;</div><div class="line"></div><div class="line">        LogDecorator.log = <span class="function"><span class="keyword">function</span>(<span class="params">option, targetObj</span>)</span>&#123;</div><div class="line">            <span class="keyword">if</span>(logging === <span class="literal">true</span>)&#123;</div><div class="line">                 <span class="built_in">console</span>.log(logPrefix);</div><div class="line">                 <span class="built_in">console</span>.log(<span class="string">`Option: <span class="subst">$&#123;option&#125;</span>`</span>);</div><div class="line">                 <span class="built_in">console</span>.log(<span class="string">'Target Object:'</span>);</div><div class="line">                 <span class="built_in">console</span>.log(targetObj);</div><div class="line">                 <span class="built_in">console</span>.log(logSuffix);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> LogDecorator;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">//define globally if it doesn't already exist</span></div><div class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span>(LogDecorator) === <span class="string">'undefined'</span>)&#123;</div><div class="line">        <span class="built_in">window</span>.LogDecorator = define_library();</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"LogDecorator has already been defined."</span>);</div><div class="line">    &#125;</div><div class="line">&#125;)(<span class="built_in">window</span>); <span class="comment">/* function scope ends */</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>Output Sample:</p>
+</blockquote>
+<div class="figure fig-50" style="width:;"><a class="fancybox" href="/assets/images/post_images/Create_Personal_JavaScript_Lib.png" title="Test Sample" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/Create_Personal_JavaScript_Lib.png" alt="Test Sample" oncontextmenu="return false;"></a><span class="caption">Test Sample</span></div><div style="clear:both;"></div>
+<h2 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h2><ol>
+<li><p>Use <code>Strict</code> can eliminate <code>silent errors</code> by changing them to throw errors. Besides, <code>Strict Mode</code> can help JavaScript engines to perform optimizations. Refer to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode" target="_blank" rel="external">Strict mode</a> for more details.</p>
+</li>
+<li><p>Core Concept - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" target="_blank" rel="external">JS Closures</a> &amp; <a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/" target="_blank" rel="external">Immediately-Invoked Function Expression</a></p>
+<p> Below is one way of using closures to define public functions that can access private functions and variables which is known as <code>module pattern</code>:</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// properties</span></div><div class="line">    <span class="comment">// methods</span></div><div class="line">    <span class="comment">// ...</span></div><div class="line">&#125;)(<span class="built_in">window</span>);</div><div class="line"><span class="comment">// Self-Executing Anonymous Functions</span></div></pre></td></tr></table></figure>
+<p> () is the scope set for this function you are able to create private methods/functions and properties inside local scope. <code>window</code> inside () is used as global scope in browser environment.</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// closures example</span></div><div class="line"><span class="keyword">var</span> globalVar = <span class="number">0</span>;</div><div class="line"></div><div class="line">(<span class="function"><span class="keyword">function</span> <span class="title">outerFunc</span>(<span class="params">outerArg</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> outerVar = <span class="number">3</span>;</div><div class="line"></div><div class="line">    (<span class="function"><span class="keyword">function</span> <span class="title">innerFunc</span>(<span class="params">innerArg</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> innerVar = <span class="number">4</span>;</div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(</div><div class="line">        <span class="string">"outerArg = "</span> + outerArg + <span class="string">"\n"</span> +</div><div class="line">        <span class="string">"innerArg = "</span> + innerArg + <span class="string">"\n"</span> +</div><div class="line">        <span class="string">"outerVar = "</span> + outerVar + <span class="string">"\n"</span> +</div><div class="line">        <span class="string">"innerVar = "</span> + innerVar + <span class="string">"\n"</span> +</div><div class="line">        <span class="string">"globalVar = "</span> + globalVar);</div><div class="line"></div><div class="line">    &#125;)(<span class="number">2</span>);</div><div class="line">&#125;)(<span class="number">1</span>);</div><div class="line"></div><div class="line"><span class="comment">// output:</span></div><div class="line"><span class="comment">// outerArg = 1</span></div><div class="line"><span class="comment">// innerArg = 2</span></div><div class="line"><span class="comment">// outerVar = 3</span></div><div class="line"><span class="comment">// innerVar = 4</span></div><div class="line"><span class="comment">// globalVar = 0</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+
+            
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/JavaScript/">JavaScript</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/11/05/Usage-of-fetch/"  data-tooltip="Usage of fetch()">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/" data-tooltip="The Beauty of Diffie-Hellman Key Exchange">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+            
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2021 Zhao Cai. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/11/05/Usage-of-fetch/"  data-tooltip="Usage of fetch()">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/" data-tooltip="The Beauty of Diffie-Hellman Key Exchange">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+            
+        </div>
+        
+
+
+    
+        
+    
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/author.jpg" alt="Author&#39;s picture" oncontextmenu="return false;"/>
+        
+            <h4 id="about-card-name">Zhao Cai</h4>
+        
+            <div id="about-card-bio"><p>What will your verse be?</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>Web developer</p>
+
+            </div>
+        
+        
+            <div id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Toronto
+            </div>
+        
+    </div>
+</div>
+
+        <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-button"><i class="fa fa-close"></i></span>
+            <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+                <span class="searchby-algolia-text text-color-light text-small">by</span>
+                <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+            </a>
+            <i class="search-icon fa fa-search"></i>
+            <form id="algolia-search-form">
+                <input type="text" id="algolia-search-input" name="search"
+                    class="form-control input--large search-input" placeholder="Search "
+                    autofocus="autofocus"/>
+            </form>
+        </div>
+        <div class="modal-body">
+            <div class="no-result text-color-light text-center">no post found</div>
+            <div class="results">
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/03/08/Gallery/">
+                            <h3 class="media-heading">Photography</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Mar 8, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                            <h3 class="media-heading">A Taste of JavaScript Promise</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Mar 24, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                            <h3 class="media-heading">A Taste of Observer pattern in JavaScript</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Mar 30, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/">
+                            <h3 class="media-heading">The Beauty of Diffie-Hellman Key Exchange</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Jun 5, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                            <h3 class="media-heading">Create Your Own JavaScript Library</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Oct 10, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
+                            <h3 class="media-heading">Usage of fetch()</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Nov 5, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="results-count text-medium"
+                data-message-zero="no post found"
+                data-message-one="1 post found"
+                data-message-other="{n} posts found">
+                8 posts found
+            </p>
+        </div>
+    </div>
+</div>
+        
+<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+<script src="/assets/js/script-rt08quwts7iav5x0cfd2ym0gb5qkd1lvrsmwrakxtkhefmaaes4ywkmnjnwf.min.js"></script>
+<!--SCRIPTS END-->
+
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+        var algoliaClient = algoliasearch('NLKNRFY9YW', '1a89f7efe7a1134fff6cb8c3a59de8b8');
+        var algoliaIndex = algoliaClient.initIndex('zhao-blog');
+    </script>
+
+    </body>
+</html>

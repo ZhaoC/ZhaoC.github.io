@@ -1,0 +1,123 @@
+{
+    "root": "UrlArchive",
+    "data": [{
+            "LevelOneName": "Java Design",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Java Standards",
+                "LevelTwoChilds": [{
+                    "title": "Java Technology Specifictions Community",
+                    "url": "https://jcp.org/en/home/index",
+                    "description": "..."
+                }]
+            }]
+        },
+        {
+            "LevelOneName": "Docs",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Official Documentation",
+                    "LevelTwoChilds": [{
+                        "title": "Java Generics",
+                        "url": "https://docs.oracle.com/javase/tutorial/java/generics/why.html",
+                        "alias": "java-generics",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Java Class Loader",
+                        "description": "...",
+                        "url": "https://docs.oracle.com/javase/jndi/tutorial/beyond/misc/classloader.html",
+                        "alias": "java-classloader"
+                    },
+                    {
+                        "title": "Java Glossary",
+                        "url": "https://docs.oracle.com/javase/jndi/tutorial/getStarted/concepts/glossary.html",
+                        "description":"...",
+                        "alias": "java-glossary"
+                    },
+                    {
+                        "title": "Environment Properties",
+                        "description": "...",
+                        "url": "https://docs.oracle.com/javase/jndi/tutorial/beyond/env/source.html"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Online Java Tutorial",
+                    "LevelTwoChilds": [{
+                        "title": "Java Point",
+                        "url": "https://www.javatpoint.com/java-tutorial",
+                        "description": "..."
+                    },{
+                        "title": "MK Yong",
+                        "url": "https://www.mkyong.com/all-tutorials-on-mkyong-com/",
+                        "description": "..."
+                    },{
+                        "title": "Computer Science Learning Notes (Github)",
+                        "description": "Notes (Java Included)",
+                        "url": "https://github.com/CyC2018/CS-Notes"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Bloger Articles",
+                    "LevelTwoChilds": [{
+                            "title": "Base64",
+                            "url": "https://my.oschina.net/benhaile/blog/267738",
+                            "alias": "java8-base64",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Java8 JRE",
+                            "url": "https://my.oschina.net/benhaile/blog/211804",
+                            "alias": "java8-jre",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Java8 StampedLock",
+                            "url": "https://my.oschina.net/benhaile/blog/264383",
+                            "alias": "java8-stamped-lock",
+                            "description": "..."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "J2EE",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Best Practice & Design Patterns",
+                    "LevelTwoChilds": [{
+                        "title": "Core J2EE Patterns",
+                        "url": "http://www.corej2eepatterns.com/",
+                        "description": "..."
+                    }]
+                }, {
+                    "LevelTwoName": "JDBC",
+                    "LevelTwoChilds": [{
+                        "title": "JDBC Sample",
+                        "url": "https://www.mkyong.com/jdbc/jdbc-transaction-example/",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Session",
+                    "LevelTwoChilds": [{
+                        "title": "Session Documentation",
+                        "url": "https://www.journaldev.com/1907/java-session-management-servlet-httpsession-url-rewriting",
+                        "alias": "java-session-management",
+                        "description": "..."
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Java Implementation",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Apach Open Source",
+                    "LevelTwoChilds": [{
+                        "title": "Lucene - Search Indexing",
+                        "url": "http://lucene.apache.org/",
+                        "description": "Apache LuceneTM is a high-performance, full-featured text search engine library written entirely in Java. It is a technology suitable for nearly any application that requires full-text search, especially cross-platform."
+                    }]
+                }
+            ]
+        }
+    ]
+}

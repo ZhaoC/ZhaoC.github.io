@@ -1,0 +1,233 @@
+{
+    "root": "UrlArchive",
+    "data": [{
+            "LevelOneName": "Zen of Web",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Code Ninja - JS/CSS",
+                    "LevelTwoChilds": [{
+                        "title": "w3school",
+                        "url": "https://www.w3schools.com/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "freeCodeCamp",
+                        "url": "https://www.freecodecamp.org/map",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Test Dome - JS",
+                        "url": "https://www.testdome.com/d/javascript-interview-questions/2",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Google Codejam",
+                        "url": "https://code.google.com/codejam/",
+                        "description":"..."
+                    },
+                    {
+                        "title": "Google I/O 2017 CodeLabs",
+                        "url": "https://codelabs.developers.google.com/io2017?cat=Web",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Code Ninja - Java",
+                    "LevelTwoChilds": [
+                    {
+                        "title": "Java Programming Test",
+                        "url": "https://www.indiabix.com/online-test/java-programming-test/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Test Dome - Java",
+                        "url": "https://www.testdome.com/d/java-interview-questions/4",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Java Challenge",
+                        "url": "https://javachallenge.devpost.com/",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Code Ninja - Mixed",
+                    "LevelTwoChilds": [                    
+                    {
+                        "title": "Coder Byte",
+                        "url": "https://coderbyte.com/challenges",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Hacker Rank",
+                        "url": "https://www.hackerrank.com/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Leetcode",
+                        "url": "https://leetcode.com/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Atcoder",
+                        "url": "http://atcoder.jp/",
+                        "description":"..."
+                    },
+                    {
+                        "title": "Codin Game",
+                        "url": "https://www.codingame.com/start",
+                        "description": "..."
+                    },
+                    {
+                        "title": "ACM Problem Set",
+                        "url": "http://acm.timus.ru/problemset.aspx",
+                        "description":"..."
+                    },
+                    {
+                        "title": "Code Wars",
+                        "url": "http://www.spoj.com/problems/classical/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Codeeval",
+                        "url": "https://www.codeeval.com/how_it_works/#anchor-for-hacker-deals",
+                        "description":"...",
+                        "alias": "www.codeeval.com"
+                    },
+                    {
+                        "title": "Code Chef",
+                        "url": "https://www.codechef.com/problems/hard",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Code Guide",
+                    "LevelTwoChilds": [{
+                            "title": "UDACITY",
+                            "url": "https://eu.udacity.com/",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Eric Elliott - Interview",
+                            "url": "https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95",
+                            "alias": "10-interview-questions-every-javascript-developer-should-know",
+                            "description": "..."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Code Cheatsheet",
+                    "LevelTwoChilds": [{
+                            "title": "ES2015",
+                            "url": "https://devhints.io/es6",
+                            "description": "..."
+                        },
+                        {
+                            "title": "JavaScript",
+                            "url": "http://overapi.com/javascript",
+                            "description": "..."
+                        },
+                        {
+                            "title": "JS Regex",
+                            "url": "https://www.debuggex.com/cheatsheet/regex/javascript",
+                            "description": "..."
+                        },
+                        {
+                            "title": "React.js",
+                            "url": "https://devhints.io/react",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Redux",
+                            "url": "https://github.com/linkmesrl/react-journey-2016/blob/master/resources/egghead-redux-cheat-sheet-3-2-1.pdf",
+                            "alias": "egghead-redux-cheat-sheet",
+                            "description": "..."
+                        },
+                        {
+                            "title": "VueJS",
+                            "url": "https://vuejs-tips.github.io/cheatsheet/",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Vuex",
+                            "url": "https://vuejs-tips.github.io/vuex-cheatsheet/",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Angular",
+                            "url": "https://angular.io/guide/cheatsheet",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Flexbox",
+                            "url": "https://yoksel.github.io/flex-cheatsheet/",
+                            "description": "..."
+                        },
+                        {
+                            "title": "SASS",
+                            "url": "https://devhints.io/sass",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Stylus",
+                            "url": "https://devhints.io/stylus",
+                            "description": "..."
+                        },
+                        {
+                            "title": "GraphQL Schema",
+                            "url": "https://raw.githubusercontent.com/sogko/graphql-shorthand-notation-cheat-sheet/master/graphql-shorthand-notation-cheat-sheet.png",
+                            "alias": "graphql-shorthand-notation-cheat-sheet",
+                            "description": "..."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Code Certificate",
+                    "LevelTwoChilds": [{
+                            "title": "Google - Mobile Web Specialist Cert Entry",
+                            "url": "https://my.oschina.net/benhaile/blog/267738",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Google - Mobile Web Specialist Cert Intro",
+                            "url": "https://developers.google.com/training/web/",
+                            "description": "..."
+                        },
+                        {
+                            "title": "UDACITY - Mobile Web Specialist Cert Course",
+                            "url": "https://www.udacity.com/mws/faq",
+                            "description": "..."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Meditation",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Visual",
+                    "LevelTwoChilds": [{
+                        "title": "随线",
+                        "url": "https://randomwire.com/",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Sound",
+                    "LevelTwoChilds": [{
+                        "title": "谢春花",
+                        "url": "https://www.youtube.com/results?search_query=%E8%B0%A2%E6%98%A5%E8%8A%B1",
+                        "alias": "YouTube 谢春花",
+                        "description": "..."
+                    },
+                    {
+                        "title": "房東的貓",
+                        "url": "https://www.youtube.com/watch?v=KNfKqJeHgZQ",
+                        "alias": "房東的貓 - 美好事物",
+                        "description": "..."
+                    }
+                ]
+                }
+            ]
+        }
+    ]
+}

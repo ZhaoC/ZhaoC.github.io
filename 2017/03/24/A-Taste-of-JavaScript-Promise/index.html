@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Zhao Cai">
+    <title>A Taste of JavaScript Promise - Zhao Cai</title>
+    <meta name="author" content="Zhao Cai">
+    
+    
+        <link rel="icon" href="https://zhaoc.github.io/assets/images/favicon.png">
+    
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+    
+    <meta name="description" content="JavaScript Promise
+
+JavaScript Promises are used to track the state of an asynchronous task.
+
+1new Promise(/* executor */ function(resolve, reject)&amp;#123;...&amp;#125;);
+Promise states
+fulfilled - the acti">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="A Taste of JavaScript Promise">
+<meta property="og:url" content="https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/index.html">
+<meta property="og:site_name" content="Zhao Cai">
+<meta property="og:description" content="JavaScript Promise
+
+JavaScript Promises are used to track the state of an asynchronous task.
+
+1new Promise(/* executor */ function(resolve, reject)&amp;#123;...&amp;#125;);
+Promise states
+fulfilled - the acti">
+<meta property="og:image" content="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67">
+<meta property="og:updated_time" content="2017-10-16T00:39:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="A Taste of JavaScript Promise">
+<meta name="twitter:description" content="JavaScript Promise
+
+JavaScript Promises are used to track the state of an asynchronous task.
+
+1new Promise(/* executor */ function(resolve, reject)&amp;#123;...&amp;#125;);
+Promise states
+fulfilled - the acti">
+<meta name="twitter:image" content="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67">
+    
+    
+        
+    
+    
+        <meta property="og:image" content="https://zhaoc.github.io/assets/images/author.jpg"/>
+    
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style-yrst5vo1nxaxbp2g3v9na2wg1lixlpr3ghbjdvskeixmu79deycecx3rh4bt.min.css">
+    <!--STYLES END-->
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-96114025-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+        
+            
+        
+    
+
+<header id="header" data-behavior="5">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a class="header-title-link" href="/ ">Zhao Cai</a>
+    </div>
+    
+        
+            <a  class="header-right-picture "
+                href="#about">
+        
+        
+            <img class="header-picture" src="/assets/images/author.jpg" alt="Author&#39;s picture" oncontextmenu="return false;"/>
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+
+        
+    
+
+<nav id="sidebar" data-behavior="5">
+    <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a href="/#about">
+                    <img class="sidebar-profile-picture" src="/assets/images/author.jpg" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">Zhao Cai</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>What will your verse be?</p>
+</h5>
+                
+            </div>
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/ "
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/2017/03/08/Gallery/"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-photo"></i>
+                        <span class="sidebar-button-desc">Photography</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-tags"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-archives"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="https://github.com/zhaoc" target="_blank">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/atom.xml"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="#about"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-info"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="5"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title" itemprop="headline">
+            A Taste of JavaScript Promise
+        </h1>
+    
+    <div class="post-meta">
+    <time itemprop="datePublished" datetime="2017-03-24T21:04:58-04:00">
+	
+		    Mar 24, 2017
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
+
+
+    
+</div>
+
+</div>
+    
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <div class="figure center" style="width:;"><a class="fancybox" href="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" title="JavaScript Promise" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" alt="JavaScript Promise" oncontextmenu="return false;"></a><span class="caption">JavaScript Promise</span></div><div style="clear:both;"></div>
+<blockquote>
+<p>JavaScript Promises are used to track the state of an asynchronous task.</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="comment">/* executor */</span> <span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;...&#125;);</div></pre></td></tr></table></figure>
+<h2 id="Promise-states"><a href="#Promise-states" class="headerlink" title="Promise states"></a>Promise states</h2><ul>
+<li>fulfilled - the action relating to the promise successed</li>
+<li>rejected - the action relating to the promise failed</li>
+<li>pending - hasn’t fulfilled or rejected yet</li>
+<li>settled - has fulfilled or rejected</li>
+</ul>
+<blockquote>
+<p>A promise can be <code>resolved to</code> either a promise or thenable, in which case it will store the promise or thenable for later unwrapping.</p>
+</blockquote>
+<h2 id="how-to-create-a-promise"><a href="#how-to-create-a-promise" class="headerlink" title="how to create a promise"></a>how to create a promise</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</div><div class="line">    <span class="comment">//process a task, possibly async, then...</span></div><div class="line">    <span class="keyword">if</span>(<span class="comment">/* task successed */</span>)&#123;</div><div class="line">        resolve(<span class="string">"it worked!"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span>&#123;</div><div class="line">        reject(<span class="built_in">Error</span>(<span class="string">"it  failed!"</span>));</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="how-to-use-promise"><a href="#how-to-use-promise" class="headerlink" title="how to use promise"></a>how to use promise</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">promise.then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(result); <span class="comment">// "it worked!"</span></div><div class="line">&#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(err); <span class="comment">//"it failed!"</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<blockquote>
+<p><code>then()</code> takes two arguments, callback for a success case, and another for the failure case. Both are optional, so you are able to add a callback for the success or failure case only.</p>
+</blockquote>
+<h4 id="Resources"><a href="#Resources" class="headerlink" title="Resources:"></a>Resources:</h4><p>   <a href="http://www.javascriptkit.com/javatutors/javascriptpromises.shtml" target="_blank" rel="external">Guide to JavaScript Promise</a>， <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises#promise-api-reference" target="_blank" rel="external">Promise API Reference</a></p>
+<hr>
+<h3 id="Update-2017-06-11"><a href="#Update-2017-06-11" class="headerlink" title="Update (2017/06/11)"></a>Update (2017/06/11)</h3><blockquote>
+<p>The purpose of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" target="_blank" rel="external">async/await</a> function is to simplify the behavior of using promises synchronously and to perform some behavior on a group of <code>Promises</code>. Just like <code>Promises</code> are similar to structured callbacks, <code>async/await</code> is similar to combining generators and promises.  -MDN</p>
+</blockquote>
+<p>Also read <a href="https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9?gi=15da56f7b64f" target="_blank" rel="external">Why Async/Await is better than Promise</a></p>
+
+            
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/JavaScript/">JavaScript</a>
+
+            </div>
+        
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/30/observer-design-pattern-in-JavaScript/"  data-tooltip="A Taste of Observer pattern in JavaScript">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/08/Gallery/" data-tooltip="Photography">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        
+            
+        
+    </div>
+</article>
+
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2021 Zhao Cai. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/30/observer-design-pattern-in-JavaScript/"  data-tooltip="A Taste of Observer pattern in JavaScript">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/03/08/Gallery/" data-tooltip="Photography">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+            
+        </div>
+        
+
+
+    
+        
+    
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="/assets/images/author.jpg" alt="Author&#39;s picture" oncontextmenu="return false;"/>
+        
+            <h4 id="about-card-name">Zhao Cai</h4>
+        
+            <div id="about-card-bio"><p>What will your verse be?</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>Web developer</p>
+
+            </div>
+        
+        
+            <div id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br/>
+                Toronto
+            </div>
+        
+    </div>
+</div>
+
+        <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-button"><i class="fa fa-close"></i></span>
+            <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+                <span class="searchby-algolia-text text-color-light text-small">by</span>
+                <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+            </a>
+            <i class="search-icon fa fa-search"></i>
+            <form id="algolia-search-form">
+                <input type="text" id="algolia-search-input" name="search"
+                    class="form-control input--large search-input" placeholder="Search "
+                    autofocus="autofocus"/>
+            </form>
+        </div>
+        <div class="modal-body">
+            <div class="no-result text-color-light text-center">no post found</div>
+            <div class="results">
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/03/08/Gallery/">
+                            <h3 class="media-heading">Photography</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Mar 8, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/">
+                            <h3 class="media-heading">A Taste of JavaScript Promise</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Mar 24, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/">
+                            <h3 class="media-heading">A Taste of Observer pattern in JavaScript</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Mar 30, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/">
+                            <h3 class="media-heading">The Beauty of Diffie-Hellman Key Exchange</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Jun 5, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/">
+                            <h3 class="media-heading">Create Your Own JavaScript Library</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Oct 10, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://zhaoc.github.io/2017/11/05/Usage-of-fetch/">
+                            <h3 class="media-heading">Usage of fetch()</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Nov 5, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="results-count text-medium"
+                data-message-zero="no post found"
+                data-message-one="1 post found"
+                data-message-other="{n} posts found">
+                8 posts found
+            </p>
+        </div>
+    </div>
+</div>
+        
+<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+<script src="/assets/js/script-rt08quwts7iav5x0cfd2ym0gb5qkd1lvrsmwrakxtkhefmaaes4ywkmnjnwf.min.js"></script>
+<!--SCRIPTS END-->
+
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+        var algoliaClient = algoliasearch('NLKNRFY9YW', '1a89f7efe7a1134fff6cb8c3a59de8b8');
+        var algoliaIndex = algoliaClient.initIndex('zhao-blog');
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zhao Cai</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://zhaoc.github.io/"/>
+  <updated>2018-03-24T03:50:52.000Z</updated>
+  <id>https://zhaoc.github.io/</id>
+  
+  <author>
+    <name>Zhao Cai</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript Regular Expression</title>
+    <link href="https://zhaoc.github.io/2018/01/30/JavaScript-Regular-Expression/"/>
+    <id>https://zhaoc.github.io/2018/01/30/JavaScript-Regular-Expression/</id>
+    <published>2018-01-31T02:44:13.000Z</published>
+    <updated>2018-03-24T03:50:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>Regular Expression (Regex) is a search pattern, which can be used to find or replace certain text in strings. </p>
+</blockquote>
+<h3 id="Test-Cases"><a href="#Test-Cases" class="headerlink" title="Test Cases"></a>Test Cases</h3><p><code>Case 1 | Find</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringA = <span class="string">"This is a test string"</span>;</div><div class="line"></div><div class="line"><span class="comment">/* 'g' means global which means to return all matched text in the string */</span></div><div class="line"><span class="comment">/* 'i' means to ignore the case */</span></div><div class="line"><span class="comment">/* check if string contains 'test' */</span></div><div class="line"><span class="keyword">var</span> regexPatternA = <span class="regexp">/test/gi</span>;</div><div class="line"></div><div class="line"><span class="comment">// output: 1</span></div><div class="line"><span class="keyword">var</span> textCountA = testStringA.match(regexPatternA).length;</div></pre></td></tr></table></figure></p>
+<p><code>Case 2 | Find</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringB = <span class="string">"This is a test string..."</span>;    </div><div class="line"></div><div class="line"><span class="comment">/* '\' is used to ignore special character */</span></div><div class="line"><span class="comment">/* check if string contains '.' */</span></div><div class="line"><span class="keyword">var</span> regexPatternB = <span class="regexp">/\./gi</span>;</div><div class="line"></div><div class="line"><span class="comment">// output: 3</span></div><div class="line"><span class="keyword">var</span> textCountB = testStringB.match(regexPatternB).length;</div></pre></td></tr></table></figure></p>
+<p><code>Case 3 | Find</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testStringC = <span class="string">"This is a test string with number 12345 ..."</span>;  </div><div class="line"></div><div class="line"><span class="comment">/* '\d+', '\d' means to match digits, '+' means to match one or more digits */</span></div><div class="line"><span class="comment">/* check if string contains '.' */</span></div><div class="line"><span class="keyword">var</span> regexPatternC1 = <span class="regexp">/\d+/gi</span>;</div><div class="line"><span class="keyword">var</span> regexPatternC2 = <span class="regexp">/\d/gi</span>; <span class="comment">// var regexPatternC2 = /[1-9]/gi;</span></div><div class="line"></div><div class="line"><span class="comment">//  output: 1 | ['12345']</span></div><div class="line"><span class="keyword">var</span> textCountC1 = testStringC.match(regexPatternC1).length;</div><div class="line"></div><div class="line"><span class="comment">// output: 5 | ['1', '2', '3', '4', '5']</span></div><div class="line"><span class="keyword">var</span> textCountC2 = testStringC.match(regexPatternC2).length;</div></pre></td></tr></table></figure></p>
+<p><code>Case 4 | Replace</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> testString = <span class="string">"This is a test string for function xxx "</span>;  </div><div class="line"></div><div class="line"><span class="comment">/* match text 'xxx' */</span></div><div class="line"><span class="keyword">var</span> regexPattern = <span class="regexp">/xxx/gi</span>;</div><div class="line"></div><div class="line"><span class="keyword">var</span> newstring = testString.replace(regexPattern, <span class="string">'Replace'</span>);</div><div class="line"><span class="built_in">console</span>.log(newstring);  <span class="comment">// This is a test string for function Replace</span></div></pre></td></tr></table></figure></p>
+<p><code>Case 5 | Test</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// The Regex test() method will return true or false when match a certain string</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> regexNumTest = <span class="regexp">/\d/g</span>; <span class="comment">// test if string contains digits</span></div><div class="line"><span class="keyword">var</span> regexStartTest = <span class="regexp">/^[A-Z]/g</span>; <span class="comment">// test if string start with any word from A-Z </span></div><div class="line"><span class="keyword">var</span> regexEndTest = <span class="regexp">/[0-9]$/g</span>;   <span class="comment">// test if string end with any digits from 0-9</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> testString = <span class="string">"This is a test string for function test"</span>; </div><div class="line">regexNumTest.test(testString); <span class="comment">// false</span></div><div class="line">regexStartTest.test(testString); <span class="comment">// true</span></div><div class="line">regexEndTest.test(testString); <span class="comment">// false</span></div></pre></td></tr></table></figure></p>
+<h4 id="Resource"><a href="#Resource" class="headerlink" title="Resource"></a>Resource</h4><p><a href="https://www.debuggex.com/cheatsheet/regex/javascript" target="_blank" rel="external">Regex Cheatsheet</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="external">MDN - Regualr Expressions</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test" target="_blank" rel="external">MDN - Regex Test</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace" target="_blank" rel="external">MDN - String.prototype.replace()</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Regular Expression (Regex) is a search pattern, which can be used to find or replace certain text in strings. &lt;/p&gt;
+&lt;/blockqu
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript/Util" scheme="https://zhaoc.github.io/tags/JavaScript-Util/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Efficient JavaScript</title>
+    <link href="https://zhaoc.github.io/2017/11/25/Efficient-JavaScript/"/>
+    <id>https://zhaoc.github.io/2017/11/25/Efficient-JavaScript/</id>
+    <published>2017-11-25T23:53:05.000Z</published>
+    <updated>2018-04-01T00:56:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="1-Usage-of-Unicode-Character"><a href="#1-Usage-of-Unicode-Character" class="headerlink" title="1. Usage of Unicode Character"></a>1. Usage of <code>Unicode Character</code></h4><blockquote>
+<p>“I hear and I forget. I see and I remember. I do and I understand.”<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> rate = <span class="number">3</span></div><div class="line"><span class="string">"★★★★★☆☆☆☆☆"</span>.slice(<span class="number">5</span> - rate, <span class="number">10</span> - rate);</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h4 id="2-An-efficient-way-to-handle-JavaScript-exception"><a href="#2-An-efficient-way-to-handle-JavaScript-exception" class="headerlink" title="2. An efficient way to handle JavaScript exception"></a>2. An efficient way to handle JavaScript exception</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// by 'Jordan Hall'</span></div><div class="line"><span class="keyword">try</span> &#123;</div><div class="line">    <span class="comment">//something</span></div><div class="line">&#125; <span class="keyword">catch</span> (e) &#123;</div><div class="line">    <span class="built_in">window</span>.location.href =</div><div class="line">        <span class="string">"http://stackoverflow.com/search?q=[js]+"</span> +</div><div class="line">        e.message;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="3-Locate-all-DOM-elements-visually"><a href="#3-Locate-all-DOM-elements-visually" class="headerlink" title="3. Locate all DOM elements visually"></a>3. Locate all DOM elements visually</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// by 'Addy Osmani' https://addyosmani.com/</span></div><div class="line">[].forEach.call($$(<span class="string">"*"</span>),<span class="function"><span class="keyword">function</span>(<span class="params">a</span>)</span>&#123;</div><div class="line">    a.style.outline=<span class="string">"1px solid #"</span>+(~~(<span class="built_in">Math</span>.random()*(<span class="number">1</span>&lt;&lt;<span class="number">24</span>))).toString(<span class="number">16</span>)</div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="built_in">Array</span>.prototype.forEach.call(<span class="built_in">document</span>.querySelectorAll(<span class="string">'*'</span>), </div><div class="line">    dom =&gt; dom.style.outline = <span class="string">`1px solid #<span class="subst">$&#123;<span class="built_in">parseInt</span>(<span class="built_in">Math</span>.random() * </span></span></div><div class="line">    <span class="built_in">Math</span>.pow(<span class="number">2</span>,<span class="number">24</span>)).toString(<span class="number">16</span>)&#125;`)</div></pre></td></tr></table></figure>
+<h4 id="4-Separate-number-with"><a href="#4-Separate-number-with" class="headerlink" title="4. Separate number with ,"></a>4. Separate number with <code>,</code></h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> test1 = <span class="string">'1234567890'</span></div><div class="line"><span class="keyword">var</span> format = test1.replace(<span class="regexp">/\B(?=(\d&#123;3&#125;)+(?!\d))/g</span>, <span class="string">','</span>)</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(format) <span class="comment">//Output:  1,234,567,890</span></div></pre></td></tr></table></figure>
+<h4 id="5-An-unofficial-way-to-do-deep-clone-for-JSON-object"><a href="#5-An-unofficial-way-to-do-deep-clone-for-JSON-object" class="headerlink" title="5. An unofficial way to do deep clone for JSON object"></a>5. An unofficial way to do deep clone for JSON object</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = &#123;</div><div class="line">    <span class="attr">a</span>: <span class="number">1</span>,</div><div class="line">    <span class="attr">b</span>: &#123; <span class="attr">c</span>: <span class="number">1</span>, <span class="attr">d</span>: <span class="number">2</span> &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> b=<span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(a))</div></pre></td></tr></table></figure>
+<h4 id="6-Implicitly-convert-string-to-number"><a href="#6-Implicitly-convert-string-to-number" class="headerlink" title="6. Implicitly convert string to number"></a>6. Implicitly convert string to number</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a =<span class="number">1</span> </div><div class="line">+a</div></pre></td></tr></table></figure>
+<h4 id="7-Usage-of-ES6-Spread-Operator"><a href="#7-Usage-of-ES6-Spread-Operator" class="headerlink" title="7. Usage of ES6 Spread Operator"></a>7. Usage of ES6 <code>Spread Operator</code></h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// quickly remove duplicated number</span></div><div class="line">[...new <span class="built_in">Set</span>([<span class="number">2</span>, <span class="string">"2"</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">1</span>])] <span class="comment">//output: [2, "2", 3, 4, 1]</span></div><div class="line"></div><div class="line"><span class="comment">// create an array with length 3 and all number 2</span></div><div class="line"><span class="built_in">Array</span>(<span class="number">3</span>).fill(<span class="number">2</span>) <span class="comment">//outpput: [2, 2, 2]</span></div></pre></td></tr></table></figure>
+<h4 id="8-Find-Max-and-Min-use-Math"><a href="#8-Find-Max-and-Min-use-Math" class="headerlink" title="8. Find Max and Min use Math"></a>8. Find Max and Min use <code>Math</code></h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> numbers = [<span class="number">-99</span>, <span class="number">0</span> , <span class="number">99</span> , <span class="number">98</span> , <span class="number">-1</span>]; </div><div class="line"><span class="keyword">var</span> maxNum = <span class="built_in">Math</span>.max.apply(<span class="built_in">Math</span>, numbers); <span class="comment">// output: 99</span></div><div class="line"><span class="keyword">var</span> minNum = <span class="built_in">Math</span>.min.apply(<span class="built_in">Math</span>, numbers); <span class="comment">// ouput: -99</span></div></pre></td></tr></table></figure>
+<h4 id="9-Debugging-tips"><a href="#9-Debugging-tips" class="headerlink" title="9. Debugging tips"></a>9. Debugging tips</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// eye candy for JSON view</span></div><div class="line"><span class="keyword">var</span> fruits = [</div><div class="line">    &#123; <span class="attr">fruit</span>: <span class="string">'Tangerine'</span>, <span class="attr">weight</span>: <span class="number">43</span> &#125;,</div><div class="line">    &#123; <span class="attr">fruit</span>: <span class="string">'Cherry'</span>, <span class="attr">weight</span>: <span class="number">13</span> &#125;,</div><div class="line">    &#123; <span class="attr">fruit</span>: <span class="string">'Litchi'</span>, <span class="attr">weight</span>: <span class="number">25</span> &#125;</div><div class="line">];</div><div class="line"><span class="built_in">console</span>.table(fruits);</div><div class="line"></div><div class="line"><span class="comment">// output code snippets execution time period</span></div><div class="line"><span class="built_in">console</span>.time(<span class="string">'Timer01'</span>);</div><div class="line"><span class="keyword">var</span> items = [];</div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">100000</span>; i++)&#123;</div><div class="line">    items.push(&#123;<span class="attr">index</span>: i&#125;);</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.timeEnd(<span class="string">'Timer01'</span>);</div></pre></td></tr></table></figure>
+<h4 id="10-Remove-Timers-from-Global-Scope"><a href="#10-Remove-Timers-from-Global-Scope" class="headerlink" title="10. Remove Timers from Global Scope"></a>10. Remove Timers from Global Scope</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> highestTimeoutId = setTimeout(<span class="string">";"</span>);</div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;hightestTimeoutId; i++)&#123;</div><div class="line">    clearTimeout(i);</div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;1-Usage-of-Unicode-Character&quot;&gt;&lt;a href=&quot;#1-Usage-of-Unicode-Character&quot; class=&quot;headerlink&quot; title=&quot;1. Usage of Unicode Character&quot;&gt;&lt;/a&gt;1
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript/Util" scheme="https://zhaoc.github.io/tags/JavaScript-Util/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Usage of fetch()</title>
+    <link href="https://zhaoc.github.io/2017/11/05/Usage-of-fetch/"/>
+    <id>https://zhaoc.github.io/2017/11/05/Usage-of-fetch/</id>
+    <published>2017-11-06T00:43:59.000Z</published>
+    <updated>2018-01-31T23:12:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - <a href="http://www.math.tamu.edu/~cyan/Rota/mitless.html" target="_blank" rel="external">Gian-Carlo Rota</a></p>
+</blockquote>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/post_images/ship.png" title="" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/ship.png" alt="" oncontextmenu="return false;"></a></div><div style="clear:both;"></div>
+<p>fetch() is a global method provided by Fetch API which can be used to <code>GET</code> or <code>POST</code> data asynchronously through the network. </p>
+<h2 id="GET"><a href="#GET" class="headerlink" title="GET"></a><code>GET</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">fetch(<span class="string">"url"</span>, &#123;</div><div class="line">    <span class="attr">method</span>: <span class="string">"GET"</span>,</div><div class="line">    <span class="attr">mode</span>: <span class="string">'cors'</span></div><div class="line">    &#125;</div><div class="line">    <span class="comment">// default method is 'GET' if not provided</span></div><div class="line">    <span class="comment">// add "mode: 'cors'" to send cross orign request</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">response</span> =&gt;</span> response.json()</div><div class="line">    <span class="comment">// methed json() will convert the ReadableStream to json data format</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">data</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'Json data retrieved:'</span>, data)</div><div class="line">    <span class="comment">// data is ready for use</span></div><div class="line">);</div><div class="line"></div><div class="line"><span class="comment">// you can also use methods below to extract a body </span></div><div class="line"><span class="comment">// arrayBuffer(), blob(), text(), formData()</span></div></pre></td></tr></table></figure>
+<h2 id="POST"><a href="#POST" class="headerlink" title="POST"></a><code>POST</code></h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> dataToServer = &#123;....&#125;;</div><div class="line"></div><div class="line">fetch(<span class="string">"url"</span>, &#123;</div><div class="line">    <span class="attr">method</span>: <span class="string">"POST"</span>,</div><div class="line">    <span class="attr">headers</span>: &#123;</div><div class="line">        <span class="attr">Accept</span>: <span class="string">"application/json"</span>,</div><div class="line">        <span class="string">"Content-Type"</span>: <span class="string">"application/json"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">body</span>: <span class="built_in">JSON</span>.stringify(dataToServer)</div><div class="line">    &#125;</div><div class="line">    <span class="comment">// set headers as needed</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">response</span> =&gt;</span> response.text()</div><div class="line">    <span class="comment">// response from server</span></div><div class="line">).then(</div><div class="line">    <span class="function"><span class="params">result</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'Result content:'</span>, result)</div><div class="line">).catch(</div><div class="line">    <span class="function"><span class="params">err</span> =&gt;</span> <span class="built_in">console</span>.log(<span class="string">'error meesage'</span>, err.messge)</div><div class="line">);</div></pre></td></tr></table></figure>
+<h4 id="Difference-between-fetch-and-jQuery-ajax"><a href="#Difference-between-fetch-and-jQuery-ajax" class="headerlink" title="Difference between fetch() and jQuery.ajax()"></a>Difference between fetch() and jQuery.ajax()</h4><p>From <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank" rel="external">Fetch API</a>:</p>
+<blockquote>
+<p>The Promise returned from fetch() won’t reject on HTTP error status even if the response is an HTTP 404 or 500. Instead, it will resolve normally (with ok status set to false), and it will only reject on network failure or if anything prevented the request from completing.<br>By default, fetch won’t send or receive any cookies from the server, resulting in unauthenticated requests if the site relies on maintaining a user session (to send cookies, the credentials init option must be set).</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;“The world and your career are unpredictable, so you are better off learning subjects of permanent value”       - &lt;a href=&quot;h
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript/Util" scheme="https://zhaoc.github.io/tags/JavaScript-Util/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Create Your Own JavaScript Library</title>
+    <link href="https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/"/>
+    <id>https://zhaoc.github.io/2017/10/10/Create-Your-Own-JavaScript-Library/</id>
+    <published>2017-10-11T01:26:17.000Z</published>
+    <updated>2018-01-17T22:51:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>Don’t Repeat Yourself</p>
+</blockquote>
+<p>JavaScript has been developed rapidly in past few years. Developers are able to accumulate experience through reduplicated work. However, in order to improve the work efficiency and code quality, it is suggested to organize and maintain your codebase in a elegant way - Write your own JS Library.</p>
+<h2 id="How"><a href="#How" class="headerlink" title="How"></a>How</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">window</span>)</span>&#123;  <span class="comment">/* function scope starts here */</span></div><div class="line"><span class="meta">    'use strict'</span>;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">define_library</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">var</span> LogDecorator = &#123;&#125;; <span class="comment">// will be returned as a global variable</span></div><div class="line">        <span class="keyword">var</span> logging = <span class="literal">true</span>; <span class="comment">// disable/enable logging globally</span></div><div class="line">        <span class="keyword">var</span> logPrefix = <span class="string">"----------------Start---------------------"</span>;</div><div class="line">        <span class="keyword">var</span> logSuffix = <span class="string">"-----------------End---------------------"</span>;</div><div class="line"></div><div class="line">        LogDecorator.log = <span class="function"><span class="keyword">function</span>(<span class="params">option, targetObj</span>)</span>&#123;</div><div class="line">            <span class="keyword">if</span>(logging === <span class="literal">true</span>)&#123;</div><div class="line">                 <span class="built_in">console</span>.log(logPrefix);</div><div class="line">                 <span class="built_in">console</span>.log(<span class="string">`Option: <span class="subst">$&#123;option&#125;</span>`</span>);</div><div class="line">                 <span class="built_in">console</span>.log(<span class="string">'Target Object:'</span>);</div><div class="line">                 <span class="built_in">console</span>.log(targetObj);</div><div class="line">                 <span class="built_in">console</span>.log(logSuffix);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> LogDecorator;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">//define globally if it doesn't already exist</span></div><div class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span>(LogDecorator) === <span class="string">'undefined'</span>)&#123;</div><div class="line">        <span class="built_in">window</span>.LogDecorator = define_library();</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"LogDecorator has already been defined."</span>);</div><div class="line">    &#125;</div><div class="line">&#125;)(<span class="built_in">window</span>); <span class="comment">/* function scope ends */</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>Output Sample:</p>
+</blockquote>
+<div class="figure fig-50" style="width:;"><a class="fancybox" href="/assets/images/post_images/Create_Personal_JavaScript_Lib.png" title="Test Sample" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/Create_Personal_JavaScript_Lib.png" alt="Test Sample" oncontextmenu="return false;"></a><span class="caption">Test Sample</span></div><div style="clear:both;"></div>
+<h2 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h2><ol>
+<li><p>Use <code>Strict</code> can eliminate <code>silent errors</code> by changing them to throw errors. Besides, <code>Strict Mode</code> can help JavaScript engines to perform optimizations. Refer to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode" target="_blank" rel="external">Strict mode</a> for more details.</p>
+</li>
+<li><p>Core Concept - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" target="_blank" rel="external">JS Closures</a> &amp; <a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/" target="_blank" rel="external">Immediately-Invoked Function Expression</a></p>
+<p> Below is one way of using closures to define public functions that can access private functions and variables which is known as <code>module pattern</code>:</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="comment">// properties</span></div><div class="line">    <span class="comment">// methods</span></div><div class="line">    <span class="comment">// ...</span></div><div class="line">&#125;)(<span class="built_in">window</span>);</div><div class="line"><span class="comment">// Self-Executing Anonymous Functions</span></div></pre></td></tr></table></figure>
+<p> () is the scope set for this function you are able to create private methods/functions and properties inside local scope. <code>window</code> inside () is used as global scope in browser environment.</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// closures example</span></div><div class="line"><span class="keyword">var</span> globalVar = <span class="number">0</span>;</div><div class="line"></div><div class="line">(<span class="function"><span class="keyword">function</span> <span class="title">outerFunc</span>(<span class="params">outerArg</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> outerVar = <span class="number">3</span>;</div><div class="line"></div><div class="line">    (<span class="function"><span class="keyword">function</span> <span class="title">innerFunc</span>(<span class="params">innerArg</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> innerVar = <span class="number">4</span>;</div><div class="line"></div><div class="line">        <span class="built_in">console</span>.log(</div><div class="line">        <span class="string">"outerArg = "</span> + outerArg + <span class="string">"\n"</span> +</div><div class="line">        <span class="string">"innerArg = "</span> + innerArg + <span class="string">"\n"</span> +</div><div class="line">        <span class="string">"outerVar = "</span> + outerVar + <span class="string">"\n"</span> +</div><div class="line">        <span class="string">"innerVar = "</span> + innerVar + <span class="string">"\n"</span> +</div><div class="line">        <span class="string">"globalVar = "</span> + globalVar);</div><div class="line"></div><div class="line">    &#125;)(<span class="number">2</span>);</div><div class="line">&#125;)(<span class="number">1</span>);</div><div class="line"></div><div class="line"><span class="comment">// output:</span></div><div class="line"><span class="comment">// outerArg = 1</span></div><div class="line"><span class="comment">// innerArg = 2</span></div><div class="line"><span class="comment">// outerVar = 3</span></div><div class="line"><span class="comment">// innerVar = 4</span></div><div class="line"><span class="comment">// globalVar = 0</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Don’t Repeat Yourself&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;JavaScript has been developed rapidly in past few years. Developers are able to a
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Beauty of Diffie-Hellman Key Exchange</title>
+    <link href="https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/"/>
+    <id>https://zhaoc.github.io/2017/06/05/The-Beauty-of-Diffie-Hellman-Key-Exchange/</id>
+    <published>2017-06-06T01:32:14.000Z</published>
+    <updated>2017-10-11T02:40:58.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/post_images/Diffie-Hellman_Key_Exchange.png" title="Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)" data-fancybox-group=""><img class="fig-img" src="/assets/images/post_images/Diffie-Hellman_Key_Exchange.png" alt="Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)" oncontextmenu="return false;"></a><span class="caption">Diffie-Hellman Key Exchange (Value marked as red is private and only visible to its owner)</span></div><div style="clear:both;"></div>
+<p>Diffie-Hellman is a very simple algorithm which can be used to establish a shared secret between two parties.</p>
+<h3 id="How-it-works"><a href="#How-it-works" class="headerlink" title="How it works"></a>How it works</h3><p> Robot A use its private number <code>a</code> to generate value <code>A</code> and pass it to Robot B along with value <code>g</code> and <code>p</code>. Value <code>g</code>, <code>p</code> and <code>A</code> are all public. Robot B uses the same formula to generate value <code>B</code> using its private value <code>b</code> then transfers value <code>B</code> to Robot A. After all of that, Robot A and B can get same value <code>R</code> without exposing its private values to others.</p>
+<h3 id="Usage-of-D-H-and-Concept-Behind"><a href="#Usage-of-D-H-and-Concept-Behind" class="headerlink" title="Usage of D-H and Concept Behind"></a>Usage of D-H and Concept Behind</h3><p>During the network communications, data can be eaily exposed to attackers. D-H provides a fantastic solution for that. Using D-H algorithm, users can estalish a secret even through public channels.</p>
+<p>The key concept of this algorithm is <a href="https://en.wikipedia.org/wiki/Trapdoor_function" target="_blank" rel="external"><code>Trapdoor Function</code></a> which is widely used in cryptography. In this case, <code>f(x)=g^x mod p</code> is a <code>Trapdoor Function</code>, f(x) can be easily calculated when x is given but the computation of the inverse of f can hardly be done.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;figure center&quot; style=&quot;width:;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/assets/images/post_images/Diffie-Hellman_Key_Exchange.png&quot; title=&quot;Diff
+    
+    </summary>
+    
+    
+      <category term="cryptographic" scheme="https://zhaoc.github.io/tags/cryptographic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A Taste of Observer pattern in JavaScript</title>
+    <link href="https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/"/>
+    <id>https://zhaoc.github.io/2017/03/30/observer-design-pattern-in-JavaScript/</id>
+    <published>2017-03-30T22:07:48.000Z</published>
+    <updated>2017-03-31T02:28:53.000Z</updated>
+    
+    <content type="html"><![CDATA[<p> Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. </p>
+<p> There would be an object (observer collection) maintains a list of events. Those observers (subscriber) will be automatically notified once the event occurs. </p>
+<h4 id="Code-Sample"><a href="#Code-Sample" class="headerlink" title="Code Sample:"></a>Code Sample:</h4><blockquote>
+<ol>
+<li><p>observer subscribes to an event by the event name. ‘globalBroadcaster’ is an observer collection which stores the events subscribed. ‘handler’ is the action observer will make once the event occurs.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.subscribe(<span class="string">'uniqueEventName'</span>, handler);</div></pre></td></tr></table></figure>
+</li>
+<li><p>Once the event be published, all the subscribers of this event will be notified. parameters could be injected when event published and it can be used by the subscribers. */</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.publish(<span class="string">'uniqueEventName'</span>, parameter1, parameter2, ...);</div></pre></td></tr></table></figure>
+</li>
+<li><p>Observer can unsubsribe the event in the ‘handler’ after being notified. In this case, observer won’t be notified if same event published again.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">globalBroadcaster.unsubscribe(<span class="string">'uniqueEventName'</span>, handler);</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</blockquote>
+<h4 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h4><blockquote>
+<p>The biggest benifit of using Sub/Pub pattern comes from the concept of decoupling. Observer A doesn’t need to worry about how the event published or who announces the event, ‘A’ will process its handler once be notified.</p>
+<p>The disadvantages also come from decoupling modules. It would be hard for one to draw a clearly workflow since some of the actions processed on the fly. It will cause chaos if not implemented properly. </p>
+<p>Anyhow, I like the concept of decoupling, especially in group work.</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; Observer pattern (also known as Pub/Sub pattern) can be used to help break down a whole application into more loosely coupled modules. &lt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A Taste of JavaScript Promise</title>
+    <link href="https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/"/>
+    <id>https://zhaoc.github.io/2017/03/24/A-Taste-of-JavaScript-Promise/</id>
+    <published>2017-03-25T01:04:58.000Z</published>
+    <updated>2017-10-16T00:39:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="figure center" style="width:;"><a class="fancybox" href="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" title="JavaScript Promise" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76bd9e/687474703a2f2f7279616e73756b616c652e636f6d2f76697a2f50726f6d6973652e706e67" alt="JavaScript Promise" oncontextmenu="return false;"></a><span class="caption">JavaScript Promise</span></div><div style="clear:both;"></div>
+<blockquote>
+<p>JavaScript Promises are used to track the state of an asynchronous task.</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="comment">/* executor */</span> <span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;...&#125;);</div></pre></td></tr></table></figure>
+<h2 id="Promise-states"><a href="#Promise-states" class="headerlink" title="Promise states"></a>Promise states</h2><ul>
+<li>fulfilled - the action relating to the promise successed</li>
+<li>rejected - the action relating to the promise failed</li>
+<li>pending - hasn’t fulfilled or rejected yet</li>
+<li>settled - has fulfilled or rejected</li>
+</ul>
+<blockquote>
+<p>A promise can be <code>resolved to</code> either a promise or thenable, in which case it will store the promise or thenable for later unwrapping.</p>
+</blockquote>
+<h2 id="how-to-create-a-promise"><a href="#how-to-create-a-promise" class="headerlink" title="how to create a promise"></a>how to create a promise</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</div><div class="line">    <span class="comment">//process a task, possibly async, then...</span></div><div class="line">    <span class="keyword">if</span>(<span class="comment">/* task successed */</span>)&#123;</div><div class="line">        resolve(<span class="string">"it worked!"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span>&#123;</div><div class="line">        reject(<span class="built_in">Error</span>(<span class="string">"it  failed!"</span>));</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="how-to-use-promise"><a href="#how-to-use-promise" class="headerlink" title="how to use promise"></a>how to use promise</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">promise.then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(result); <span class="comment">// "it worked!"</span></div><div class="line">&#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(err); <span class="comment">//"it failed!"</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<blockquote>
+<p><code>then()</code> takes two arguments, callback for a success case, and another for the failure case. Both are optional, so you are able to add a callback for the success or failure case only.</p>
+</blockquote>
+<h4 id="Resources"><a href="#Resources" class="headerlink" title="Resources:"></a>Resources:</h4><p>   <a href="http://www.javascriptkit.com/javatutors/javascriptpromises.shtml" target="_blank" rel="external">Guide to JavaScript Promise</a>， <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises#promise-api-reference" target="_blank" rel="external">Promise API Reference</a></p>
+<hr>
+<h3 id="Update-2017-06-11"><a href="#Update-2017-06-11" class="headerlink" title="Update (2017/06/11)"></a>Update (2017/06/11)</h3><blockquote>
+<p>The purpose of <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function" target="_blank" rel="external">async/await</a> function is to simplify the behavior of using promises synchronously and to perform some behavior on a group of <code>Promises</code>. Just like <code>Promises</code> are similar to structured callbacks, <code>async/await</code> is similar to combining generators and promises.  -MDN</p>
+</blockquote>
+<p>Also read <a href="https://hackernoon.com/6-reasons-why-javascripts-async-await-blows-promises-away-tutorial-c7ec10518dd9?gi=15da56f7b64f" target="_blank" rel="external">Why Async/Await is better than Promise</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;figure center&quot; style=&quot;width:;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;https://camo.githubusercontent.com/87eeaf90bf51aea228fd0e0c14fd9807cc76
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="https://zhaoc.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Photography</title>
+    <link href="https://zhaoc.github.io/2017/03/08/Gallery/"/>
+    <id>https://zhaoc.github.io/2017/03/08/Gallery/</id>
+    <published>2017-03-08T22:53:42.000Z</published>
+    <updated>2017-03-09T03:06:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-1.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-1.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-2.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail2.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-3.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail3.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-5.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail5.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-4.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail4.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-6.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail6.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-7.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail7.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-8.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail8.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-9.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-9.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-10.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail10.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-11.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail11.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-33" style="width:;"><a class="fancybox" href="/assets/images/raw/image-13.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail13.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-14.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-14.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-16.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-16.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-19.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-19.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-17.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-17.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-18.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-18.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-50" style="width:;"><a class="fancybox" href="/assets/images/raw/image-20.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-20.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-50" style="width:;"><a class="fancybox" href="/assets/images/raw/image-21.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-21.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-22.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-22.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure left" style="width:;"><a class="fancybox" href="/assets/images/raw/image-23.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail23.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure right" style="width:;"><a class="fancybox" href="/assets/images/raw/image-24.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail24.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="/assets/images/raw/image-25.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-25.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-12.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-12.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure center" style="width:;"><a class="fancybox" href="/assets/images/raw/image-15.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/raw/image-15.jpg" alt="" oncontextmenu="return false;"></a></div>
+<!--<div class="figure left" style="width:;"><a class="fancybox" href="/assets/images/raw/image-27.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail27.jpg" alt="" oncontextmenu="return false;"></a></div>
+<div class="figure right" style="width:;"><a class="fancybox" href="/assets/images/raw/image-26.jpg" title="" data-fancybox-group="photography"><img class="fig-img" src="/assets/images/thumbnail/thumbnail26.jpg" alt="" oncontextmenu="return false;"></a></div>–&gt;
+-->]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;figure fig-100&quot; style=&quot;width:;&quot;&gt;&lt;a class=&quot;fancybox&quot; href=&quot;/assets/images/raw/image-1.jpg&quot; title=&quot;&quot; data-fancybox-group=&quot;photogra
+    
+    </summary>
+    
+    
+      <category term="photos" scheme="https://zhaoc.github.io/tags/photos/"/>
+    
+  </entry>
+  
+</feed>

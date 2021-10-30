@@ -1,0 +1,883 @@
+{
+    "root": "UrlArchive",
+    "data": [{
+            "LevelOneName": "Web Implementation",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Web Conventions",
+                    "LevelTwoChilds": [{
+                            "title": "ECMA Script",
+                            "url": "https://www.ecma-international.org/publications/standards/Ecma-262.htm",
+                            "alias": "ecma-international-standards",
+                            "description": "ECMA Standards"
+                        },{
+                            "title": "HTML5",
+                            "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+                            "description": "HTML5 is the latest evolution of the standard that defines HTML.",
+                            "alias": "mozilla/html5"
+                        },
+                        {
+                            "title": "HTML Head",
+                            "url": "https://github.com/joshbuchea/HEAD",
+                            "description": "A list of everything that *could* go in the <head> of your document"
+                        },
+                        {
+                            "title": "HTML Tags",
+                            "url": "https://www.w3schools.com/Tags/tag_link.asp",
+                            "description": "an explanation of tags used in HTML docs"
+                        },
+                        {
+                            "title": "CSS Media Queries",
+                            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries",
+                            "alias": "Using-media-queries",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Front End Checklist",
+                            "url": "https://github.com/thedaviddias/Front-End-Checklist",
+                            "description": "The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your site / HTML page to production."
+                        },
+                        {
+                            "title": "WHATWG Community",
+                            "url": "https://whatwg.org/",
+                            "description": "The Web Hypertext Application Technology Working Group (WHATWG) is a community of people interested in evolving the web through standards and tests."
+                        },
+                        {
+                            "title": "W3C Web Standards (List)",
+                            "url": "https://www.w3.org/TR/",
+                            "description": "The W3C technical report development process is the set of steps and requirements followed by W3C Working Groups to standardize Web technology."
+                        },
+                        {
+                            "title": "Web Workers",
+                            "url": "https://www.w3.org/TR/workers/",
+                            "description": "worker allows for thread-like operation with message-passing as the coordination mechanism"
+                        },
+                        {
+                            "title": "Promises A+",
+                            "url": "https://promisesaplus.com/implementations",
+                            "description": "promises implementation standard"
+                        },
+                        {
+                            "title": "Await/Async",
+                            "url": "http://nikgrozev.com/2017/10/01/async-await/",
+                            "description": "Await and Async Explained with Diagrams and Examples."
+                        },
+                        {
+                            "title": "Service Workers",
+                            "url": "https://jakearchibald.github.io/isserviceworkerready/resources.html",
+                            "description": "...",
+                            "alias": "is-service-worker-ready"
+                        },
+                        {
+                            "title": "Hardware Intergration for Web",
+                            "url": "https://www.w3.org/Mobile/mobile-web-app-state/#Sensors_and_hardware_integration",
+                            "description": "",
+                            "alias": "ensors_and_hardware_integration"
+                        },
+                        {
+                            "title": "Everything HTTP (bagder Gitbook)",
+                            "url": "https://www.gitbook.com/@bagder",
+                            "description": "Books: 'Http2 Explained' & 'Everything curl' "
+                        },
+                        {
+                            "title": "Content Security Policy",
+                            "url": "https://www.w3.org/TR/CSP2/",
+                            "description": "This document defines a policy language used to declare a set of content restrictions for a web resource, and a mechanism for transmitting the policy from a server to a client where the policy is enforced."
+                        },
+                        {
+                            "title": "Web Content Accessibility Guidelines (WCAG) Overview",
+                            "url": "https://www.w3.org/WAI/intro/wcag",
+                            "description": "..."
+                        },
+                        {
+                            "title": "JS/CSS Preprocessors",
+                            "url": "https://developers.google.com/web/tools/setup/setup-preprocessors#debugging-and-editing-preprocessed-content",
+                            "alias": "setup-css-preprocessors",
+                            "description": "..."
+                        },
+                        {
+                            "title": "JS Proxy",
+                            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+                            "alias": "js-global_object-proxy",
+                            "description": "Check arc/design/programming/Metaprogramming for futher details."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Web Essential",
+                    "LevelTwoChilds": [{
+                            "title": "Webpack",
+                            "url": "https://webpack.js.org/",
+                            "description": "At its core, webpack is a static module bundler for modern JavaScript applications. When webpack processes your application, it recursively builds a dependency graph that includes every module your application needs, then packages all of those modules into one or more bundles."
+                        },
+                        {
+                            "title": "V8 JavaScript Engine",
+                            "url": "https://v8project.blogspot.ca/",
+                            "description": "This is the official blog of the V8 JavaScript engine."
+                        },
+                        {
+                            "title": "Commonjs",
+                            "url": "http://requirejs.org/docs/commonjs.html",
+                            "description": "CommonJS defines a module format."
+                        },
+                        {
+                            "title": "WebRTC Code Sample",
+                            "url": "https://github.com/webrtc/samples",
+                            "description": "This is a repository for the WebRTC Javascript code samples."
+                        },
+                        {
+                            "title": "WebSocket",
+                            "url": "https://github.com/websockets/ws",
+                            "description": "ws is a simple to use, blazing fast, and thoroughly tested WebSocket client and server implementation."
+                        },
+                        {
+                            "title": "Socket.io",
+                            "url": "https://socket.io/get-started/chat/",
+                            "description": "Socket.IO enables real-time bidirectional event-based communication."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Web Optimisation",
+                    "LevelTwoChilds": [{
+                            "title": "Progressive Web App",
+                            "url": "https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/",
+                            "description": "Progressive Web Apps are experiences that combine the best of the web and the best of apps.",
+                            "alias": "google/progressive-web-app"
+                        },
+                        {
+                            "title": "Progressive Web App Samples",
+                            "url": "https://pwa.rocks/",
+                            "description": "A website with PWA demos."
+                        },
+                        {
+                            "title": "The Cost of Javascript",
+                            "url": "https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e",
+                            "description": "",
+                            "alias": "perfromnace-impact-of-javascript"
+                        },
+                        {
+                            "title": "The PRPL Pattern",
+                            "url": "https://developers.google.com/web/fundamentals/performance/prpl-pattern/",
+                            "description": "PRPL is a new pattern we feel has great potential. At this stage, we welcome experimentation with it while we iterate on the ideas in the pattern and collect more data on where it offers the greatest benefits.",
+                            "alias": "performance/prpl-pattern/"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Web Design",
+                    "LevelTwoChilds": [{
+                            "title": "The Twelve-Factor App",
+                            "url": "https://12factor.net/",
+                            "description": "The twelve-factor app is a methodology for building software-as-a-service apps.."
+                        },
+                        {
+                            "title": "ReactiveX",
+                            "url": "http://reactivex.io/",
+                            "description": "ReactiveX is a library for composing asynchronous and event-based programs by using observable sequences."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Web Security",
+                    "LevelTwoChilds": [{
+                            "title": "Cross-Origin Resource Sharing",
+                            "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS",
+                            "description": "...",
+                            "alias": "CROS"
+                        },
+                        {
+                            "title": "Let's Encrypt",
+                            "url": "https://letsencrypt.org/",
+                            "description": "Let’s Encrypt is a free, automated, and open Certificate Authority."
+                        },
+                        {
+                            "title": "Certbot",
+                            "url": "https://github.com/certbot/certbot",
+                            "description": "Certbot, previously the Let's Encrypt Client, is EFF's tool to obtain certs from Let's Encrypt, and (optionally) auto-enable HTTPS on your server. It can also act as a client for any other CA that uses the ACME protocol."
+                        },
+                        {
+                            "title": "Common Web Security Setup",
+                            "url": "https://codeburst.io/common-security-issues-in-web-applications-part-1-af339360c646",
+                            "description": "...",
+                            "alias": "common-security-issues-in-web-applications"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Web Utils",
+                    "LevelTwoChilds": [{
+                            "title": "Web Trends",
+                            "url": "https://trends.google.com/trends/",
+                            "description": "..."
+                        },
+                        {
+                            "title": "MongoDB Altas",
+                            "url": "https://www.mongodb.com/cloud/atlas",
+                            "description": "Database as a Service"
+                        },
+                        {
+                            "title": "Service Workers (UPUP)",
+                            "url": "https://www.talater.com/upup/",
+                            "description": "Support website in offline mode."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "V8 Engine",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Documentation",
+                "LevelTwoChilds": [{
+                        "title": "V8 wiki",
+                        "url": "https://github.com/v8/v8/wiki/Introduction",
+                        "description": "V8 wiki"
+                    },
+                    {
+                        "title": "Hidden Class & Inline Caching in V8",
+                        "url": "http://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html",
+                        "description": "...",
+                        "alias": "v8-hidden-class-and-inline-caching"
+                    }
+                ]
+            }]
+        },
+        {
+            "LevelOneName": "JavaScript Core",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                            "title": "Speaking JS",
+                            "url": "http://speakingjs.com/",
+                            "description": "JavaScript Core Concept"
+                        },
+                        {
+                            "title": "JS Core Concept Intro",
+                            "url": "https://github.com/getify/You-Dont-Know-JS",
+                            "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                        "title": "JS Memory Mangement",
+                        "url": "https://blog.sessionstack.com/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks-3f28b94cfbec",
+                        "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language.",
+                        "alias": "how-javascript-works-memory-management"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                            "title": "JavaScriprt Tool Kit - A",
+                            "url": "https://github.com/proYang/outils",
+                            "description": "JS Tool Kit."
+                        },
+                        {
+                            "title": "JS Tool Kit - B",
+                            "url": "https://github.com/Chalarangelo/30-seconds-of-code",
+                            "description": "Curated collection of useful Javascript snippets that you can understand in 30 seconds or less."
+                        },
+                        {
+                            "title": "freeCodeCamp",
+                            "url": "https://www.freecodecamp.org/map#nested-collapseBasicJavaScript",
+                            "description": "freeCodeCamp JavaScript Section",
+                            "alias": "javascript-basics"
+                        },
+                        {
+                            "title": "JavaScript Factory Functions With ES6",
+                            "url": "https://medium.com/javascript-scene/javascript-factory-functions-with-es6-4d224591a8b1",
+                            "description": "...",
+                            "alias": "javascript-factory-functions-with-es6"
+                        }
+                    ]
+                } 
+            ]
+        },
+        {
+            "LevelOneName": "Front-end Development",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "CSS",
+                    "LevelTwoChilds": [{
+                            "title": "Uncss",
+                            "url": "https://github.com/giakki/uncss",
+                            "description": "UnCSS is a tool that removes unused CSS from your stylesheets. It works across multiple files and supports Javascript-injected CSS."
+                        },
+                        {
+                            "title": "CSS Color Picker",
+                            "url": "https://www.w3schools.com/cssref/css_colors.asp",
+                            "description": "color picker",
+                            "alias": "css-color-picker"
+                        },
+                        {
+                            "title": "Less.js",
+                            "url": "https://github.com/less/less.js/",
+                            "description": "The dynamic stylesheet language."
+                        },
+                        {
+                            "title": "Less vs. CSS",
+                            "url": "https://htmlmag.com/article/an-introduction-to-css-preprocessors-sass-less-stylus",
+                            "alias": "an-introduction-to-css-preprocessors-sass-less",
+                            "description": "Less, CSS and SASS comparision."
+                        },
+                        {
+                            "title": "Yahoo Pure.css",
+                            "url": "https://purecss.io/tables/",
+                            "description": "A set of small, responsive CSS modules that you can use in every web project."
+                        },
+                        {
+                            "title": "Normalize.css",
+                            "url": "https://github.com/necolas/normalize.css",
+                            "description": "A modern alternative to CSS resets"
+                        },
+                        {
+                            "title": "Adminlte",
+                            "url": "https://adminlte.io/",
+                            "description": "An open source admin dashboard & control panel theme. Built on top of Bootstrap 3, AdminLTE provides a range of responsive, reusable, and commonly used components."
+                        },
+                        {
+                            "title": "Flex-box",
+                            "url": "https://github.com/philipwalton/solved-by-flexbox",
+                            "description": "A showcase of problems once hard or impossible to solve with CSS alone, now made trivially easy with Flexbox."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "UI Components",
+                    "LevelTwoChilds": [{
+                            "title": "jsGrid",
+                            "url": "http://js-grid.com/",
+                            "description": "jsGrid is a lightweight client-side data grid control based on jQuery. "
+                        },
+                        {
+                            "title": "Ace Editor",
+                            "url": "https://github.com/ajaxorg/ace",
+                            "description": "Ace is a standalone code editor written in JavaScript."
+                        },
+                        {
+                            "title": "jsPanel",
+                            "url": "http://jspanel.de/",
+                            "description": "A jsPanel is highly configurable by numerous of options, properties, methods and events. "
+                        },
+                        {
+                            "title": "jsTree",
+                            "url": "https://github.com/vakata/jstree/",
+                            "description": "jsTree is jquery plugin, that provides interactive trees."
+                        },
+                        {
+                            "title": "notifyJs",
+                            "url": "https://notifyjs.com/",
+                            "description": "Notify.js is a jQuery plugin to provide simple yet fully customisable notifications."
+                        },
+                        {
+                            "title": "Sweet Alert",
+                            "url": "https://github.com/t4t5/sweetalert",
+                            "description": "A beautiful replacement for JavaScript's 'alert' "
+                        },
+                        {
+                            "title": "ECharts (Charting)",
+                            "url": "https://github.com/ecomfe/echarts",
+                            "description": "A powerful, interactive charting and visualization library for browser."
+                        },
+                        {
+                            "title": "Calendar",
+                            "url": "https://github.com/nhnent/tui.calendar",
+                            "description": "..."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Data Model",
+                    "LevelTwoChilds": [{
+                            "title": "Facebook Immutable collections",
+                            "url": "https://github.com/facebook/immutable-js",
+                            "description": "Immutable persistent data collections for Javascript which increase efficiency and simplicity."
+                        },
+                        {
+                            "title": "Decimal.js",
+                            "url": "https://github.com/MikeMcl/decimal.js",
+                            "description": "handle floating number operation."
+                        },
+                        {
+                            "title": "jsSpacetime",
+                            "url": "https://github.com/smallwins/spacetime",
+                            "description": "A simple way to manipulate, compare, and format dates and times across the Earth"
+                        },
+                        {
+                            "title": "jSchema Data Modeling",
+                            "url": "https://github.com/ignoreintuition/jSchema",
+                            "description": "Data Modeling in JavaScript jSchema is a framework for modeling data in JavaScript."
+                        },
+                        {
+                            "title": "Momentjs",
+                            "url": "https://momentjs.com/",
+                            "description": "A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Controller",
+                    "LevelTwoChilds": [{
+                            "title": "Lodash",
+                            "url": "https://github.com/lodash/lodash/",
+                            "description": "JavaScript utility library"
+                        },
+                        {
+                            "title": "Promise Blue Bird",
+                            "description": "...",
+                            "url": "http://bluebirdjs.com/docs/api/promise.promisifyall.html",
+                            "alias": "promisify-all-api"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Animation",
+                    "LevelTwoChilds": [{
+                            "title": "JavaScript Animation Engine",
+                            "url": "https://github.com/juliangarnier/anime",
+                            "description": "JavaScript Animation Engine"
+                        }, {
+                            "title": "Overlay Spinning Bar",
+                            "url": "https://gasparesganga.com/labs/jquery-loading-overlay/",
+                            "description": "easy spinning bar",
+                            "alias": "jquery-loading-overlay"
+                        },
+                        {
+                            "title": "Animate+",
+                            "url": "https://github.com/bendc/animateplus",
+                            "description": "Animate Plus is a JavaScript animation library focusing on performance and authoring flexibility."
+                        },
+                        {
+                            "title": "Lottie",
+                            "url": "https://github.com/airbnb/lottie-web",
+                            "description": "Lottie is a mobile library for Web, and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile!"
+                        },
+                        {
+                            "title": "Dynamics.js",
+                            "url": "https://github.com/michaelvillar/dynamics.js",
+                            "description": "Dynamics.js is a JavaScript library to create physics-based animations."
+                        },
+                        {
+                            "title": "P5.js",
+                            "url": "https://github.com/processing/p5.js",
+                            "description": "p5.js is a JavaScript library that starts with the original goal of Processing, to make coding accessible for artists, designers, educators, and beginners, and reinterprets this for today's web."
+                        },
+                        {
+                            "title": "Rainyday.js",
+                            "url": "https://github.com/maroslaw/rainyday.js",
+                            "description": "A simple script for simulating raindrops falling on a glass surface."
+                        },
+                        {
+                            "title": "Snabbt.js",
+                            "url": "https://github.com/daniel-lundin/snabbt.js",
+                            "description": "Fast animations with Javascript and CSS transforms."
+                        },
+                        {
+                            "title": "Scrollama.js",
+                            "url": "https://github.com/russellgoldenberg/scrollama",
+                            "description": "Scrollama is a modern & lightweight JavaScript library for scrollytelling using IntersectionObserver in favor of scroll events."
+                        },
+                        {
+                            "title": "Scroll Reveal",
+                            "url": "https://github.com/jlmakes/scrollreveal",
+                            "description": "Easy scroll animations for web and mobile browsers."
+                        },
+                        {
+                            "title": "Popmotion",
+                            "url": "https://popmotion.io/",
+                            "description": "A Swiss Army knife for animators and interaction developers"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "SVG",
+                    "LevelTwoChilds": [{
+                            "title": "Supper Tiny SVG Icons",
+                            "url": "https://github.com/edent/SuperTinyIcons",
+                            "description": "Super Tiny Social Icons."
+                        },
+                        {
+                            "title": "D3.js",
+                            "url": "https://github.com/d3/d3",
+                            "description": "D3 (or D3.js) is a JavaScript library for visualizing data using web standards. D3 helps you bring data to life using SVG, Canvas and HTML."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Media Content Processor",
+                    "LevelTwoChilds": [{
+                            "title": "Video.js",
+                            "url": "https://github.com/videojs/video.js/",
+                            "description": "open source HTML5 & Flash video player."
+                        },
+                        {
+                            "title": "jsMPEG",
+                            "url": "https://github.com/phoboslab/jsmpeg",
+                            "description": "MPEG1 Video Decoder in JavaScript."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Vue.js",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                        "title": "Flux-like Structure",
+                        "url": "https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch",
+                        "description": "VueJS State Management",
+                        "alias": "Simple-State-Management-from-Scratch"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                            "title": "VueJS Style Guide",
+                            "url": "https://vuejs.org/v2/style-guide/",
+                            "description": "The official style guide for Vue-specific code."
+                        },
+                        {
+                            "title": "Vue App Step-by-Step Tutorial",
+                            "url": "https://segmentfault.com/a/1190000009275424",
+                            "description": "Vue Backend Setup",
+                            "alias": "segmentfault-vue-app-setup"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                            "title": "Vuex",
+                            "url": "https://vuex.vuejs.org/en/",
+                            "description": "Vuex is a state management pattern + library for Vue.js applications. It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated in a predictable fashion."
+                        },
+                        {
+                            "title": "Vue Element Admin",
+                            "url": "https://github.com/PanJiaChen/vue-element-admin",
+                            "description": "Vue Admin Style Page Library"
+                        },
+                        {
+                            "title": "Element",
+                            "url": "https://github.com/ElemeFE/element",
+                            "description": "A Vue.js 2.0 UI Toolkit for Web."
+                        },
+                        {
+                            "title": "iView",
+                            "url": "https://github.com/iview/iview",
+                            "description": "A Vue.js 2.0 UI Toolkit for Web."
+                        },
+                        {
+                            "title": "Vue Material",
+                            "url": "https://vuematerial.io/",
+                            "description": "Vue components in material design."
+                        },
+                        {
+                            "title": "Made with Vue.js",
+                            "url": "https://madewithvuejs.com/",
+                            "description": "Pages built on top of Vue.js"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Node.js",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "NodeJS Core",
+                    "LevelTwoChilds": [{
+                            "title": "Documentation",
+                            "url": "https://nodejs.org/en/docs/guides/",
+                            "description": "Node.js Documentation"
+                        },
+                        {
+                            "title": "Node.js Presentation by Ryan Dahl",
+                            "url": "https://www.youtube.com/watch?v=jo_B4LTHi3I",
+                            "description": "Node.js Introduction"
+                        },
+                        {
+                            "title": "NodeJS Best Practices",
+                            "url": "https://github.com/i0natan/nodebestpractices",
+                            "description": "This doc includes nodejs best practices, style guides, and architectural tips."
+                        },
+                        {
+                            "title": "libuv",
+                            "url": "http://libuv.org/",
+                            "description": "a multi-platform support library with a focus on asynchronous I/O"
+                        },
+                        {
+                            "title": "Node Wenworker Threads",
+                            "url": "https://github.com/audreyt/node-webworker-threads",
+                            "alias": "node-webworker-threads",
+                            "description": "Lightweight Web Worker API implementation with native threads"
+                        },
+                        {
+                            "title": "Thread Pool (stackoverflow)",
+                            "url": "https://stackoverflow.com/questions/22644328/when-is-the-thread-pool-used",
+                            "alias": "when-is-the-thread-pool-used",
+                            "description": "..."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Express Framework",
+                    "LevelTwoChilds": [{
+                            "title": "Express.js",
+                            "url": "https://expressjs.com/",
+                            "description": "Fast, unopinionated, minimalist web framework for Node.js"
+                        },
+                        {
+                            "title": "Express-Nodejs Tutorial",
+                            "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website",
+                            "alias": "express-nodejs-tutorial",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Express Middleware",
+                            "url": "http://expressjs.com/en/resources/middleware.html",
+                            "description": "express.js official middleware provided"
+                        },
+                        {
+                            "title": "Express Template Engines",
+                            "url": "https://github.com/expressjs/express/wiki#template-engines",
+                            "alias": "express-template-engines",
+                            "description": "express template engines wiki"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Socket.io Framework",
+                    "LevelTwoChilds": [{
+                        "title": "Socket.io",
+                        "url": "https://github.com/socketio/socket.io",
+                        "description": "Socket.IO enables real-time bidirectional event-based communication."
+                    }]
+                },
+                {
+                    "LevelTwoName": "NodeJS Utils",
+                    "LevelTwoChilds": [{
+                            "title": "Node HTTP Proxy",
+                            "url": "https://github.com/nodejitsu/node-http-proxy",
+                            "description": "node-http-proxy is an HTTP programmable proxying library that supports websockets. It is suitable for implementing components such as reverse proxies and load balancers."
+                        },
+                        {
+                            "title": "Nodemon",
+                            "url": "https://nodemon.io/",
+                            "description": "Nodemon is a utility that will monitor for any changes in your source and automatically restart your server."
+                        },
+                        {
+                            "title": "Boom Error Handler",
+                            "url": "https://github.com/hapijs/boom",
+                            "description": "HTTP-friendly error objects"
+                        },
+                        {
+                            "title": "Pino Light-Weight Logger",
+                            "url": "https://github.com/pinojs/pino",
+                            "description": "Extremely fast node.js logger"
+                        },
+                        {
+                            "title": "Winston Logger",
+                            "url": "https://github.com/winstonjs/winston",
+                            "description": "A logger for just about everything"
+                        },
+                        {
+                            "title": "AMQP lib & Client for Node.js",
+                            "url": "https://github.com/squaremo/amqp.node",
+                            "description": "A library for making AMQP 0-9-1 clients for Node.JS, and an AMQP 0-9-1 client for Node.JS v0.8-0.12, v4-v9, and the intervening io.js releases."
+                        },
+                        {
+                            "title": "Busboy",
+                            "url": "https://github.com/mscdex/busboy",
+                            "description": "A streaming parser for HTML form data for node.js."
+                        },
+                        {
+                            "title": "Multer",
+                            "url": "https://github.com/expressjs/multer",
+                            "description": "Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files."
+                        },
+                        {
+                            "title": "Uppy",
+                            "url": "https://github.com/transloadit/uppy",
+                            "description": "file uploader for web browsers."
+                        },
+                        {
+                            "title": "Fake Data Generator",
+                            "url": "https://github.com/Marak/faker.js",
+                            "description": "generate massive amounts of fake data in Node.js and the browser."
+                        },
+                        {
+                            "title": "Sharp Image Resizer",
+                            "url": "https://github.com/lovell/sharp",
+                            "description": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP and TIFF images. Uses the libvips library."
+                        },
+                        {
+                            "title": "Lodash/FP (Functional Programming)",
+                            "url": "https://lodash.com/",
+                            "description": "FP friendly style by exporting an instance of lodash with its methods wrapped to produce immutable auto-curried iteratee-first data-last methods."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Automation Testing",
+                    "LevelTwoChilds": [{
+                            "title": "Night Watch",
+                            "url": "http://nightwatchjs.org/",
+                            "description": "Write End-to-End tests in Node.js quickly and effortlessly that run against a Selenium/WebDriver server."
+                        },
+                        {
+                            "title": "Grunt Task Runner",
+                            "url": "https://github.com/gruntjs/grunt",
+                            "description": "A JavaScript Task Runner."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Data Store",
+                    "LevelTwoChilds": [{
+                            "title": "Lowdb (Small Local Json DB)",
+                            "url": "https://github.com/typicode/lowdb",
+                            "description": "lowdb is a small local JSON database powered by Lodash (supports Node, Electron and the browser)"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Module Management",
+                    "LevelTwoChilds": [{
+                            "title": "Node Prune",
+                            "url": "https://github.com/tj/node-prune",
+                            "description": "Remove unnecessary files from node_modules."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS IoT",
+                    "LevelTwoChilds": [{
+                            "title": "Home Automation",
+                            "url": "https://github.com/deepsyx/home-automation",
+                            "description": "Raspberry Pi 3 based home automation with NodeJS and React Native."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Gimmick",
+                    "LevelTwoChilds": [{
+                            "title": "Node Notifier",
+                            "url": "https://github.com/mikaelbr/node-notifier",
+                            "description": "A Node.js module for sending notifications on native Mac, Windows and Linux."
+                        },
+                        {
+                            "title": "Node Benchmark",
+                            "url": "https://github.com/nearform/node-clinic",
+                            "description": "A Node.js benchmark toolkit."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS Security",
+                    "LevelTwoChilds": [{
+                            "title": "Joi Object Schema Validation",
+                            "url": "https://github.com/hapijs/joi",
+                            "description": "joi allows you to create blueprints or schemas for JavaScript objects (an object that stores information) to ensure validation of key information."
+                        },
+                        {
+                            "title": "Helmet HTTP Headers",
+                            "url": "https://helmetjs.github.io/",
+                            "description": "Helmet helps you secure your Express apps by setting various HTTP headers."
+                        },
+                        {
+                            "title": "Passport",
+                            "url": "https://github.com/jaredhanson/passport",
+                            "description": "Passport is Express-compatible authentication middleware for Node.js."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "React",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                            "title": "React Official Site",
+                            "url": "https://reactjs.org/docs/",
+                            "description": "React.js Official Site"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                        "title": "Ruanyf React Demos",
+                        "url": "https://github.com/ruanyf/react-demos",
+                        "description": "React Demos"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                        "title": "React Material Design",
+                        "url": "http://www.material-ui.com/",
+                        "description": "React components that implement Google's Material Design."
+                    },
+                    {
+                        "title": "Storybook",
+                        "url": "https://github.com/storybooks/storybook",
+                        "description": "Storybook is a development environment for UI components."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Server Rendered",
+                    "LevelTwoChilds": [{
+                        "title": "Next.js",
+                        "url": "https://github.com/zeit/next.js",
+                        "description": "Next.js is a minimalistic framework for server-rendered React applications."
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Angular",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Documentation",
+                    "LevelTwoChilds": [{
+                            "title": "Angular Official Site",
+                            "url": "https://angular.io/",
+                            "description": "Angular Official Site"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Type Script",
+                    "LevelTwoChilds": [{
+                            "title": "TS Live Guide",
+                            "url": "https://channel9.msdn.com/Events/Build/2017/B8088/",
+                            "description": "New feature in TS 2017."
+                        },
+                        {
+                            "title": "TS Official Site",
+                            "url": "https://www.typescriptlang.org/",
+                            "description": "Details for TS."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Best Practice",
+                    "LevelTwoChilds": [{
+                        "title": "Angular Style Guide",
+                        "url": "https://github.com/johnpapa/angular-styleguide",
+                        "description": "A starting point for Angular development teams to provide consistency through good practices."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                        "title": "Angular Demo Site",
+                        "url": "http://angularexpo.com/",
+                        "description": "Angular project demos."
+                    }]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+{
+    "root": "UrlArchive",
+    "data": [{
+            "LevelOneName": "Soft Skill",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Communication",
+                    "LevelTwoChilds": [{
+                            "title": "Speaking I/O",
+                            "url": "http://speaking.io/",
+                            "description": "..."
+                        },
+                        {
+                            "title": "朱家安",
+                            "url": "https://phiphicake.blogspot.com/",
+                            "description": "台灣宜蘭人，研究專長為自由意志。"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Presentation",
+                    "LevelTwoChilds": [{
+                        "title": "Speaker Deck",
+                        "url": "https://speakerdeck.com/",
+                        "description": "a slides sharing host"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Journey",
+                    "LevelTwoChilds": [{
+                        "title": "Stanford University Podcast",
+                        "url": "https://ecorner.stanford.edu/series/dfj-entrepreneurial-thought-leaders/",
+                        "alias": "dfj-entrepreneurial-thought-leaders",
+                        "description": "Entrepreneurial journey."
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Incubator",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Lisp",
+                    "LevelTwoChilds": [{
+                        "title": "The Roots of Lisp (Paul Graham)",
+                        "url": "http://paulgraham.com/lisp.html",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "OpenCV",
+                    "LevelTwoChilds": [{
+                        "title": "OpenCV + Node.js",
+                        "url": "https://github.com/justadudewhohacks/opencv4nodejs",
+                        "description": "Asynchronous OpenCV 3.x API for node.js"
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Travel",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Japan",
+                "LevelTwoChilds": [{
+                        "title": "Guides",
+                        "url": "https://www.jnto.go.jp/",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Japan Candy",
+                        "url": "https://www.candyjapan.com/",
+                        "description": "enjoy Japan flavour"
+                    },
+                    {
+                        "title": "东京",
+                        "url": "https://www.youtube.com/watch?v=hoeYM-M_Hb0",
+                        "description": "..."
+                    },
+                    {
+                        "title": "秋叶原",
+                        "url": "https://www.youtube.com/watch?v=9r0DxhXr2HY",
+                        "description": "..."
+                    },
+                    {
+                        "title": "镰仓",
+                        "url": "https://www.youtube.com/watch?v=cQLZYdYKibY",
+                        "description": "..."
+                    }
+                ]
+            }]
+        },
+        {
+            "LevelOneName": "Media",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Audio",
+                "LevelTwoChilds": [{
+                        "title": "Looplabs",
+                        "url": "https://looplabs.com/beta",
+                        "description": "Audio Studio."
+                    },
+                    {
+                        "title": "Brian Culbertson ~ Waiting for You",
+                        "url": "https://www.youtube.com/watch?v=vSPHy_yCPCY",
+                        "description": "..."
+                    }
+                ]
+            }]
+        },
+        {
+            "LevelOneName": "Art",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Design",
+                "LevelTwoChilds": [{
+                    "title": "Wood Joints",
+                    "url": "https://taguxdesign.com/sunmao.html",
+                    "description": "榫卯"
+                }]
+            }]
+        },
+        {
+            "LevelOneName": "M.L.",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Tensor Flow",
+                    "LevelTwoChilds": [{
+                        "title": "Standford Tensor Flow Class Note",
+                        "url": "https://web.stanford.edu/class/cs20si/syllabus.html",
+                        "alias": "standford-tensor-flow-class-note",
+                        "description": "Tensorflow for Deep Learning Research"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Keras - The Python Deep Learning library",
+                    "LevelTwoChilds": [{
+                        "title": "Keras Documentation",
+                        "url": "https://keras.io/",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "JS - Deep Learning library",
+                    "LevelTwoChilds": [{
+                        "title": "TensorFlow.js",
+                        "url": "https://js.tensorflow.org/",
+                        "description": "..."
+                    },{
+                        "title": "Brain.js",
+                        "url": "https://github.com/BrainJS/brain.js",
+                        "description": "..."
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Future",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Quantum Computing",
+                "LevelTwoChilds": [{
+                    "title": "D-Wave",
+                    "url": "https://www.dwavesys.com/home",
+                    "description": "D-Wave Systems, Inc. is a quantum computing company, based in Burnaby, British Columbia, Canada."
+                }]
+            }]
+        }
+    ]
+}

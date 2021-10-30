@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /categories/
+Disallow: /archives/
+Disallow: /2017/03/08/Gallery/
+Disallow: /assets/images/
+Sitemap: https://zhaoc.github.io/sitemap.xml

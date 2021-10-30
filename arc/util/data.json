@@ -1,0 +1,460 @@
+{
+    "root": "UrlArchive",
+    "data": [{
+            "LevelOneName": "Editor",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Vim",
+                    "LevelTwoChilds": [{
+                        "title": "Vim Cheatsheet",
+                        "url": "https://gist.github.com/awidegreen/3854277",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Online Editor",
+                    "LevelTwoChilds": [{
+                        "title": "SQL Fiddle",
+                        "url": "http://sqlfiddle.com/",
+                        "description": ""
+                    }]
+                },
+                {
+                    "LevelTwoName": "Editor Cheet Sheet",
+                    "LevelTwoChilds": [{
+                        "title": "cheat.sh - Online Commands Tool",
+                        "url": "https://github.com/chubin/cheat.sh",
+                        "description": ""
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Thrending Viewer",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Web Techs",
+                "LevelTwoChilds": [{
+                        "title": "Thrending Framework",
+                        "url": "http://hotframeworks.com/",
+                        "description": "Find your new favorite web framework"
+                    },
+                    {
+                        "title": "Github Thrending for Vue",
+                        "url": "https://github.com/trending/vue",
+                        "description": "..."
+                    },
+                    {
+                        "title": "Built with Thrends",
+                        "url": "https://trends.builtwith.com/",
+                        "description": "Web Technology Usage Thrends."
+                    }
+                ]
+            }]
+        },
+        {
+            "LevelOneName": "Server/Service",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Tomcat",
+                    "LevelTwoChilds": [{
+                            "title": "Meet Tomcat Catalina",
+                            "url": "https://www.mulesoft.com/tcat/tomcat-catalina",
+                            "description": "Intro of tomcat catalina"
+                        },
+                        {
+                            "title": "Tomcat Optimization",
+                            "url": "https://www.mulesoft.com/tcat/tomcat-performance",
+                            "description": "Tuning Tomcat Performance For Optimum Speed"
+                        },
+                        {
+                            "title": "Tomcat Remote Debug On Eclipse",
+                            "url": "https://stackoverflow.com/questions/3835612/remote-debugging-tomcat-with-eclipse",
+                            "alias": "remote-debugging-tomcat-with-eclipse",
+                            "description": "..."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Kubernetes",
+                    "LevelTwoChilds": [{
+                        "title": "Kubernetes official website",
+                        "url": "https://kubernetes.io/",
+                        "description": "Production-Grade Container Orchestration"
+                    }]
+                },
+                {
+                    "LevelTwoName": "RabbitMQ",
+                    "LevelTwoChilds": [{
+                            "title": "RabbitMQ official website",
+                            "url": "http://www.rabbitmq.com/getstarted.html",
+                            "description": "RabbitMQ is aopen source message broker."
+                        },
+                        {
+                            "title": "RabbitMQ Code Base",
+                            "url": "https://github.com/rabbitmq",
+                            "description": "..."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Log Collector",
+                    "LevelTwoChilds": [{
+                        "title": "Fluentd GitHub",
+                        "url": "https://github.com/fluent/fluentd",
+                        "description": "Fluentd collects events from various data sources and writes them to files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on."
+                    },
+                    {
+                        "title": "Winston (JS logger)",
+                        "url": "https://github.com/winstonjs/winston",
+                        "description": "A universal logging library (JS)."
+                    }]
+                },
+                {
+                    "LevelTwoName": "A/B Testing",
+                    "LevelTwoChilds": [{
+                        "title": "A/B Testing Introduction",
+                        "url": "https://vwo.com/ab-testing/",
+                        "description": "In web analytics, A/B testing is a controlled experiment with two variants, A and B."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Mail Service",
+                    "LevelTwoChilds": [{
+                        "title": "Nodemailer",
+                        "url": "https://github.com/nodemailer/nodemailer",
+                        "description": "Send e-mails from Node.js."
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Web App Public Release",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Generic",
+                    "LevelTwoChilds": [{
+                            "title": "ngrok official website",
+                            "url": "https://ngrok.com/",
+                            "description": "Secure tunnels to localhost"
+                        },
+                        {
+                            "title": "mLab (MongoDB)",
+                            "url": "https://mlab.com/",
+                            "description": "mLab is the leading Database-as-a-Service for MongoDB"
+                        },
+                        {
+                            "title": "Local Tunnel",
+                            "url": "https://github.com/localtunnel/localtunnel",
+                            "description": "localtunnel exposes your localhost to the world for easy testing and sharing! No need to mess with DNS or deploy just to have others test out your changes."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "NodeJS",
+                    "LevelTwoChilds": [{
+                        "title": "Publish Local Node.js App",
+                        "url": "https://www.pluralsight.com/guides/node-js/exposing-your-local-node-js-app-to-the-world",
+                        "description": "Exposing your local Node.js app to the world",
+                        "alias": "exposing-your-local-node-js-app-to-the-world"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Security",
+                    "LevelTwoChilds": [{
+                        "title": "Certbot HTTPS",
+                        "url": "https://certbot.eff.org/",
+                        "description": "Automatically enable HTTPS on your website with EFF's Certbot, deploying Let's Encrypt certificates."
+                    },
+                    {
+                        "title": "Key Rotation",
+                        "url": "https://www.vaultproject.io/docs/internals/rotation.html",
+                        "description": "..."
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Data Store",
+            "LevelOneChilds": [{
+                "LevelTwoName": "MongoDB",
+                "LevelTwoChilds": [{
+                        "title": "Robo 3T (Client Tool)",
+                        "url": "http://robomongo.org",
+                        "description": "Native cross-platform MongoDB management tool"
+                    },
+                    {
+                        "title": "Mongoose",
+                        "url": "http://mongoosejs.com/",
+                        "description": "mongodb object modeling for node.js"
+                    }
+                ]
+            }]
+        },
+        {
+            "LevelOneName": "Data Handler",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Data Compression",
+                "LevelTwoChilds": [{
+                        "title": "Zstandard (Real-time comression Tool)",
+                        "url": "https://github.com/facebook/zstd",
+                        "description": "fast real-time compression tool developed by facebook"
+                    }
+                ]
+            }]
+        },
+        {
+            "LevelOneName": "Package Manager / Version Control",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Package Manager",
+                    "LevelTwoChilds": [{
+                            "title": "Home Brew Service",
+                            "url": "https://github.com/Homebrew/homebrew-services",
+                            "description": "Integrates Homebrew formulae with macOS's launchctl manager."
+                        },
+                        {
+                            "title": "Yarn",
+                            "url": "https://yarnpkg.com/en/",
+                            "description": "Yarn is a deterministic package management tool which could be faster than npm"
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Version Control",
+                    "LevelTwoChilds": [{
+                            "title": "GitHub Helper",
+                            "url": "https://help.github.com/categories/bootcamp/",
+                            "description": "github bootcamp"
+                        },
+                        {
+                            "title": "Github Markdown",
+                            "url": "https://guides.github.com/features/mastering-markdown/",
+                            "description": "Github Markdown Guides."
+                        },
+                        {
+                            "title": "Signing commits with GPG",
+                            "url": "https://help.github.com/articles/signing-commits-with-gpg/",
+                            "description": "Use GPG keys to sign your work locally and verify work from trusted collaborators."
+                        },
+                        {
+                            "title": "Git History Revision",
+                            "url": "https://www.jianshu.com/p/8f46e13a8ada",
+                            "description": "how to rewrite git history record."
+                        },
+                        {
+                            "title": "12 Github Hidden Features",
+                            "url": "https://hackernoon.com/12-cool-things-you-can-do-with-github-f3e0424cf2f0",
+                            "description": "...",
+                            "alias": "12-cool-things-you-can-do-with-github"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Browser",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Console API",
+                    "LevelTwoChilds": [{
+                            "title": "Chrome Console",
+                            "url": "https://developers.google.com/chrome-developer-tools/docs/console-api/",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Firefox Console",
+                            "url": "https://developer.mozilla.org/en-US/docs/Web/API/console",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Internet Explorer Console",
+                            "url": "http://msdn.microsoft.com/en-us/library/ie/hh772183.aspx",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Node.js Console",
+                            "url": "https://nodejs.org/api/console.html",
+                            "description": "..."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Implementation",
+                    "LevelTwoChilds": [{
+                        "title": "Chrome DevTools Protocol View",
+                        "url": "https://chromedevtools.github.io/devtools-protocol/",
+                        "description": "..."
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Admin Tools",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Regular Expression",
+                    "LevelTwoChilds": [{
+                        "title": "RegExp Online Tools",
+                        "url": "https://regex101.com/",
+                        "description": "..."
+                    }]
+                },
+                {
+                    "LevelTwoName": "Bash",
+                    "LevelTwoChilds": [{
+                        "title": "Bash Tips",
+                        "url": "https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/",
+                        "alias": "ten-things-i-wish-id-known-about-bash",
+                        "description": "..."
+                    }]
+                }, {
+                    "LevelTwoName": "Resource",
+                    "LevelTwoChilds": [{
+                        "title": "Admin Choice",
+                        "url": "http://www.adminschoice.com/",
+                        "description": "Magzine for Systm & Technologists."
+                    }]
+                },
+                {
+                    "LevelTwoName": "System Migration",
+                    "LevelTwoChilds": [{
+                        "title": "Clonezilla",
+                        "url": "http://clonezilla.org/",
+                        "description": "A partition and disk imaging/cloning program"
+                    }]
+                },
+                {
+                    "LevelTwoName": "Android Tools",
+                    "LevelTwoChilds": [{
+                        "title": "Screen Cast",
+                        "url": "https://xsavikx.github.io/AndroidScreencast/",
+                        "description": "Cast Android screen to PC"
+                    },
+                    {
+                        "title": "Scrcpy (Android Device Controller)",
+                        "url": "https://github.com/Genymobile/scrcpy",
+                        "description": "This application provides display and control of Android devices connected on USB."
+                    }]
+                },
+                {
+                    "LevelTwoName": "System Monitoring",
+                    "LevelTwoChilds": [{
+                        "title": "Netdata",
+                        "url": "https://github.com/firehol/netdata",
+                        "description": "netdata is a system for distributed real-time performance and health monitoring."
+                    },
+                    {
+                        "title": "htop - Unix Interactive process viewer",
+                        "url": "https://hisham.hm/htop/",
+                        "description": "..."
+                    }]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Networking Tools",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Samba",
+                "LevelTwoChilds": [{
+                        "title": "Samba Official Site",
+                        "url": "https://www.samba.org/",
+                        "description": "Samba is an extremely useful networking tool for anyone who has both Windows and Unix systems on his network."
+                    },
+                    {
+                        "title": "Samba Reference Online Book",
+                        "url": "https://www.samba.org/samba/docs/using_samba/toc.html",
+                        "description": "Using Samba, 2nd Edition"
+                    }
+                ]
+            },
+            {
+                "LevelTwoName": "Web download utility (Protocol)",
+                "LevelTwoChilds": [
+                    {
+                        "title": "aria2 - The ultra fast download utility",
+                        "url": "https://github.com/aria2/aria2",
+                        "description": "aria2 is a utility for downloading files. The supported protocols are HTTP(S), FTP, SFTP, BitTorrent, and Metalink. "
+                    }
+                ]
+            }]
+        },
+        {
+            "LevelOneName": "Games",
+            "LevelOneChilds": [{
+                    "LevelTwoName": "Game Design",
+                    "LevelTwoChilds": [{
+                            "title": "Amanita Design",
+                            "url": "http://amanita-design.net/",
+                            "description": "Amanita Design is an independent game developer based in the Czech Republic."
+                        },
+                        {
+                            "title": "The Legend of Zelda",
+                            "url": "https://www.zelda.com/",
+                            "description": "The Legend of Zelda"
+                        },
+                        {
+                            "title": "Itch Game Center",
+                            "url": "https://itch.io/",
+                            "description": "Game community."
+                        },
+                        {
+                            "title": "3D/AR/VR Game Design",
+                            "url": "https://sketchfab.com/",
+                            "description": "Discover things in 3D, AR, and VR."
+                        }
+                    ]
+                },
+                {
+                    "LevelTwoName": "Game Emulator",
+                    "LevelTwoChilds": [{
+                            "title": "RetroArch-Offical Site",
+                            "url": "http://www.retroarch.com/",
+                            "description": "RetroArch is a frontend for emulators, game engines and media players."
+                        },
+                        {
+                            "title": "RetroArch-Config",
+                            "url": "https://www.libretro.com/index.php/getting-started-with-retroarch/",
+                            "description": "config"
+                        },
+                        {
+                            "title": "Lakka-Offical Site",
+                            "url": "http://www.lakka.tv/",
+                            "description": "Lakka is a lightweight Linux distribution that transforms a small computer into a full blown retrogaming console."
+                        },
+                        {
+                            "title": "Lakka-File Access",
+                            "url": "http://www.lakka.tv/doc/Accessing-Lakka-filesystem/",
+                            "description": "Lakka File Accessing"
+                        },
+                        {
+                            "title": "Cemu Wii U Emulator",
+                            "url": "http://cemu.info/",
+                            "description": "..."
+                        },
+                        {
+                            "title": "Etcher",
+                            "url": "https://etcher.io/",
+                            "description": "Burn images to SD cards & USB drives, safely and easily."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "LevelOneName": "Media Utils",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Convertor",
+                "LevelTwoChilds": [{
+                    "title": "FFmpeg",
+                    "url": "https://www.ffmpeg.org/",
+                    "description": "A complete, cross-platform solution to record, convert and stream audio and video."
+                }]
+            }]
+        },
+        {
+            "LevelOneName": "Fun Tools",
+            "LevelOneChilds": [{
+                "LevelTwoName": "Research Category",
+                "LevelTwoChilds": [{
+                    "title": "Submarine Cable Map",
+                    "url": "https://www.submarinecablemap.com/",
+                    "description": "The Submarine Cable Map is a free and regularly updated resource from TeleGeography."
+                }]
+            }]
+        }
+    ]
+}

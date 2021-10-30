@@ -1,0 +1,193 @@
+{
+    "root": "UrlArchive",
+    "data": [{
+        "LevelOneName": "Programming",
+        "LevelOneChilds": [{
+            "LevelTwoName": "Project Design",
+            "LevelTwoChilds": [{
+                    "title": "Best Practices for JavaScript projects",
+                    "url": "https://github.com/wearehive/project-guidelines",
+                    "description": "A set of best practices for JavaScript projects."
+                },
+                {
+                    "title": "Web Design Fundamentals",
+                    "url": "https://github.com/wxyyxc1992/Web-Series/",
+                    "description": "王下邀月熊 GitHub"
+                },
+                {
+                    "title": "JS Guide (Google)",
+                    "url": "https://google.github.io/styleguide/jsguide.html",
+                    "description": "..."
+                },
+                {
+                    "title": "Netflix Open Source Software Center",
+                    "url": "https://netflix.github.io/",
+                    "description": "..."
+                }
+            ]
+        },
+        {
+            "LevelTwoName": "Functional Programming",
+            "LevelTwoChilds": [{
+                    "title": "Observable Streams",
+                    "url": "http://reactivex.io/",
+                    "description": "An API for asynchronous programming with observable streams."
+                },
+                {
+                    "title": "Functional Programming Intro",
+                    "description": "The Two Pillars of JavaScript — Pt 2: Functional Programming",
+                    "url": "https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4",
+                    "alias": "js-functional-programming"
+                },
+                {
+                    "title": "Asynchronous Programming Demo *",
+                    "url": "https://www.youtube.com/watch?v=gawmdhCNy-A",
+                    "description": "Asynchronous Programming at Netflix."
+                },
+                {
+                    "title": "FP Concept Training",
+                    "url": "http://reactivex.io/learnrx/",
+                    "description": "FP Playground"
+                },
+                {
+                    "title": "JS Array Iterator",
+                    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/%40%40iterator",
+                    "alias": "lobal-objects-array-iterator",
+                    "description": "..."
+                }
+            ]
+        },
+        {
+            "LevelTwoName": "Metaprogramming",
+            "LevelTwoChilds": [{
+                    "title": "JavaScript - Symbol",
+                    "url": "https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/",
+                    "description": "..."
+                },
+                {
+                    "title": "JavaScript - Reflect",
+                    "url": "https://www.keithcirkel.co.uk/metaprogramming-in-es6-part-2-reflect/",
+                    "description": "..."
+                },
+                {
+                    "title": "JavaScript - Proxy",
+                    "url": "https://www.keithcirkel.co.uk/metaprogramming-in-es6-part-3-proxies/",
+                    "description": "..."
+                }
+            ]
+        },
+        {
+            "LevelTwoName": "Design Patterns",
+            "LevelTwoChilds": [{
+                    "title": "JavaScript Design Patterns (Online Book)",
+                    "url": "https://addyosmani.com/resources/essentialjsdesignpatterns/book/",
+                    "alias": "essential-jsdesign-patterns",
+                    "description": "..."
+                }
+            ]
+        },
+        {
+            "LevelTwoName": "Code Testing Design",
+            "LevelTwoChilds": [{
+                    "title": "Best Practices for JavaScript Testing",
+                    "url": "https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3",
+                    "alias": "an-overview-of-javascript-testing-in-2018",
+                    "description": "..."
+                }
+            ]
+        },
+        {
+            "LevelTwoName": "Data Encryption",
+            "LevelTwoChilds": [{
+                    "title": "ROT13",
+                    "url": "https://en.wikipedia.org/wiki/ROT13",
+                    "description": "Rotate by 13 places."
+                }
+            ]
+        },
+        {
+            "LevelTwoName": "Microservice Design",
+            "LevelTwoChilds": [{
+                    "title": "Enterprise Java Microservices (Online Book)",
+                    "url": "https://livebook.manning.com/#!/book/enterprise-java-microservices/chapter-1/v-6/1",
+                    "alias": "enterprise-java-microservices",
+                    "description": "..."
+                },
+                {
+                    "title": "Microservices (Martin Fowler)",
+                    "url": "https://martinfowler.com/articles/microservices.html",
+                    "description": "..."
+                },
+                {
+                    "title": "Serverless with Claudia",
+                    "url": "https://livebook.manning.com/#!/book/serverless-apps-with-node-and-claudiajs/chapter-1/v-5/",
+                    "alias": "serverless-apps-with-node-and-claudiajs",
+                    "description": "..."
+                },
+                {
+                    "title": "Netflix Conductor",
+                    "url": "https://netflix.github.io/conductor/",
+                    "description": "Conductor is Netflix’s microservices orchestration engine as part of its Netflix OSS ecosystem."
+                },
+                {
+                    "title": "Logstash",
+                    "url": "https://www.elastic.co/products/logstash",
+                    "description": "Util to monitor microserivces"
+                },
+                {
+                    "title": "Apache Kafka",
+                    "url": "https://kafka.apache.org/",
+                    "description": "Message queuing."
+                },
+                {
+                    "title": "Tyk ",
+                    "url": "https://tyk.io/",
+                    "description": "Fast, scalable, and modern, Tyk is an out-of-the-box open source API management platform."
+                }
+            ]
+        }]
+    },
+    {
+        "LevelOneName": "Interface Design",
+        "LevelOneChilds": [{
+            "LevelTwoName": "UX",
+            "LevelTwoChilds": [{
+                    "title": "UX Design",
+                    "url": "https://lawsofux.com",
+                    "description": "Law of UX."
+                },
+                {
+                    "title": "Sketch Design",
+                    "url": "https://designer.io/#hero",
+                    "description": "online design tool."
+                }
+            ]
+        },
+        {
+            "LevelTwoName": "Mind Map",
+            "LevelTwoChilds": [{
+                    "title": "Online Coggle",
+                    "url": "https://coggle.it/",
+                    "description": "Online Mind Map Design."
+                }
+            ]
+        },
+        {
+            "LevelTwoName": "Visual Sets",
+            "LevelTwoChilds": [{
+                    "title": "Showcase & Discover Creation Work",
+                    "url": "https://www.behance.net/",
+                    "description": "..."
+                },{
+                    "title": "Dribble",
+                    "url": "https://dribbble.com/",
+                    "description": "Shots"
+                },{
+                    "title": "WLOP",
+                    "url": "https://www.patreon.com/wlop",
+                    "description": "..."
+                }
+            ]
+        }]
+    }]
+}

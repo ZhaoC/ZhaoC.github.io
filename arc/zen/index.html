@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Zen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Zhao Cai">
+    <link rel="icon" href="https://zhaoc.github.io/assets/images/favicon.png">
+    <!-- in order to dynamic compie less stylesheet, make sure it loaded before less.js -->
+    <link href="../config/css/style.less" rel="stylesheet/less" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        less = {
+            env: "production"
+            //    env: "development"
+        };
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@1.5.4/src/loadingoverlay.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <ul class="tree">
+        </ul>
+    </div>
+    <script src="../config/js/script.js"></script>
+    <script>
+        loadData('data.json');
+    </script>
+
+</body>
+
+</html>
