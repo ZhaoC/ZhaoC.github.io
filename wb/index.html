@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
     <!--  Meta  -->
     <meta charset="UTF-8" />
     <title>WB·2021</title>
-
+    <link rel="icon" href="https://zhaoc.github.io/assets/images/favicon.png">
     <!--  Styles  -->
     <link rel="stylesheet" href="res/01_meow.css">
-    <link rel="stylesheet" href="res/common.css">
-     <script src="https://labs.nearpod.com/bodymovin/demo/catrim/bodymovin.js"></script>
+    <!-- <link rel="stylesheet" href="res/common.css"> -->
+    <script src="https://labs.nearpod.com/bodymovin/demo/catrim/bodymovin.js"></script>
 </head>
 
 <body>
-    <div class="fixed-div-top-center">
-    <h2 class="blink_me" style="text-align: center; color:rgb(211, 250, 251); font-size: 2em">Happy Birthday to Wenbei!!!</h2> 
-        </div>
-    <div id="svgContainerOne" style="width:100%;height:85%;display:inline-block"></div>
 
-    <img src="res/images/totoro/004.gif" style="width:8%; position: fixed; top: 1.4em; left: 1.4em;">
-<img src="res/images/totoro/002.gif" style="width:8%; position: fixed; bottom: 1.4em; right: 1.4em;"> 
+    <audio id="Audio01">
+        <source src="res/audio/01_bgm.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="Audio02">
+        <source src="res/audio/02_bgm.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="fixed-div-top-center">
+        <h2 class="blink_me" style="text-align: center; color:rgb(211, 250, 251); font-size: 2em">Happy Birthday to
+            Wenbei!!!</h2>
+    </div>
+    <div onclick="playAudio02()" id="svgContainerOne" style="width:100%;height:85%;display:inline-block"></div>
+
+    <img onclick="showImg()" src="res/images/totoro/004.gif"
+        style="width:12%; position: fixed; top: 8.4em; left: 1.4em;">
+    <img id="wb" src="res/images/wb/wb01.jpg"
+        style="width:20%; position: fixed; top: 8.4em; right: 1.4em; display:none; border-radius: 65px;">
+    <img onclick="playAudio01()" src="res/images/totoro/002.gif"
+        style="width:18%; position: fixed; bottom: 1.4em; right: 1.4em;">
 
     <script src="res/01_meow.js"></script>
 
-    <audio controls autoplay style=”display:none”>
-        <source src="res/audio/01_bgm.mp3" type="audio/mpeg">
-    </audio>
+    <script>
+        var a1 = document.getElementById("Audio01");
+        var a2 = document.getElementById("Audio02");
+        var wb = document.getElementById("wb");
 
+        function showImg() {
+            if (wb.style.display === "none"){
+                wb.style.display = "block";
+                document.getElementsByTagName("html")[0].style.background = "rgb(145, 131, 184)"; 
+            } else {
+                wb.style.display = "none";
+                document.getElementsByTagName("html")[0].style.background = "rgb(171, 223, 228)"; 
+            }
+        }
+
+        function playAudio01() {
+            a2.pause();
+            a1.play();
+        }
+
+        function playAudio02() {
+            a1.pause();
+            a2.play();
+        }
+    </script>
 </body>
 
 </html>
